@@ -148,6 +148,7 @@ Timothy Cota
 Tino Mehlmann
 Tom Marble
 Victor Jaquez
+Vincent Vermeulen
 Wayne Gray
 William Lachance
 Wolfram Priess
