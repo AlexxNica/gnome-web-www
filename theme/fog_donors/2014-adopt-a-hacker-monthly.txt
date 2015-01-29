@@ -47,7 +47,10 @@ James Campbell
 Jan Girlich
 Jan Leike
 Jan Szpuk
+Javier Sivianes Lopez
+Jean Chen
 Jerome PERRET
+Joannis Orlandos
 Jorge Gallegos
 Jose Maria Casanova Crespo
 Jose Miguel Dana Perez
@@ -61,6 +64,7 @@ Jérôme PERRET
 Kerry Chhim
 Leif Gruenwoldt
 Luiz Paulo Colombiano
+M J van Wolferen
 Mahendra TALLUR
 Manish Sinha
 Marc Thomas
@@ -95,6 +99,7 @@ Russell Sim
 Samuel El-Borai
 Scott Mcdonald
 Shane Auckland
+Siegfried Gevatter
 Stefan Lehmann
 Steve Philipp
 Steven J Drinnan
