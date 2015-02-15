@@ -1,3 +1,4 @@
+ 
  
 ukasz Jerna
 Aaron Honeycutt
@@ -14,6 +15,7 @@ Behdad Esfahbod
 Benjamin Lebsanft
 Blaise Alleyne
 Blane Warrene
+Bors LTD
 Bowie Poag
 Brian Campbell
 Bryan Freeman
@@ -37,6 +39,7 @@ Edward Jakus
 Elad Alfassa
 Felipe Franco
 Gregory Wellington
+Guadalupe Vadillo
 Guido Vargas Ahumada
 Gustavo Noronha
 Hannes Ovrén
