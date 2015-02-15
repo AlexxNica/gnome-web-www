@@ -1,10 +1,12 @@
 Brad Geesaman
 Casey Harkins
 Christopher Clark
+Geoffrey Hill
 Jens Jorgensen
 John Hughes
 Joseph Sadusk
 Magne Larsen
 Michel Tu
+Mischa Zschokke
 Peter Stoddard
 colin walters
