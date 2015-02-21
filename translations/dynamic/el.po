@@ -2,19 +2,21 @@
 # Copyright (C) 2012 gnome-web-www's COPYRIGHT HOLDER
 # This file is distributed under the same license as the gnome-web-www package.
 # Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>, 2012.
+# Efstathios Iosifidis <iosifidis@opensuse.org>, 2015.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-web-www master\n"
 "POT-Creation-Date: 2014-03-25 14:02+0000\n"
-"PO-Revision-Date: 2014-06-28 04:50+0200\n"
-"Last-Translator: Maria Mavridou <mavridou@gmail.com>\n"
-"Language-Team: team@gnome.gr\n"
+"PO-Revision-Date: 2015-02-22 00:53+0200\n"
+"Last-Translator: Efstathios Iosifidis <iosifidis@opensuse.org>\n"
+"Language-Team: Greek, Modern (1453-) <opensuse-translation-el@opensuse.org>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.6.4\n"
+"X-Generator: Gtranslator 2.91.6\n"
 "X-Project-Style: gnome\n"
 
 #. (itstool) path: post/title
@@ -8566,6 +8568,11 @@ msgid ""
 "program will donate the proceeds from the sales of 500 Nokia 770 devices to "
 "the GNOME Foundation."
 msgstr ""
+"Στουτγάρδη, Γερμανία - 31 Μαΐου, 2005-Η Nokia , η οποία ξεκίνησε πρόσφατα το "
+"Nokia 770 Internet Tablet , ανακοίνωσε σήμερα ένα πρόγραμμα για την ανάπτυξη "
+"της συσκευής στο  GNOME user και στο Developer European Conference "
+"( GUADEC ) .Το πρόγραμμα για την ανάπτυξη της συσκευής  θα δωρίσει τα έσοδα "
+"από τις πωλήσεις των 500 Nokia 770 συσκευές στο Ίδρυμα GNOME ."
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2052
@@ -9162,6 +9169,8 @@ msgid ""
 "Linux is a trademark of Linus Torvalds. All other names and trademarks are "
 "the property of their respective owners."
 msgstr ""
+"Το Linux είναι εμπορικό σήμα του Linus Torvalds . Όλα τα άλλα ονόματα και τα "
+"εμπορικά σήματα είναι ιδιοκτησία των αντίστοιχων ιδιοκτητών τους ."
 
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2159
@@ -9192,6 +9201,9 @@ msgid ""
 "“This is one of the two most important events for GNOME developers,” said "
 "Timothy Ney, executive director of the GNOME Foundation."
 msgstr ""
+"\" Αυτό είναι ένα από τα δύο πιο σημαντικά γεγονότα για τους προγραμματιστές "
+"του GNOME , \" δήλωσε ο Timothy Ney , εκτελεστικός διευθυντής του Ιδρύματος "
+"GNOME ."
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2164
@@ -9247,6 +9259,9 @@ msgid ""
 "A new search bar, called Deskbar, which can search through local files, "
 "programs and contacts as well as on the web"
 msgstr ""
+"Μια νέα μπαρ αναζήτησης, που ονομάζεται Deskbar, η οποία μπορεί να "
+"αναζητήσει μέσα από τοπικά αρχεία, τα προγράμματα και τις επαφές, καθώς και "
+"από το διαδίκτυο"
 
 #. (itstool) path: li/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2181
@@ -9269,7 +9284,7 @@ msgstr ""
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2183
 msgid "The ability to switch users quickly, without logging off"
-msgstr ""
+msgstr "Η δυνατότητα να αλλάξετε τους χρήστες γρήγορα , χωρίς να αποσυνδεθείτε"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2184
@@ -9360,6 +9375,9 @@ msgid ""
 "GNOME 2.14 includes the ability to easily switch between users, and makes it "
 "possible to have multiple users logged in at the same time."
 msgstr ""
+"Το GNOME 2.14 περιλαμβάνει τη δυνατότητα να μεταβείτε εύκολα μεταξύ των "
+"χρηστών, και είναι δυνατόν να έχουμε πολλούς χρήστες συνδεδεμένους "
+"ταυτόχρονα."
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2197
@@ -9597,6 +9615,9 @@ msgid ""
 "trademarks of Google, Inc.. All other names and trademarks are the property "
 "of their respective owners."
 msgstr ""
+"Το Linux είναι εμπορικό σήμα του Linus Torvalds . Η Google και το \" Summer "
+"of Code \" είναι εμπορικά σήματα της Google , Inc .. Όλα τα άλλα ονόματα και "
+"τα εμπορικά σήματα είναι ιδιοκτησία των αντίστοιχων ιδιοκτητών τους ."
 
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2241
@@ -9667,6 +9688,8 @@ msgid ""
 "Increase community and commercial visibility of GMAE technology and "
 "participating organizations."
 msgstr ""
+"Αύξηση  της  κοινότητα και εμπορική προβολή της τεχνολογίας GMAE και των "
+"συμμετεχόντων οργανισμών "
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2251
@@ -9703,6 +9726,8 @@ msgid ""
 "Ensure that Software Freedom is a reality beyond the desktop, and available "
 "in the hands of users around the world."
 msgstr ""
+"Βεβαιωθείτε ότι το Ελεύθερο Λογισμικό είναι μια πραγματικότητα πέρα ​​από την "
+"επιφάνεια εργασίας , και διατίθεται στα χέρια των χρηστών σε όλο τον κόσμο ."
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2257
@@ -10006,7 +10031,7 @@ msgstr ""
 #. (itstool) path: html/h2
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2306
 msgid "Words from our Founders"
-msgstr ""
+msgstr "Λόγια από τους ιδρυτές μας"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2307
@@ -10033,6 +10058,9 @@ msgid ""
 "“free and complete set of user friendly applications and desktop tools [...] "
 "based entirely on free software.”"
 msgstr ""
+"Τον Αύγουστο του 1997 , Miguel de Icaza <_:a-1/> το “GNOME Desktop project” "
+"ως \" ελεύθερη και πλήρη σειρά φιλικών προς το χρήστη εφαρμογών και desktop "
+"εργαλείων  [ ... ] βασίζεται εξ ολοκλήρου σε ελεύθερο λογισμικό . \""
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2309
@@ -10231,6 +10259,8 @@ msgid ""
 "Jody Goldberg is the lead maintainer of Gnumeric, a GNOME-based spreadsheet "
 "application, a position he has held for seven years."
 msgstr ""
+"Jody Goldberg είναι ο κύριος συντηρητής του Gnumeric , μια GNOME -based "
+"εφαρμογή λογιστικών φύλλων , μια θέση που κατείχε για επτά χρόνια ."
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2342
@@ -10619,6 +10649,9 @@ msgid ""
 "Inc. All other names and trademarks are the property of their respective "
 "owners."
 msgstr ""
+"Το Linux είναι εμπορικό σήμα του Linus Torvalds . Το Google είναι εμπορικό "
+"σήμα της Google , Inc. Όλα τα άλλα ονόματα και τα εμπορικά σήματα είναι "
+"ιδιοκτησία των αντίστοιχων ιδιοκτητών τους"
 
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2394
@@ -10681,7 +10714,7 @@ msgstr ""
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2401
 msgid "As with last year, the conference will have three tracks:"
-msgstr ""
+msgstr "Όπως και με το προηγούμενο έτος , το συνέδριο θα έχει τρία σκέλη:"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2403
@@ -10715,6 +10748,8 @@ msgid ""
 "See the <_:a-1/> for more more information about the conference, to "
 "register, and to submit proposals."
 msgstr ""
+"Δείτε το <_:a-1/> για περισσότερες περισσότερες πληροφορίες σχετικά με το "
+"συνέδριο , για να εγγραφείτε , και να υποβάλετε προτάσεις ."
 
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2408
@@ -10744,7 +10779,7 @@ msgstr ""
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2415
 msgid "GNOME Foundation and Mozilla Foundation join forces"
-msgstr ""
+msgstr "GNOME Foundation και το Mozilla Foundation ενώνουν τις δυνάμεις τους"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2417
@@ -10787,6 +10822,9 @@ msgid ""
 "to be spent on the improvement of the accessibility of the GNOME desktop "
 "environment via the <_:a-1/> program."
 msgstr ""
+"Το ίδρυμα Mozilla ανακοινώνει μια επιχορήγηση $ 10.000 για το Ίδρυμα GNOME , "
+"που θα δαπανηθεί για τη βελτίωση της προσβασιμότητας του περιβάλλοντος "
+"εργασίας GNOME μέσω του < _ : a- 1 / > πρόγραμμα ."
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2424
@@ -11354,7 +11392,7 @@ msgstr ""
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2532
 msgid "KDE e.V. Board<br/> Email: <_:a-1/>"
-msgstr ""
+msgstr "KDE e.V. Board<br/> Email: <_:a-1/>"
 
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2539
@@ -11433,7 +11471,7 @@ msgstr ""
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2548
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2736
 msgid "The GNOME project has three main goals:"
-msgstr ""
+msgstr "Το έργο GNOME έχει τρεις κύριους στόχους :"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2550
@@ -11463,6 +11501,7 @@ msgstr ""
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2566
 msgid "Gran Canaria Desktop Summit 2009 to be held July 3-11, 2009"
 msgstr ""
+"Το Gran Canaria Desktop Summit 2009   θα πραγματοποιηθεί  3-11 Ιουλιου 2009"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2568
@@ -11478,6 +11517,8 @@ msgid ""
 "The conference will be hosted by Cabildo, the local government of Gran "
 "Canaria."
 msgstr ""
+"Το συνέδριο θα φιλοξενηθεί στο Cabildo ,τη τοπική κυβέρνηση της Γκραν "
+"Κανάρια ."
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2570
@@ -11500,6 +11541,8 @@ msgid ""
 "Sugar Labs, the nonprofit behind the OLPC software, is joining the GNOME "
 "Foundation"
 msgstr ""
+"Το Sugar Labs, ο μη κερδοσκοπικός οργανισμός πίσω από το λογισμικό OLPC  , "
+"ενώνει το GNOME Foundation"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2578
@@ -11660,7 +11703,7 @@ msgstr ""
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2616
 msgid "Current confirmed keynotes are:"
-msgstr ""
+msgstr "Current confirmed keynotes are:"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2618
@@ -11671,12 +11714,12 @@ msgstr "Πνευματικά δικαιώματα © 2001-2010 Free Software Fou
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2619
 msgid "Walter Bender, Executive Director, Sugar Labs"
-msgstr ""
+msgstr "Walter Bender, Διευθύνων σύμβουλος, Sugar Labs"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2620
 msgid "Robert Lefkowitz (known as “r0ml”), Distinguished Engineer of the ACM"
-msgstr ""
+msgstr "Robert Lefkowitz (γνωστός ώς “r0ml”), Διακεκριμένος Μηχανικός ACM"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2621
@@ -11727,12 +11770,16 @@ msgid ""
 "Registration is free and we look forward to meeting desktop enthusiasts at "
 "the conference. You can register at: <_:a-1/>."
 msgstr ""
+"Η εγγραφή είναι δωρεάν και ανυπομονούμε για την συναντήσουμε  λάτρεις της "
+"επιφάνειας εργασίας στο συνέδριο . Μπορείτε να εγγραφείτε στη διεύθυνση <_:"
+"a-1/>."
 
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2638
 msgid ""
 "Free Desktop Communities come together at the Gran Canaria Desktop Summit"
 msgstr ""
+" Οι Free Desktop Κοινότητες  έρχονται μαζί στο Gran Canaria Desktop Summit"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2640
@@ -12205,6 +12252,8 @@ msgid ""
 "Please join the GNOME community in celebrating the achievements the free "
 "software world has made."
 msgstr ""
+"Παρακαλούμε να ενταχθείτε  στην κοινότητα του GNOME για τον  εορτασμό των "
+"επιτευγμάτων  που έχουν γίνει στον κόσμο του ελεύθερου λογισμικού."
 
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2716
@@ -12289,6 +12338,7 @@ msgstr ""
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2727
 msgid "The Evince document viewer has been ported to Microsoft Windows®."
 msgstr ""
+"Ο Evince document viewer έχει μεταφερθεί και στα  Windows® της  Microsoft."
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2728
@@ -12328,6 +12378,8 @@ msgstr "http://library.gnome.org/misc/release-notes/2.28/"
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2733
 msgid "For the full list of changes, please see the release notes at <_:a-1/>."
 msgstr ""
+"Για την πλήρη λίστα των αλλαγών, παρακαλούμε να δείτε τις σημειώσεις έκδοσης "
+"στο<_:a-1/>."
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2738
@@ -12340,7 +12392,7 @@ msgstr ""
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2753
 msgid "GUADEC 2010 to be held in The Hague, Netherlands"
-msgstr ""
+msgstr "To GUADEC 2010  θα πραγματοποιηθεί στη Χάγη , Ολλανδία"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2755
@@ -13157,7 +13209,7 @@ msgstr "http://foundation.gnome.org/"
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2937
 msgid "More information can be found at <_:a-1/> and <_:a-2/>."
-msgstr ""
+msgstr "Περισσότερες πληροφορίες μπορείτε να βρείτε στο <_:a-1/> και <_:a-2/>."
 
 #. (itstool) path: html/h2
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2938
@@ -13181,7 +13233,7 @@ msgstr "http://www.laptop.org/"
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2956
 msgid "GNOME Targets Wider Audience at GUADEC"
-msgstr ""
+msgstr " Το GNOME στοχεύει σε ευρύτερο κοινό  στο GUADEC"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:2958
@@ -13476,7 +13528,7 @@ msgstr ""
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3039
 msgid "Desktop Summit 2011 to be held in Berlin, Germany"
-msgstr ""
+msgstr "To Desktop Summit 2011 θα πραγματοποιηθεί στο Βερολίνο , Γερμανία"
 
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3041
@@ -13762,7 +13814,7 @@ msgstr ""
 #. (itstool) path: li/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3103
 msgid "thomas.keup@opencoffee.de"
-msgstr ""
+msgstr "thomas.keup@opencoffee.de"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3103
@@ -13803,7 +13855,7 @@ msgstr ""
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3118
 msgid "GNOME Project Receives $15,000 for Accessibility Work"
-msgstr ""
+msgstr "GNOME Project λαμβάνει $15,000 για Εργασία για τη Προσβασιμότητα"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3120
@@ -14480,7 +14532,7 @@ msgstr ""
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4341
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4663
 msgid "Sysadmin"
-msgstr ""
+msgstr "διαχειριστής συστημάτων"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3224
@@ -14565,7 +14617,7 @@ msgstr "Ομάδα Προσιτότητας"
 #. (itstool) path: html/h2
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3233
 msgid "Joanmarie Diggs and Alejandro Piñeiro Iglesias"
-msgstr ""
+msgstr "Joanmarie Diggs και  Alejandro Piñeiro Iglesias"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3234
@@ -14690,6 +14742,8 @@ msgid ""
 "For more detailed information on the Accessibility Team’s work this quarter, "
 "please see the <_:a-1/>."
 msgstr ""
+"Για πιο λεπτομερείς πληροφορίες σχετικά με το έργο της Ομάδας "
+"Προσβασιμότητας αυτό το τρίμηνο , ανατρέξτε στο <_:a-1/>."
 
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3253
@@ -15301,7 +15355,7 @@ msgstr "Χαρούμενο πάρτι έκδοσης GNOME 3.0!"
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3376
 msgid "GNOME t-shirt competition winners announced"
-msgstr ""
+msgstr "Ανακοινώθηκαν οι νικητές του διαγωνισμού για τις μπλούζες του GNOME "
 
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3378
@@ -15614,7 +15668,7 @@ msgstr ""
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3438
 msgid "Photo Competition Deadline Coming Up!"
-msgstr ""
+msgstr "Η Προθεσμία του Διαγωνισμού Φωτογραφίας  Πλησιάζει!"
 
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3440
@@ -16265,7 +16319,7 @@ msgstr ""
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3544
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5102
 msgid "Local industry and government support."
-msgstr ""
+msgstr " Υποστήριξη  από τη τοπική βιομηχανία και τη κυβέρνηση ."
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3545
@@ -16496,7 +16550,7 @@ msgstr ""
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3580
 msgid "Short description of the session. Between 150 and 400 words please."
-msgstr ""
+msgstr "Σύντομη περιγραφή της συνόδου. Μεταξύ 150 και 400 λέξεων παρακαλώ."
 
 #. (itstool) path: li/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3581
@@ -16517,12 +16571,13 @@ msgstr "Δεν έγινε κατανοητό το `%s' (αναμένεται π�
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3583
 msgid "Numbers of hours you think you need"
-msgstr ""
+msgstr "Ο αριθμός των ωρών που νομίζετε ότι χρειάζεστε"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3584
 msgid "Special requirements/requests (equipment, room and scheduling)"
 msgstr ""
+"Ειδικές απαιτήσεις / αιτήματα (εξοπλισμός, αίθουσα και προγραμματισμός)"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3586
@@ -16795,7 +16850,7 @@ msgstr ""
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3626
 msgid "Read the full interview here."
-msgstr ""
+msgstr "Διαβάστε όλη τη συνέντευξη εδώ ."
 
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3631
@@ -16822,7 +16877,7 @@ msgstr ""
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3635
 msgid "Find out more on the Desktop Summit website"
-msgstr ""
+msgstr "Μάθετε περισσότερα στην ιστοσελίδα του Desktop Summit"
 
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3640
@@ -16832,7 +16887,7 @@ msgstr "Τριμηνιαία έκθεση GNOME Q1 2011"
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3643
 msgid "Read the full report here"
-msgstr ""
+msgstr "Διάβασε την πλήρη έκθεση εδώ"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3642
@@ -16944,7 +16999,7 @@ msgstr "Qt"
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3663
 msgid "The following are our Bronze level sponsors:"
-msgstr ""
+msgstr "Οι παρακάτω είναι χάλκινου επιπέδου  χορηγοί μας :"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3665
@@ -16968,7 +17023,7 @@ msgstr "OpenShine"
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3669
 msgid "Their support is greatly appreciated."
-msgstr ""
+msgstr "Η υποστήριξή τους εκτιμάται ιδιαίτερα."
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3670
@@ -17063,7 +17118,7 @@ msgstr ""
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3691
 msgid "GNOME having fun at Desktop Summit 2011"
-msgstr ""
+msgstr " Το GNOME   διασκεδάζει στο Desktop Summit 2011"
 
 #. (itstool) path: html/h2
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3693
@@ -17334,7 +17389,7 @@ msgstr ""
 #. (itstool) path: html/h2
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3720
 msgid "The past, present and future of GNOME"
-msgstr ""
+msgstr "Το παρελθόν, το παρόν και το μέλλον του GNOME"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3721
@@ -18302,6 +18357,8 @@ msgstr ""
 msgid ""
 "This was been a busy quarter for The GNOME Foundation. Highlights include:"
 msgstr ""
+"Αυτό ήταν ένα πολυάσχολο τρίμηνο για το Ίδρυμα GNOME. Τα κυριότερα σημεία "
+"περιλαμβάνουν:"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3854
@@ -18356,7 +18413,7 @@ msgstr ""
 #. (itstool) path: html/h3
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3860
 msgid "Notes from New Executive Director, Karen Sandler"
-msgstr ""
+msgstr "Σημειώσεις από τη νέα Executive Director, Karen Sandler"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3861
@@ -19081,6 +19138,8 @@ msgid ""
 "discussion about HTML5, with a focus on improved video support, "
 "notifications and history"
 msgstr ""
+"συζήτηση για την HTML5, με έμφαση στην βελτιωμένη υποστήριξη βίντεο, "
+"κοινοποιήσεις και ιστορικό"
 
 #. (itstool) path: li/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3978
@@ -19115,6 +19174,8 @@ msgid ""
 "The GNOME Foundation and community are very grateful to the sponsors of this "
 "event:"
 msgstr ""
+"Το Ίδρυμα GNOME και η κοινότητα είναι πολύ ευγνώμωνες στους χορηγούς της "
+"εκδήλωσης:"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:3986
@@ -19343,7 +19404,7 @@ msgstr ""
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4022
 msgid "Read the rest of Robert Cole’s story."
-msgstr ""
+msgstr "Διαβάστε το υπόλοιπο της ιστορίας του Robert Cole."
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4022
@@ -19373,7 +19434,7 @@ msgstr ""
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4024
 msgid "Donate $25 or more today"
-msgstr ""
+msgstr "Δώρισε $25 ή περισσότερα σήμερα"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4024
@@ -19386,7 +19447,7 @@ msgstr ""
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4029
 msgid "Hackfest Plans to Improve GNOME Accessibility"
-msgstr ""
+msgstr "Το Hackfest σχεδιάζει τη βελτίωση  της προσιτότητας του GNOME"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4031
@@ -19409,7 +19470,7 @@ msgstr ""
 #. (itstool) path: p/a@title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4033
 msgid "GNOME Live! - ATK and AT-SPI Hackfest 2012"
-msgstr ""
+msgstr "GNOME Live! - ATK και AT-SPI Hackfest 2012"
 
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4033
@@ -19493,17 +19554,17 @@ msgstr ""
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4049
 msgid "See GNOME at FOSDEM 2012, February 4-5th"
-msgstr ""
+msgstr "Δείτε το GNOME στη FOSDEM 2012, 4-5 Φλεβάρη"
 
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4053
 msgid "Excellent Progress Made at GNOME Accessibility Hackfest"
-msgstr ""
+msgstr "Εξαιρετική πρόοδο που σημειώθηκε στο  προσβασιμότητα του στο  Hackfest"
 
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4055
 msgid "ATK/AT-SPI Hackfest"
-msgstr ""
+msgstr "ATK/AT-SPI Hackfest"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4055
@@ -19656,7 +19717,7 @@ msgstr "Κοινό_χρηστος φάκελος:"
 #. (itstool) path: ol/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4080
 msgid "Sergio Villar Senín (WebKitGtk+, libsoup and Epiphany)"
-msgstr ""
+msgstr "ergio Villar Senín (WebKitGtk+, libsoup and Epiphany)"
 
 #. (itstool) path: ol/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4081
@@ -19707,7 +19768,7 @@ msgstr ""
 #. (itstool) path: ol/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4088
 msgid "Michal Hruby (Zeitgeist and Synapse developer)"
-msgstr ""
+msgstr "Michal Hruby (Προγραμματιστής του Zeitgeist και του Synapse )"
 
 #. (itstool) path: ol/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4089
@@ -19718,7 +19779,7 @@ msgstr ""
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4091
 msgid "Congratulations to our new members!"
-msgstr ""
+msgstr "Συγχαρητήρια στα νέα μέλη μας!"
 
 #. (itstool) path: p/a@title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4092
@@ -19819,7 +19880,7 @@ msgstr ""
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4108
 msgid "Hong Kong to host GNOME.Asia 2012, June 9-15"
-msgstr ""
+msgstr "Το Χονγκ Κονγκ  φιλοξενει'το GNOME.Asia 2012, 9 - 15 Ιουνίου "
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4110
@@ -19866,7 +19927,7 @@ msgstr ""
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4119
 msgid "Welcome to More New GNOME Foundation Members"
-msgstr ""
+msgstr "Καλωσόρισμα στα  νέα μέλη του GNOME Foundation "
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4121
@@ -19874,6 +19935,8 @@ msgid ""
 "Many new members have been joining the GNOME Foundation recently, which is "
 "always great news. The latest to join are:"
 msgstr ""
+"Πολλά νέα μέλη εντάχθηκαν  πρόσφατα στο Ίδρυμα GNOME , το οποίο είναι πάντα "
+"μεγάλη είδηση. Οι τελευταίοι που εντάχθηκαν είναι οι εξής:"
 
 #. (itstool) path: ol/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4123
@@ -19977,12 +20040,12 @@ msgstr ""
 #. (itstool) path: ol/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4138
 msgid "Damien Lespiau (Clutter-GStreamer’s Maintainer)"
-msgstr ""
+msgstr "Damien Lespiau (Συντηρητής των Clutter-GStreamer)"
 
 #. (itstool) path: ol/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4139
 msgid "Philippe Normand (WebKitGTK, Gstreamer)"
-msgstr ""
+msgstr "Philippe Normand (WebKitGTK, Gstreamer)"
 
 #. (itstool) path: ol/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4140
@@ -20120,14 +20183,14 @@ msgstr "Ένας διαχειριστής συμπιεσμένων αρχείω�
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4158
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6122
 msgid "Integration of web life into the desktop"
-msgstr ""
+msgstr "Ένταξη της ζωής μας στο web στην επιφάνεια εργασίας"
 
 #. (itstool) path: ul/li
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4159
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6124
 msgid "Adapting GNOME to new types of devices"
-msgstr ""
+msgstr "Προσαρμογή του GNOME σε νέους τύπους συσκευών"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4160
@@ -20186,7 +20249,7 @@ msgstr ""
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4170
 msgid "April 28: Notification of speakers"
-msgstr ""
+msgstr "28 Απριλίου: Γνωστοποίηση των ομιλητών"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4171
@@ -20196,12 +20259,12 @@ msgstr ""
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4172
 msgid "July 26 – 29: GUADEC 2012 in A Coruña, Spain"
-msgstr ""
+msgstr " 26 – 29 Ιουλίου: GUADEC 2012 στην A Coruña, Ισπανάα"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4173
 msgid "July 30 – August 1: hackfests and meetings"
-msgstr ""
+msgstr "30 Ιουλίου – 1 Αυγούστου: hackfests και συναντήσεις"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4175
@@ -20274,6 +20337,8 @@ msgid ""
 "More information about GUADEC, GNOME and the GNOME Foundation can be found "
 "at <_:a-1/>, <_:a-2/> and <_:a-3/>."
 msgstr ""
+"Περισσότερες πληροφορίες σχετικά με τα GUADEC, GNOME και GNOME Foundation "
+"μπορείτε να βρείτε στην <_:a-1/>, <_:a-2/> και <_:a-3/>."
 
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4183
@@ -20531,7 +20596,7 @@ msgstr "Περί Επαφές του GNOME"
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4246
 msgid "News from GNOME Shell land"
-msgstr ""
+msgstr "Νέα από τη γη του GNOME Shell "
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4246
@@ -21031,7 +21096,7 @@ msgstr ""
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4334
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4657
 msgid "Marketing"
-msgstr ""
+msgstr "Marketing"
 
 #. (itstool) path: html/h2
 #. (itstool) path: p/a
@@ -21172,7 +21237,7 @@ msgstr ""
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4355
 msgid "The GNOME Foundation Continues to Grow"
-msgstr ""
+msgstr "Tο GNOME Foundation Συνεχίζει να Αυξάνεται"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4357
@@ -21201,12 +21266,12 @@ msgstr "Rūdolfs Mazurs (μεταφραστής λετονικής του GNOME)
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4362
 msgid "Peteris Krisjanis (GNOME Latvian translator)"
-msgstr ""
+msgstr "Peteris Krisjanis (μεταφραστής Λετονικών για το GNOME )"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4363
 msgid "Giovanni Campagna (GNOME Shell Developer)"
-msgstr ""
+msgstr "Giovanni Campagna (Προγραμματιστής  του GNOME Shell)"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4364
@@ -21810,7 +21875,7 @@ msgstr ""
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4474
 msgid "GNOME to Participate in Google Summer of Code 2012"
-msgstr ""
+msgstr "Το GNOME συμμετέχει στο Google Summer of Code 2012"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4477
@@ -23137,7 +23202,7 @@ msgstr ""
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4696
 msgid "New GNOME Foundation Members for March"
-msgstr ""
+msgstr "Νέα μέλοι του GNOME Foundation για το Μάρτιο"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4698
@@ -24029,11 +24094,13 @@ msgstr ""
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4844
 msgid "Many thanks to Laura. Stay tuned for the next episode!"
 msgstr ""
+"Πολλές ευχαριστίες στην Laura. Μείνετε συντονισμένοι για το επόμενο "
+"επεισόδιο!"
 
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4849
 msgid "Interview with GUADEC Organizer Alejo Pacín"
-msgstr ""
+msgstr "Συνέντευξη με τον οργανωτή του GUADEC  Alejo Pacín"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4851
@@ -24289,7 +24356,7 @@ msgstr ""
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4910
 msgid "Interview with GUADEC Organizer Serafín Villar"
-msgstr ""
+msgstr "Συνέντευξη με τον οργανωτή του GUADEC  Serafín Villar"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4912
@@ -24323,7 +24390,7 @@ msgstr ""
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4919
 msgid "A Costa da Morte"
-msgstr ""
+msgstr "A Costa da Morte"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4918
@@ -24378,7 +24445,7 @@ msgstr ""
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4930
 msgid "Thanks for organizing GUADEC!"
-msgstr ""
+msgstr "Ευχαριστίες  για την οργάνωση  του GUADEC !"
 
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4935
@@ -24388,7 +24455,7 @@ msgstr ""
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4939
 msgid "Interview with GUADEC Organizer Emilio J Padrón"
-msgstr ""
+msgstr "Συνέντευξη με τον οργανωτή του GUADEC Emilio J Padrón"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4941
@@ -24487,7 +24554,7 @@ msgstr ""
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4967
 msgid "GNOME UX Hackfest Kicks off in A Coruña"
-msgstr ""
+msgstr "GNOME UX Hackfest ξεκινά στην A Coruña"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:4969
@@ -24752,7 +24819,7 @@ msgstr ""
 #. (itstool) path: html/h2
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5020
 msgid "Sponsors"
-msgstr ""
+msgstr "Χορηγοί"
 
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5026
@@ -25886,7 +25953,7 @@ msgstr ""
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5251
 msgid "invites"
-msgstr ""
+msgstr "προσκλήσεις"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5251
@@ -26120,7 +26187,7 @@ msgstr "guadec-papers@gnome.org"
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5306
 msgid "Submit a Talk!"
-msgstr ""
+msgstr "Υποβολή Συζήτησης!"
 
 #. (itstool) path: html/h3
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5307
@@ -26130,22 +26197,22 @@ msgstr "Σημαντικές πληροφορίες"
 #. (itstool) path: html/h4
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5308
 msgid "The deadlines:"
-msgstr ""
+msgstr "Οι προθεσμίες :"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5310
 msgid "Submission: March 8th, 2013"
-msgstr ""
+msgstr "Υποβολή : 8 Μαρτίου του 2013"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5311
 msgid "Notification of Acceptance: March 15th, 2013"
-msgstr ""
+msgstr "Γνωστοποίηση αποδοχής : 15, Μαρ 2013"
 
 #. (itstool) path: html/h4
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5313
 msgid "Conference:"
-msgstr ""
+msgstr "διάσκεψη:"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5315
@@ -26639,6 +26706,9 @@ msgid ""
 "Hackfest you told us that “Some really cool stuff is coming”. Would you give "
 "us some spoilers?"
 msgstr ""
+"<strong> Ερώτηση</strong>: Κατά τη διάρκεια του  GNOME Developer Experience "
+"Hackfest  μας είπατε ότι \"μερικά φοβερά πράγματα έρχονται». Θα μπορούσατε "
+"να μας δώσετε πληροφορίες;"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5413
@@ -26698,7 +26768,7 @@ msgstr "https://www.djangoproject.com/contact/foundation/"
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5441
 msgid "GNOME Community releases GNOME 3.8."
-msgstr ""
+msgstr "Η κοινότητα GNOME  ανακοινώνει  το GNOME 3.8."
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5443
@@ -26879,7 +26949,7 @@ msgstr "available to download"
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5457
 msgid "A screenshot pack for GNOME 3.8 is <_:a-1/>."
-msgstr ""
+msgstr "Ένα πακέτο screenshot για το GNOME 3.8 είναι <_:a-1/>."
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5459
@@ -26945,7 +27015,7 @@ msgstr "http://2013.gnome.asia/tshirts/"
 #. (itstool) path: div/h2
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5476
 msgid "Prizes"
-msgstr ""
+msgstr "Βραβεία"
 
 #. (itstool) path: div/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5477
@@ -26987,22 +27057,22 @@ msgstr "Περί του Desktop Summit"
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5492
 msgid "KDE"
-msgstr ""
+msgstr "KDE"
 
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5492
 msgid "Unity"
-msgstr ""
+msgstr "Unity"
 
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5492
 msgid "Razor-qt"
-msgstr ""
+msgstr "Razor-qt"
 
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5492
 msgid "SUSE"
-msgstr ""
+msgstr "SUSE"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5492
@@ -27039,7 +27109,7 @@ msgstr ""
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5495
 msgid "mmap"
-msgstr ""
+msgstr "mmap"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5495
@@ -27097,7 +27167,7 @@ msgstr ""
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5504
 msgid "GNOME.Asia Summit 2013 - Registration now open"
-msgstr ""
+msgstr "GNOME.Asia Summit 2013 - 'Ανοιξε τώρα η εγγραφή  "
 
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5506
@@ -27127,7 +27197,7 @@ msgstr "μπλουζάκι"
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5508
 msgid "the schedule"
-msgstr ""
+msgstr "το πρόγραμμα"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5508
@@ -27164,7 +27234,7 @@ msgstr ""
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5516
 msgid "The full bid"
-msgstr ""
+msgstr "Η πλήρης προσφορά"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5516
@@ -27239,7 +27309,7 @@ msgstr ""
 #. (itstool) path: p/a@title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5527
 msgid "GUADEC 2013 Program"
-msgstr ""
+msgstr "Το πρόγραμμα του GUADEC 2013 "
 
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5527
@@ -27415,7 +27485,7 @@ msgstr ""
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5560
 msgid "<strong>Q: What do you expect from GUADEC?</strong>"
-msgstr ""
+msgstr "<strong>Ε:Τι περιμένετε από το GUADEC; </strong>"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5561
@@ -27520,7 +27590,7 @@ msgstr ""
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5579
 msgid "easily accessed by plane or train"
-msgstr ""
+msgstr "easily accessed by plane or train"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5580
@@ -27551,7 +27621,7 @@ msgstr ""
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5585
 msgid "local industry and government support"
-msgstr ""
+msgstr "τοπική βιομηχανία και υποστήριξη της κυβέρνησης"
 
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5587
@@ -27634,7 +27704,7 @@ msgstr ""
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5603
 msgid "robust VPN routing"
-msgstr ""
+msgstr "ισχυρή VPN δρομολόγηση  "
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5604
@@ -27776,7 +27846,7 @@ msgstr ""
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5626
 msgid "<b>What do you expect from GUADEC?</b>"
-msgstr ""
+msgstr "<b>Τι περιμένετε από το GUADEC?</b>"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5627
@@ -28405,7 +28475,7 @@ msgstr ""
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5712
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5760
 msgid "GUADEC 2013 Starting Now!"
-msgstr ""
+msgstr "Το GUADEC 2013 αρχίζει τώρα !!"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5714
@@ -28609,7 +28679,7 @@ msgstr ""
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5746
 msgid "Karen Sandler <br/> GNOME Foundation <br/> Executive Director <br/> E-mail: gnome-press-contact@gnome.org <br/> Phone: +1-617-206-3947"
-msgstr ""
+msgstr "Karen Sandler <br/> GNOME Foundation <br/> Διευθύνων σύμβουλος <br/> E-mail: gnome-press-contact@gnome.org <br/> τηλέφωνο: +1-617-206-3947"
 
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5755
@@ -29589,7 +29659,7 @@ msgstr ""
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5986
 msgid "Interview with Andrew Lee of Private Internet Access"
-msgstr ""
+msgstr "Συνέντευξη με τον Andrew Lee του Private Internet Access"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:5988
@@ -29698,7 +29768,7 @@ msgstr "Τα κυριότερα σημεία για το GNOME 3.10 περιλα
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6010
 msgid "Experimental Wayland support"
-msgstr ""
+msgstr "Πειραματική υποστήριξη του Wayland"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6011
@@ -29995,7 +30065,7 @@ msgstr ""
 #. (itstool) path: post/title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6069
 msgid "WebKitGTK+ Hackfest Underway in A Coruña"
-msgstr ""
+msgstr "WebKitGTK + Hackfest σε εξέλιξη στη Λα Κορούνια"
 
 #. (itstool) path: p/a@title
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6072
@@ -30219,7 +30289,7 @@ msgstr ""
 #. (itstool) path: strong/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6101
 msgid "Click here to submit your presentation!"
-msgstr ""
+msgstr "Κάντε κλικ εδώ για να υποβάλετε την παρουσίασή σας!"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6102
@@ -30236,7 +30306,7 @@ msgstr "Πώς να προωθήσετε/συνεισφέρετε στο GNOME �
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6106
 msgid "Promotion of Free / Open Source Software"
-msgstr ""
+msgstr "Προώθηση του Ελεύθερου / Λογισμικό Ανοικτού Κώδικα"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6107
@@ -30246,7 +30316,7 @@ msgstr "Πώς να λειτουργήσετε μια Τοπική Ομάδα Χ
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6108
 msgid "Asia success stories / Local GNOME Projects"
-msgstr ""
+msgstr "ιστορίες επιτυχίας  από την Ασία / Τοπικά σχέδια του GNOME "
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6109
@@ -30284,12 +30354,12 @@ msgstr ""
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6127
 msgid "Developing GNOME on embedded systems or open source hardware"
-msgstr ""
+msgstr "Aνάπτυξη του GNOME σε ενσωματωμένα συστήματα ή ανοικτoύ κώδικα υλικό "
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6128
 msgid "On-going projects and success stories"
-msgstr ""
+msgstr "Eργα σε εξέλιξη  και τις ιστορίες επιτυχίας"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6129
@@ -30299,17 +30369,17 @@ msgstr ""
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6131
 msgid "Localization and Internationalization"
-msgstr ""
+msgstr "Τοπικοποίηση και Διεθνοποίηση"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6133
 msgid "Translations"
-msgstr ""
+msgstr "Μεταφράσεις"
 
 #. (itstool) path: ul/li
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6134
 msgid "Input methods"
-msgstr ""
+msgstr "μέθοδοι εισαγωγής"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6137
@@ -30370,7 +30440,7 @@ msgstr ""
 #. (itstool) path: p/a
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6153
 msgid "UK Open Source Awards"
-msgstr ""
+msgstr " Τα  βραβεία Open Source  του Ηνωμένου Βασιλείου"
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6153
@@ -30461,6 +30531,9 @@ msgid ""
 "to check our <_:a-2/> where project ideas are listed. The <_:a-3/> deadline "
 "for this round of the program is March 19."
 msgstr ""
+"Η κοινότητα του GNOME ενθαρρύνει όσους ενδιαφέρονται να επισκεφτούν το <_:"
+"a-1/>,και να ελεξουν το <_:a-2/> μας όπου οι ιδέες του έργου παρατίθενται. H "
+"<_:a-3/>  προθεσμία για αυτόν τον γύρο του προγράμματος είναι 19 Μαρτίου."
 
 #. (itstool) path: html/p
 #: /srv/http/www.gnome.org/html/wppo/dynamic.xml:6179
