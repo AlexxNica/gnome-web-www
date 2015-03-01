@@ -1,9 +1,9 @@
 ChangSeok Oh
-Mohammed Zakaria
-Michel Machado
-Jocelyn Heuzé
+David Jakubec
 Dimitrios Christidis
 Ian McKellar
+Jocelyn Heuzé
 Michael Doherty
-David Jakubec
+Michel Machado
+Mohammed Zakaria
 Nick Kaye
