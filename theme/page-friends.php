@@ -71,35 +71,35 @@ class HackerList {
 }
 
 #adopt {
-  background-image: url("http://www.gnome.org/wp-content/themes/gnome-grass/images/adopt-normal.png");
+  background-image: url("https://www.gnome.org/wp-content/themes/gnome-grass/images/adopt-normal.png");
 }
 
 #adopt.greyed {
-    background-image: url("http://www.gnome.org/wp-content/themes/gnome-grass/images/adopt-inactive.png") !important;
+    background-image: url("https://www.gnome.org/wp-content/themes/gnome-grass/images/adopt-inactive.png") !important;
 }
 
 #associate {
-  background-image: url("http://www.gnome.org/wp-content/themes/gnome-grass/images/associate-normal.png");
+  background-image: url("https://www.gnome.org/wp-content/themes/gnome-grass/images/associate-normal.png");
 }
 
 #associate.greyed {
-    background-image: url("http://www.gnome.org/wp-content/themes/gnome-grass/images/associate-inactive.png") !important;
+    background-image: url("https://www.gnome.org/wp-content/themes/gnome-grass/images/associate-inactive.png") !important;
 }
 
 #sponsor {
-  background-image: url("http://www.gnome.org/wp-content/themes/gnome-grass/images/sponsor-normal.png");
+  background-image: url("https://www.gnome.org/wp-content/themes/gnome-grass/images/sponsor-normal.png");
 }
 
 #sponsor.greyed {
-    background-image: url("http://www.gnome.org/wp-content/themes/gnome-grass/images/sponsor-inactive.png") !important;
+    background-image: url("https://www.gnome.org/wp-content/themes/gnome-grass/images/sponsor-inactive.png") !important;
 }
 
 #philanthropist {
-  background-image: url("http://www.gnome.org/wp-content/themes/gnome-grass/images/philanthropist-normal.png");
+  background-image: url("https://www.gnome.org/wp-content/themes/gnome-grass/images/philanthropist-normal.png");
 }
 
 #philanthropist.greyed {
-    background-image: url("http://www.gnome.org/wp-content/themes/gnome-grass/images/philanthropist-inactive.png") !important;
+    background-image: url("https://www.gnome.org/wp-content/themes/gnome-grass/images/philanthropist-inactive.png") !important;
 }
 
 .active-text {
@@ -262,7 +262,7 @@ function print_form_head($form_name, $product_name) {
             action="https://www.paypal.com/cgi-bin/webscr"
             method="post" name="<?php echo "$form_name";?>">
                 <input type="hidden" name="business" value="friends@gnome.org" />
-                <input type="hidden" name="return" value="http://www.gnome.org/thank-you/" />
+                <input type="hidden" name="return" value="https://www.gnome.org/thank-you/" />
                   <input type="hidden" name="item_name" value="<?php echo "$product_name"; ?>" />
                   <input type="hidden" name="notify_url" value="https://muelli.cryptobitch.de/paypaltest/ipnhandler.php" /> 
 <?php } /* print_form_head */ ?>
@@ -297,7 +297,7 @@ function print_form_head($form_name, $product_name) {
             
                       <p style="text-align: left;"><span style="color: #993300;">PLEASE NOTE</span>:
                       Monthly or annual subscription payments made through Paypal will continue until
-                      you contact the <a href="http://www.gnome.org/foundation/">GNOME Foundation</a>
+                      you contact the <a href="https://www.gnome.org/foundation/">GNOME Foundation</a>
                       to cancel the payments.</p>
             
                       <h5>Pick a hacker from whom you will receive a post card:</h5>
@@ -392,7 +392,7 @@ function print_form_shirts() {
                       <!-- Display the payment button. -->
                       <input type="image" alt="PayPal - The safer, easier way to pay online" name=
                       "submit" src=
-                      "http://www.gnome.org/wp-content/themes/gnome-grass/images/donate-button.png" />
+                      "https://www.gnome.org/wp-content/themes/gnome-grass/images/donate-button.png" />
                       <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1"
                       height="1" border="0" />
                     </form>
@@ -440,7 +440,7 @@ function printform($level_name, $amount, $product_name, $with_shirts=false) {
                       ?>
                       <?php print_form_questions_gift_listname_note(); ?>
 
-                      <input type="image" alt="Donate" name="submit" src="http://www.gnome.org/wp-content/themes/gnome-grass/images/donate-button.png" />
+                      <input type="image" alt="Donate" name="submit" src="https://www.gnome.org/wp-content/themes/gnome-grass/images/donate-button.png" />
                       <small>You will be redirected to the Paypal website.</small>
                     </form>
 
