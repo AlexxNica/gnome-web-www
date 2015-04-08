@@ -62,6 +62,7 @@ Marius Gedminas
 Mark Wielaard
 Mathias Nicolajsen Kjaergaard
 Michael Green
+Michael Smith
 Michael Van der Weg
 Mikel Olasagasti Uranga
 OLIVER VON B KUSTER
