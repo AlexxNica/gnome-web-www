@@ -17,12 +17,12 @@ require_once("header.php"); ?>
 
     <!-- container -->
     <div id="container" class="two_columns">
-        <div class="container_12">
-	  	<div class="page_title" style="margin-bottom: 2px;">
+        <div class="container">
+	  	<div class="page_title">
 	  	  <h1><?php the_title(); ?></h1>
 		</div>        
 		<div class="clearfix"></div>
-            <?php wp_nav_menu(array('menu'=>'foundationnav','container_class'=>'foundation_nav')); ?>
+            
             <div class="content without_sidebar">
             <?php while ( have_posts() ) : the_post(); ?>
                 <?php the_content(); ?>

@@ -324,3 +324,14 @@ if (array_key_exists('render-footer-menu', $_GET)) {
     wp_nav_menu('menu=footer');
     exit;
 }
+
+function special_nav_class($classes, $item){
+    if($item->title == "Foundation +"){
+        $classes[] = "foundation-menu-item";
+    }
+    return $classes;
+}
+
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+

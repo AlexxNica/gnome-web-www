@@ -24,13 +24,13 @@ require_once("header.php"); ?>
 
     <!-- container -->
     <div id="container" class="two_columns">
-        <div class="container_12">
+        <div class="container">
         
             <div class="page_title">
                 <h1><?php the_title(); ?></h1>
             </div>
             
-            <div class="content">
+            <div class="content span8">
             
                 <?php the_content(); ?>
                 <?php
@@ -63,9 +63,10 @@ require_once("header.php"); ?>
                 </div>
                 <?php endif; ?>
                 <div class="clear"></div>
+                <div class="clearfix"></div>
             </div>
             
-            <div class="sidebar">
+            <div class="sidebar span4">
                 
                 <?php require_once("news_sidebar.php");?>
                 

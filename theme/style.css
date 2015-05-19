@@ -9,7 +9,9 @@ Description: The original theme for the GNOME Project website.
 
 @import url("css/reset.css");
 @import url("css/text.css");
-@import url("css/960.css");
+@import url("css/bootstrap_work1.css");
+@import url("css/responsive.css");
+
 
 
 
@@ -22,7 +24,7 @@ html {
     background: #fff url(images/html-bg.png) 0 10px repeat-x;
 }
 body {
-    
+
 }
 a {
     color: #204a87;
@@ -43,15 +45,23 @@ a:visited {
     display: none;
 }
 .maxwidth {
-    width: 940px;
+    max-width: 920px;
+    width: auto;
     margin: 0 auto;
 }
 .sanewidth {
     width: 780px;
     margin: 0 auto;
 }
-
-
+.alpha {
+    margin-left: 0;
+}
+.omega {
+    margin-right: 0;
+}
+.center-text {
+    text-align: center;
+}
 
 /* Accessibility access */
 /* ========================================================================== */
@@ -124,7 +134,7 @@ a:visited {
 
 
 #header {
-    margin: 20px auto 0;
+    margin-top: 20px;
 }
 #header img {
     vertical-align: middle;
@@ -157,29 +167,38 @@ a:visited {
 
 
 
-#top_bar {
+.top_bar {
     background: #2e3436 url("images/top_bar-bg.png") top repeat-x;
-    padding: 8px 0;
     margin-top: 23px;
     font-size: 13px;
     line-height: normal;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
     -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
-#top_bar ul {
+.mobile-menu .top_bar {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+
+}
+.normal-menu .top_bar {
+    -moz-border-radius: 6px 0 0 6px;
+    -webkit-border-radius: 6px 0 0 6px;
+    border-radius: 6px 0 0 6px;
+
+}
+
+.top_bar ul {
     list-style: none;
     margin: 0;
-    padding: 0 5px;
+    padding: 0;
 }
-#top_bar ul li {
+.top_bar ul li {
     display: inline;
-    margin: 0 5px 0 0;
+    margin: 0 0 0 0.5%;     /* to get some left margin for menu items*/
 }
-#top_bar a {
+.top_bar a {
     color: #fff;
     text-decoration: none;
     padding: 4px 8px;
@@ -192,31 +211,83 @@ a:visited {
     transition: background 100ms linear;
     text-shadow: 0 1px 0 #000;
 }
-#top_bar a:hover {
+.top_bar a:hover {
     background: #64696d;
     background: rgba(100%, 100%, 100%, 0.2);
 }
-#top_bar a:focus {
+.top_bar a:focus {
     background: rgba(100%, 100%, 100%, 0.15);
 }
-#top_bar a:active, #top_bar li.current-menu-item a, #top_bar li.current-page-ancestor a {
+.top_bar a:active, .top_bar  li.current-menu-item > a, .top_bar li.current-page-ancestor > a{
     background: #1c2021 url("images/top_bar-item-bg.png") top repeat-x;
     -moz-box-shadow: inset 0 -1px 0 rgba(100%,100%,100%, 0.4), inset 0 1px 3px rgba(0,0,0,0.4);
     -webkit-box-shadow: inset 0 -1px 0 rgba(100%,100%,100%, 0.4), inset 0 1px 3px rgba(0,0,0,0.4);
     box-shadow: inset 0 -1px 0 rgba(100%,100%,100%, 0.4), inset 0 1px 3px rgba(0,0,0,0.4);
+
 }
-#top_bar li.selected a {
+.top_bar li.selected a {
     font-weight: bold;
 }
-#top_bar li a span.home {
+.top_bar li a span.home {
     background: url("images/top_bar-item-home.png") no-repeat;
     padding-left: 18px;
 }
-#top_bar #main_search {
+/*--------------------Search for smartphones----------------------*/
+
+.top_bar #main_search {
     text-align: right;
 }
-#top_bar input {
-    margin: -8px 0 -8px -8px;
+
+.top_bar .left{
+    max-height: 40px;
+    margin-top: 8px;
+}
+.top_bar input {
+    /*margin: 0px;*/
+    line-height: 22px;
+    width: 90%;
+    border: 0;
+    /*font: inherit;*/
+    color: inherit;
+    padding: 0 5%;
+    background: transparent url(images/search-icon.png) 8px center no-repeat;
+    color: #fff;
+    /*border-left: 1px solid rgba(100%,100%,100%,0.3); removed left line search option*/
+    outline: none;
+}
+.top_bar input.placeholder {
+    color: #CCC;
+}
+.top_bar input:focus {
+    background-color: rgba(100%,100%,100%,0.1);
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-top-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+/*------------Search for tablets and above-----------------------------*/
+#top_bar_search {
+/*  height: 36px;
+*/  background: #2e3436 url("images/top_bar-bg.png") top repeat-x;
+/*    padding: 8px 0;
+*/  margin-top: 23px;
+    margin-left: 0px;
+    font-size: 13px;
+    line-height: normal;
+    -moz-border-radius: 0 6px 6px 0;
+    -webkit-border-radius: 0 6px 6px 0;
+    border-radius: 0 6px 6px 0;
+    -moz-box-shadow: 0 0px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 0px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 0px 0px rgba(0,0,0,0.2);
+}
+#top_bar_search #main_search {
+    text-align: right;
+}
+#top_bar_search input {
+    margin: -5px 0;
     line-height: 22px;
     width: 150px;
     border: 0;
@@ -228,10 +299,10 @@ a:visited {
     border-left: 1px solid rgba(100%,100%,100%,0.3);
     outline: none;
 }
-#top_bar input.placeholder {
+#top_bar_search input.placeholder {
     color: #CCC;
 }
-#top_bar input:focus {
+#top_bar_search input:focus {
     background-color: rgba(100%,100%,100%,0.1);
     -moz-border-radius-topright: 5px;
     -moz-border-radius-bottomright: 5px;
@@ -240,15 +311,17 @@ a:visited {
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
 }
-
-
+#top_bar_search .right {
+    margin-top: 5px;
+}
 /* Foundation Navigation Menu */
 /* ========================================================================== */
 
 #foundation h1, h2, h3, h4{
     color: #8c5f93;
 }
-.foundation_nav {
+.foundation_nav{
+    background: #fff repeat-x;
     padding: 0px 0;
     margin-top: 7px;
     margin-bottom: 40px;
@@ -304,6 +377,29 @@ a:visited {
     padding-left: 18px;
 }
 
+/*===========================Foundation==============================*/
+.foundation_advisory_board [class*="span"] {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+.foundation_advisory_board {
+    margin-top: 30px;
+}
+.foundation_advisory_board img {
+    vertical-align: middle;
+}
+.main_feature img {
+    margin-top: -25px;
+    margin-left: 50px;
+}
+
+.foundation_board li {
+    margin: 8px;
+}
+
+/*==============================End Miscelleneous=================================================*/
+
 /* ========================================================================== */
 /* Page Title */
 /* ========================================================================== */
@@ -311,7 +407,7 @@ a:visited {
 
 
 .page_title {
-    margin: 10px 10px 20px;
+    margin: 10px 10px 20px 0px;
     border-bottom: 1px solid #d3d7cf;
 }
 .page_title .breadcrumb {
@@ -330,6 +426,7 @@ a:visited {
     text-shadow: 0 1px 0 #fff;
     line-height: normal;
     letter-spacing: -0.05em;
+    color: #8c5f93;
 }
 .page_title h1 a {
     text-decoration: none;
@@ -349,10 +446,10 @@ a:visited {
 /* -> subpages list */
 
 /*
- * This is not used right now, but allows to put links by the side of
- * the title of the page.
- */
- 
+* This is not used right now, but allows to put links by the side of
+* the title of the page.
+*/
+
 .page_title .subpages_list {
     list-style: none;
     clear: left;
@@ -392,7 +489,9 @@ a:visited {
     font-weight: bold;
 }
 
-
+#foundation .page_title {
+    margin-bottom: 2px;
+}
 
 /* News Title */
 /* ========================================================================== */
@@ -424,34 +523,112 @@ a:visited {
 #container {
     padding-top: 20px;
     color: #555;
-    width: 960px;
+    /*width: 960px;*/
     margin: auto;
     min-height: 240px;
 }
 
 /*
- * this is basically used to force specific elements not to use
- * grid_* classes
- */
+* this is basically used to force specific elements not to use
+* grid_* classes
+*/
 #container .page_title, #container .content, #container .sidebar {
-    display: inline;
-    float: left;
-    margin-left: 10px;
-    margin-right: 10px;
-}
+/*  display: inline;
+float: left;
+*//*    margin-left: 10px;
+margin-right: 10px;
+*/}
 #container .content, #container .page_title {
-    width: 940px;
+    /*width: 940px;*/
 }
 #container.two_columns .content {
-    width: 700px;
+    /*width: 700px;*/
 }
 #container.two_columns .content.without_sidebar {
-    width: 940px;
+    /*width: 940px;*/
 }
 #container.two_columns .sidebar {
-    width: 220px;
+/*    width: 220px;
+*/}
+
+/*==================================Application Form===========================*/
+#application_form {
+    margin-top: 30px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    background: #eeeeec;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+#application_form h3:first-of-type {
+    margin-top: 0;
+}
+#application_form h3 {
+    border-bottom: 1px solid #ccc;
+}
+#application_form .item {
+    margin: 20px 0;
+    overflow: hidden;
+    font-size: 15px;
 }
 
+#application_form .benefits {
+    margin: 5px;            
+}
+
+#application_form .item label {
+    display: block;
+    float: left;
+    width: 140px;
+/*    text-align: right;
+*/    margin-right: 10px;
+padding: 5px;
+font-weight: bold;
+}
+#application_form .item input[type="text"],
+#application_form .item .field {
+    font: inherit;
+    padding: 5px;
+    width: 265px;
+}
+
+#application_form .item input[type="text"]:disabled {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+#application_form .item .disabled-checkbox {
+    color: #aaa;
+}
+
+#application_form .item input[name="not_spam"] {
+    width: 100px;
+}
+#application_form .item textarea {
+    width: 100%;
+    min-height: 130px;
+    font: inherit;
+    padding: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    resize: vertical;
+}
+#application_form .submit_area {
+    text-align: center;
+}
+#application_form .submit_area button {
+    font-size: 18px;
+    outline: 0;
+}
+#application_form .submit_area button:hover {
+    cursor: pointer;
+}
 
 
 /* Content specs */
@@ -460,10 +637,10 @@ a:visited {
 
 
 /*
- * -> Call to Action boxes
- *
- *
- */
+* -> Call to Action boxes
+*
+*
+*/
 
 .action_box {
     background: #fffae5 url(images/action_box-bg.png) repeat-x bottom;
@@ -479,25 +656,25 @@ a:visited {
 
 
 /*
- * -> Subtle boxes
- *
- * .subtle_box can be used inside grid classes to make simple box delimiters
- * (without grids inside of it) or as a child of container class to allow columns on it
- *
- * Examples:
- *
- * <div class="grid_3">
- *     <div class="subtle_box">Lorem ipsum dolor sit amet</div>
- * </div>
- *
- * <div class="container_12">
- *     <div class="subtle_box">
- *         <div class="grid_3 alpha">(...)</div>
- *         <div class="grid_9 omega">(...)</div>
- *     </div>
- * </div>
- *
- */
+* -> Subtle boxes
+*
+* .subtle_box can be used inside grid classes to make simple box delimiters
+* (without grids inside of it) or as a child of container class to allow columns on it
+*
+* Examples:
+*
+* <div class="grid_3">
+*     <div class="subtle_box">Lorem ipsum dolor sit amet</div>
+* </div>
+*
+* <div class="container_12">
+*     <div class="subtle_box">
+*         <div class="grid_3 alpha">(...)</div>
+*         <div class="grid_9 omega">(...)</div>
+*     </div>
+* </div>
+*
+*/
 
 .subtle_box {
     margin: 0 0 20px;
@@ -517,14 +694,14 @@ a:visited {
 }
 
 /*
- * --> Navigation list
- *
- * Navigation lists are used to generate a list of links which are in the same
- * hierarchical level of the current page. Use it preferably in a grid_3 element.
- *
- * Don't forget to highlight with <li class="current_page_item"> the current page.
- *
- */
+* --> Navigation list
+*
+* Navigation lists are used to generate a list of links which are in the same
+* hierarchical level of the current page. Use it preferably in a grid_3 element.
+*
+* Don't forget to highlight with <li class="current_page_item"> the current page.
+*
+*/
 
 .navigation_list {
     background: #fff;
@@ -753,16 +930,16 @@ dl.icon_list dt img {
 
 
 /*
- * --> News list
- *
- * This is initially used in the home page for displaying the news
- *
- */
+* --> News list
+*
+* This is initially used in the home page for displaying the news
+*
+*/
 
 .news_list {
 }
 
-.grid_4.news:first-child {
+.span4.news:first-child {
     margin-left: 0;
 }
 
@@ -855,7 +1032,10 @@ dl.icon_list dt img {
 #footer_grass {
     background: url(images/grass.png) top center repeat-x;
     height: 39px;
-    margin-top: -33px;
+    margin-top: -53px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 
@@ -869,7 +1049,7 @@ dl.icon_list dt img {
     /*background: #d3d7cf url(images/grass.png) top center repeat-x;*/
     background: #d3d7cf;
     color: #555753;
-    padding: 20px 0;
+    padding: 20px 20px;
 }
 #footer div.links > div > ul > li {
     float: left;
@@ -927,18 +1107,6 @@ dl.icon_list dt img {
     background: -moz-linear-gradient(bottom, #fff, #fff);
 }
 
-#footer div.icons {
-    float: right;
-}
-#footer div.icons a {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    width: 220px;
-    height: 110px;
-    outline: none;
-    text-decoration: none;
-}
 
 #footer ul {
     margin: 0;
@@ -1076,26 +1244,26 @@ hr.bottom_shadow {
 }
 .crafted_content .section.image-right .text {
     float: left;
-    width: 480px;
+    /*width: 480px;*/
 }
 .crafted_content .section.image-left .text {
     float: right;
-    width: 480px;
+    /*width: 480px;*/
 }
 .crafted_content .section .image {
     display: block;
-    width: 420px;
+    /*width: 420px;*/
 }
 .crafted_content .section .image img {
-    width: 420px;
+    /*width: 420px;*/
     display: block;
 }
 .crafted_content .section.image-right .image {
-    margin-left: 40px;
+    /*margin-left: 40px;*/
     float: right;
 }
 .crafted_content .section.image-left .image {
-    margin-right: 40px;
+    /*margin-right: 40px;*/
     float: left;
 }
 .crafted_content .section .thumbs {
@@ -1163,9 +1331,10 @@ hr.bottom_shadow {
     margin-bottom: 10px;
 }
 
-.col-3 {
-    list-style-type: disc;
-    columns: 3;
-    -webkit-columns: 3;
-    -moz-columns: 3;
+/* span hacks */
+class[*="span"] .alpha {
+    margin-left: 0;
+}
+class[*="span"] .omega {
+    margin-right: 0;
 }

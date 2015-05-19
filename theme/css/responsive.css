@@ -1,0 +1,375 @@
+/*responsive.css*/
+
+/*--------------General------------------------*/
+@media(max-width: 767px) {
+    img {
+        margin : 10px auto;
+        display: block;
+    }
+    .mobile_text {
+        text-align: justify;
+    }
+}
+@media(min-width: 767px){
+    #header {
+        margin-bottom: 20px;
+    }
+}
+/*-------------Mobile-Menu----------------------*/
+
+.mobile-menu {
+    display: none;
+    visibility: hidden;
+}
+.normal-menu {
+    display: block;
+}
+
+.mobile-menu .top_bar ul li a {
+  display: inline-block;
+  width: 90%;
+  height: 100%;
+  padding: 1.5%;
+}
+
+.mobile-menu-text {
+    letter-spacing: 1px;
+    font-size: large;
+    vertical-align: middle;
+    height:25px;
+}
+#menu-globalnav {
+    margin: 0px 0px 10px 0px;
+    list-style: none;
+}
+
+#menu-globalnav .menu-item {
+    float: none;
+    font-size: large;
+    letter-spacing: 2px;
+    line-height: 100%;
+    padding: 1%;
+/*    margin-top: 10px; 
+*/}
+
+.navbar .btn-navbar, .navbar .btn-navbar:hover, .navbar .btn-navbar:focus, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled]{
+    margin-top: 40px;
+    background-image: none;
+    background-color: #2e3436;
+}
+
+.plus-pull {
+    color: white;
+    /*margin-left: -5px;*/
+    cursor: pointer;
+    display: inline-block;
+}
+
+.menu-globalnav-container > .menu > .menu-item > .sub-menu {
+    background-color: #191919;
+}
+
+    /*----------------Smartphones-------------------*/
+    @media (max-width: 767px) {
+        form {
+            padding: 5px 10px;
+            margin-left: 0.5%;
+        }
+        .mobile-menu {
+            cursor: pointer;
+            display: inline-block;
+            float: right;
+            visibility: visible;
+            width:100%;
+        }
+        .normal-menu {
+            display: none;
+        }
+        .top_bar {
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+        }
+        .top_bar ul li {
+            display: block !important;
+            border-bottom: 1px solid rgba(102, 102, 102, 1);
+        }
+        .top_bar .sub-menu li {
+            border-bottom: 0px;
+        }
+        .top_bar .sub-menu li:first-child {
+            border-top: 1px white solid;
+        }
+        .top_bar input {
+            width: 85%;
+        }
+
+    }
+
+    /*-----------------Tablets------------------------*/
+    @media (min-width: 767px) {
+        
+        .menu-globalnav-container {
+/*            max-height: 20px;
+*/        }
+        .nav li {
+            display: inline-block;
+            vertical-align: top;
+        }
+        .top_bar {
+            height: 36px;
+        }
+        #top_bar_search {
+            height: 36px;
+        }
+        .top_bar .sub-menu {
+            padding: 8px 0;
+            margin-top: 8px;
+            position: relative;
+            z-index: 20;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+        }
+        .top_bar ul li {
+            margin-right: 2px;
+        }
+
+    }
+
+    @media (min-width:767px) and  (max-width: 979px){
+        .menu-globalnav-container {
+            width: 724px;
+        }
+        .top_bar {
+            max-width: 100%;
+            width: 70%;
+            margin-left: 0;
+        }
+        #header #logo {
+            height: auto;
+            width: 199px;
+            padding: 0 33%;
+        }
+        #top_bar_search {
+            width: 30%;
+        }
+        .top_bar ul li {
+            /*line-height: 28px;*/
+        }
+    }
+    /*-------------------Laptops-------------------------------*/
+    @media (min-width: 979px){
+    .menu-globalnav-container {
+            width: 680px;
+    }
+}
+
+    /*-------------Sub-Menu---------------------------*/
+    #menu-globalnav-1 .sub-menu {
+        display: none;
+    }
+    #menu-globalnav .sub-menu {
+        display: none;
+        vertical-align: top;
+        margin: -2%;
+        transition: all 1s;
+    }
+
+    #menu-globalnav .sub-menu .menu-item {
+        list-style: none;
+        margin-top: 0px;
+        display: block;
+        
+    }
+
+    #menu-globalnav .sub-menu .menu-item:first-child {
+        margin-top: 3%;
+    }
+
+/*------------Column without sidebar-----------*/
+@media (max-width: 767px){
+    .crafted_content .section h2, .crafted_content .section h3 {
+        text-align: center;
+    }
+    .crafted_content .section .text{
+        text-align: center;
+    }
+    .crafted_content .section .image img{
+        margin: auto;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 979px){
+    
+    .crafted_content .section .image.span6{
+        max-width: 320px;
+        margin-left: 0px;
+    }
+    .crafted_content .section .text.span6{
+        max-width: 480px;
+        margin-left: 0px
+    }
+    .span12{
+        margin-left: 0px;
+    }
+
+
+}
+
+@media (min-width: 979px){
+    .crafted_content .section .image.span6{
+        max-width: 420px;
+        margin-left: 0px;
+    }
+    .crafted_content .section .text.span6{
+        max-width: 480px;
+        margin-left: 0px
+    }
+    .span12{
+        margin-left: 0px;
+    }
+}
+/*-----------------list adjustments-----------*/
+@media (max-width: 979px) {
+    li {
+        margin-left: 0px;
+/*        line-height: 1.6px;
+*/    }
+}
+
+
+/*-------------------Membership------------------*/
+@media (max-width: 767px) {
+    .foundation_members_list {
+        display: none;
+    }
+    .member_heading {
+        display: none;
+    }
+}
+ /*-------------------Foundation----------------------*/
+ 
+.foundation_board {
+  -moz-column-count: 2 !important;
+  -webkit-column-count: 2 !important;
+  column-count: 2 !important;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.foundation_board img {
+    margin: auto !important;
+}
+@media (min-width: 360px) and (max-width: 767px) {
+    .foundation_board {
+        -moz-column-count: 2 !important;
+        -webkit-column-count: 2 !important;
+        column-count: 2 !important;
+    }
+}
+@media (max-width: 767px) {
+
+    .foundation-mobile-hidden {
+        display: none;
+    }
+}
+@media (max-width: 979px) {
+    .foundation_board li{
+        text-align: center;
+    }
+
+    .foundation_board img {
+        display: block;
+    }
+}
+/*--------------------two-column/sidebar-------------------------*/
+@media(max-width: 767px){
+    #container.two_columns .sidebar {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        display: block;
+    }
+
+}
+@media(min-width: 767px){
+    #container.two_columns .sidebar {
+        width: 220px;
+    }
+    #container.two_columns .content {
+        margin-left: 0px;
+    }
+}
+.press_list {
+    margin-left: 0px;
+}
+.news_list {
+    margin-left: 0px;
+}
+/*----------------Applications-------------------*/
+@media (max-width: 767px){
+    .app_image_mhide {
+        display: none;
+    }
+    .app_image_mshow {
+        display: inline-block ;
+    }
+}
+@media (min-width: 767px){
+    .app_image_mhide {
+        display: block;
+        margin-top: 25px;
+    }
+    .app_image_mshow {
+        display: none;
+    }
+}
+@media (min-width: 360px) and (max-width: 767px) {
+    #app_column {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+/*-----------------Application Form--------------*/
+@media (min-width: 480px ){
+    #application_form .item label {
+        text-align: left;
+    }
+}
+
+/*plus-pull sign for apply page*/
+div[id *= apply-pull] {
+    margin: 0 4%;
+    padding: 0 1% 1%;
+    cursor: pointer;
+    width: 20%;
+    font-size: 16px;
+    display: none;
+}
+p[id *= apply-mobile-hidden] {
+    display: block;
+}
+@media (max-width: 480px){
+    div[id *= apply-pull] {
+        display: inline;
+    }
+    p[id *= apply-mobile-hidden] {
+        display: none;
+    }
+    .heading_collapse {
+        display: inline-block;
+        width: 70%;
+    }
+
+}
+/*------------Footer Adjustments-----------*/
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 20px 20px;
+    }
+}

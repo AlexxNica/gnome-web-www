@@ -7,8 +7,8 @@ require_once("header.php"); ?>
 
     <!-- container -->
     <div id="container" class="two_columns">
-        <div class="container_12">
-        
+        <div class="container">
+            
             <div class="page_title">
                 <h1><?php the_title(); ?></h1>
             </div>
@@ -19,8 +19,8 @@ require_once("header.php"); ?>
             <?php endwhile; // End the loop. Whew. ?>
                 <br />
                 <div class="clear"></div>
+        
             </div>
-            
             <?php require_once("footer_art.php"); ?>
         </div>
     </div>

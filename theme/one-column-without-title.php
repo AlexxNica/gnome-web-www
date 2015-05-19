@@ -7,8 +7,7 @@ require_once("header.php"); ?>
 
     <!-- container -->
     <div id="container" class="two_columns">
-        <div class="container_12">
-            
+        <div class="container">
             <div class="content without_sidebar">
             <?php while ( have_posts() ) : the_post(); ?>
                 <?php the_content(); ?>
@@ -16,9 +15,9 @@ require_once("header.php"); ?>
                 <br />
                 <div class="clear"></div>
             </div>
+            </div>
             
             <?php require_once("footer_art.php"); ?>
-        </div>
     </div>
     
     <div class="clearfix"></div>

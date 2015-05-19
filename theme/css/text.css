@@ -84,6 +84,7 @@ code {
 .main_feature {
     font-size: 16pt;
     line-height: 130%;
+    margin-top: 20px;
 }
 
 .footnotes {
