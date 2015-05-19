@@ -261,11 +261,11 @@
 .foundation_board img {
     margin: auto !important;
 }
-@media (min-width: 360px) and (max-width: 767px) {
+@media (max-width: 360px) {
     .foundation_board {
-        -moz-column-count: 2 !important;
-        -webkit-column-count: 2 !important;
-        column-count: 2 !important;
+        -moz-column-count: 1 !important;
+        -webkit-column-count: 1 !important;
+        column-count: 1 !important;
     }
 }
 @media (max-width: 767px) {
