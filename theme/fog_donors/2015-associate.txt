@@ -3,6 +3,7 @@ ChangSeok Oh
 David Jakubec
 Dimitrios Christidis
 Gabriel Diosan
+Georges-Mickael Seguin
 Helmut Eberharter
 Ian McKellar
 Jocelyn Heuzé
