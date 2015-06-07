@@ -1,22 +1,23 @@
 
 $(function() {
-	//insert plus pull down button before each submenu
-//	$('+').insertBefore('.menu-globalnav-container > .menu > .menu-item > .sub-menu');
-	// $('<span id="plus-pull-1"> + </span>').insertBefore('#menu-globalnav-1 > .sub-menu');
-
-	// var mainmenu = document.getElementByID('sub-menu').getElementsByTagName('sub-menu'); 
-    
     //  Sub menu navigation of Foundation Menu
      $(".normal-menu .foundation-menu-item").click(function(){
 
+        //Toggle foundation menu option name as menu displays or hides.
          if($(".sub-menu").css("display") == "none") {
          	$(".foundation-menu-item > a").html("Foundation -");
          }
          else{
          	$(".foundation-menu-item > a").html("Foundation +");
+             $('.foundation-menu-item a').blur();
          }
          $(".sub-menu").toggle('slow');
      })
+
+
+     if( $("li.foundation-menu-item").hasClass("current-menu-parent") ){
+        $("li.foundation-menu-item .sub-menu").last().trigger('click');
+     }
 
      $(".mobile-menu .foundation-menu-item").click(function(){
 

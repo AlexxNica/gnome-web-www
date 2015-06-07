@@ -1,10 +1,10 @@
-    <!-- footer grass -->
-    <div id="footer_grass">
-        &nbsp;
-    </div>
+ <!-- footer -->
+    <div id="footer">   
+<!-- footer grass -->
+        <div id="footer_grass">
+            &nbsp;
+        </div>
 
-    <!-- footer -->
-    <div id="footer">
         <div class="container">
             <div class="links span9">
                 <?php
