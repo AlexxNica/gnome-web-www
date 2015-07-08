@@ -1,6 +1,7 @@
 Anthony Greene
 Anthony Priest
 ChangSeok Oh
+Claudio Santos
 David Jakubec
 David Quist
 Dimitrios Christidis
@@ -8,6 +9,7 @@ Gabriel Diosan
 Georges-Mickael Seguin
 Helmut Eberharter
 Ian McKellar
+Jacob Tarr
 Jocelyn Heuzé
 JUAN MORALES ARIAS
 Kevin Porter
