@@ -4,6 +4,12 @@
  * @subpackage Default_Theme
  */
 
+/*
+ * The genericons.css stylesheet wasn't loaded, enqueue
+ * it for share icons to show up correctly. 
+ */
+
+wp_enqueue_style( 'genericons', '/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css', array(), '3.1' );
 
 /*
  * Add support for custom menus and posts thumbnails
