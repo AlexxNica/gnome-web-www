@@ -28,6 +28,7 @@ Nick Kaye
 Patrick Rifici
 Rafael Lino
 RAFAEL TRINDADE
+Richard Sexton
 Robert Scott
 Shuji Narazaki
 Stephen Mahood
