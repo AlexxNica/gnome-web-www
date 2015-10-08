@@ -58,6 +58,7 @@ Manish Sinha
 Marc-Antoine Perennou
 Marcelo Soares Souza
 Marc Thomas
+Mario Angel Davila
 Marius Gedminas
 Mark Wielaard
 Mathias Nicolajsen Kjaergaard
