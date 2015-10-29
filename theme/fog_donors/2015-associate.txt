@@ -13,6 +13,7 @@ Gabriel Diosan
 Georges-Mickael Seguin
 Helmut Eberharter
 Ian McKellar
+Jacob Ferrero
 Jacob Tarr
 Jason Parker
 Jimmy Richards
@@ -36,4 +37,5 @@ Suppatach Sabpisal
 Sven Herrmann
 Taejun Heo
 Thomas Heidrich
+Vincent Vermeulen
 Vitalij Rerich
