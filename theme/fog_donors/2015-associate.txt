@@ -15,6 +15,7 @@ Helmut Eberharter
 Ian McKellar
 Jacob Ferrero
 Jacob Tarr
+Jan-Michael Brummer
 Jason Parker
 Jimmy Richards
 Jocelyn Heuzé
