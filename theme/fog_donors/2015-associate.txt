@@ -1,4 +1,6 @@
  
+Abdulaziz Alsenafi
+Albert Vernon
 Allen Welkie
 Anthony Greene
 Anthony Hertzler
@@ -23,6 +25,7 @@ Jimmy Richards
 Jocelyn Heuzé
 JUAN MORALES ARIAS
 Kevin Porter
+Luca Daghino
 Mario Sanchez Prada
 Max Whittingham
 Michael Doherty
@@ -34,7 +37,9 @@ Rafael Lino
 RAFAEL TRINDADE
 Richard Sexton
 Robert Scott
+Shreepad Shukla
 Shuji Narazaki
+Simon Lyall
 Stephen Mahood
 Suppatach Sabpisal
 Sven Herrmann
