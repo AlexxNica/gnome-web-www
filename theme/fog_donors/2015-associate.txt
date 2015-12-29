@@ -13,6 +13,7 @@ David Jakubec
 David Quist
 Dimitrios Christidis
 Faron Anslow
+Fraser Tweedale
 Gabriel Diosan
 Georges-Mickael Seguin
 Helmut Eberharter
@@ -25,12 +26,14 @@ Jesse DuBord
 Jimmy Richards
 Jocelyn Heuzé
 JUAN MORALES ARIAS
+Karol Babioch
 Kevin Porter
 Lisa Sarbak
 Luca Daghino
 Mario Sanchez Prada
 Max Whittingham
 Michael Doherty
+Michael Lewis
 Michel Machado
 Mohammed Zakaria
 Nick Kaye
@@ -47,5 +50,6 @@ Suppatach Sabpisal
 Sven Herrmann
 Taejun Heo
 Thomas Heidrich
+Tilo Ortmann
 Vincent Vermeulen
 Vitalij Rerich
