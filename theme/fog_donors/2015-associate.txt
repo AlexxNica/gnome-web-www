@@ -1,6 +1,7 @@
  
 Abdulaziz Alsenafi
 Albert Vernon
+Alexander Jeremy Newton
 Allen Welkie
 Andrew England
 Anthony Greene
@@ -18,6 +19,7 @@ Gabriel Diosan
 Georges-Mickael Seguin
 Helmut Eberharter
 Ian McKellar
+Ilja Sekler
 Jacob Ferrero
 Jacob Tarr
 Jan-Michael Brummer
@@ -28,6 +30,7 @@ Jocelyn Heuzé
 JUAN MORALES ARIAS
 Karol Babioch
 Kevin Porter
+Laurent Goujon
 Lisa Sarbak
 Luca Daghino
 Mario Sanchez Prada
@@ -38,11 +41,14 @@ Michael Lewis
 Michel Machado
 Mohammed Zakaria
 Nick Kaye
+Owen Taylor
 Patrick Rifici
 Rafael Lino
 RAFAEL TRINDADE
 Richard Sexton
+Ritchie Wilson
 Robert Scott
+Scott Godin
 Shreepad Shukla
 Shuji Narazaki
 Simon Lyall
