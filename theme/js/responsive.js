@@ -4,14 +4,14 @@ $(function() {
      $(".normal-menu .foundation-menu-item").click(function(){
 
         //Toggle foundation menu option name as menu displays or hides.
-         if($(".sub-menu").css("display") == "none") {
+         if($(".foundation-menu-item .sub-menu").css("display") == "none") {
          	$(".foundation-menu-item > a").html("Foundation -");
          }
          else{
          	$(".foundation-menu-item > a").html("Foundation +");
              $('.foundation-menu-item a').blur();
          }
-         $(".sub-menu").toggle('slow');
+         $(".foundation-menu-item .sub-menu").toggle('slow');
      })
 
 
@@ -21,13 +21,13 @@ $(function() {
 
      $(".mobile-menu .foundation-menu-item").click(function(){
 
-         if($(".sub-menu").css("display") == "none") {
+         if($(".foundation-menu-item .sub-menu").css("display") == "none") {
             $(".foundation-menu-item > a").html("Foundation -");
          }
          else{
             $(".foundation-menu-item > a").html("Foundation +");
          }
-         $(".sub-menu").toggle();
+         $(".foundation-menu-item .sub-menu").toggle();
      })
 
      $("[id^=apply-pull]").click(function(){
