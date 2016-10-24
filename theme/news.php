@@ -21,7 +21,7 @@ require_once("header.php"); ?>
 
     <!-- container -->
     <div id="container" class="two_columns">
-        <div class="container_12">
+        <div class="container">
         
             <div class="page_title">
                 <h1><a href="<?php bloginfo('url'); ?>/news/"><?php echo __('News', 'grass');?></a></h1>
@@ -39,7 +39,7 @@ require_once("header.php"); ?>
                 <div class="clear"></div>
             </div>
             
-            <div class="sidebar">
+            <div class="sidebar col-md-3">
             
                 <?php require_once("news_sidebar.php");?>
                       
