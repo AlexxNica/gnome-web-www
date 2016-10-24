@@ -27,7 +27,7 @@ require_once("header.php"); ?>
                 <h1><a href="<?php bloginfo('url'); ?>/news/"><?php echo __('News', 'grass');?></a></h1>
             </div>
             
-            <div class="content">
+            <div class="content col-md-9">
             <?php while ( have_posts() ) : the_post(); ?>
                 <div class="news_title">
                     <p class="date"><?php the_date(); ?></p>
