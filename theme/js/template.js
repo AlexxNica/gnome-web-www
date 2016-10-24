@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function($) {
 
     // Get browser  
     $.each($.browser, function(i) {

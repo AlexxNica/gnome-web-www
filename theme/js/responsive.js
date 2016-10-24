@@ -1,5 +1,4 @@
-
-$(function() {
+jQuery(document).ready(function($) {
     //  Sub menu navigation of Foundation Menu
      $(".normal-menu .foundation-menu-item").click(function(){
 
@@ -9,9 +8,8 @@ $(function() {
          }
          else{
          	$(".foundation-menu-item > a").html("Foundation +");
-             $('.foundation-menu-item a').blur();
          }
-         $(".foundation-menu-item .sub-menu").toggle('slow');
+         $(".foundation-menu-item .sub-menu").toggle('fast');
      })
 
 
