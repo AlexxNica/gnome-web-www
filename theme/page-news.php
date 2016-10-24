@@ -32,7 +32,7 @@ require_once("header.php"); ?>
                 <h1><?php echo __('News', 'grass');?></h1>
             </div>
             
-            <div class="content span8">
+            <div class="content col-md-9">
             
                 <?php the_content(); ?>
                 <?php
@@ -67,7 +67,7 @@ require_once("header.php"); ?>
 
             </div>
             
-            <div class="sidebar span4">
+            <div class="sidebar col-md-3">
                 
                 <?php require_once("news_sidebar.php");?>
                 

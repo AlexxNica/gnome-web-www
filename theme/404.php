@@ -8,18 +8,18 @@ require_once("header.php"); ?>
 
     <!-- container -->
     <div id="container" class="two_columns">
-        <div class="container_12">
+        <div class="container">
             
             <div class="content without_sidebar">
                 
-                <div class="grid_10 prefix_1 suffix_1 alpha omega">
+                <div class="col-sm-10 col-sm-offset-1">
                         <h1><?php _e( 'Ooooops. Something is not here.', 'grass' ); ?></h1>
                         
                         <p class="main_feature"><?php _e( 'The page you tried to access was not found.', 'grass' ); ?></p>
                         
                         <hr />
                         
-                        <div class="grid_5 alpha">
+                        <div class="col-sm-6">
                             <p><?php
                             
                             printf(
@@ -31,7 +31,7 @@ require_once("header.php"); ?>
                             <?php get_search_form(); ?>
                         </div>
                         
-                        <div class="grid_5 omega">
+                        <div class="col-sm-4">
                             <p><?php
                             
                             printf(

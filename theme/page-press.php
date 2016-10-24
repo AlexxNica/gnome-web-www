@@ -30,7 +30,7 @@ require_once("header.php"); ?>
                 <h1><?php the_title(); ?></h1>
             </div>
             
-            <div class="content span8">
+            <div class="content col-md-8">
             
                 <?php the_content(); ?>
                 <?php
@@ -66,7 +66,7 @@ require_once("header.php"); ?>
                 <div class="clearfix"></div>
             </div>
             
-            <div class="sidebar span4">
+            <div class="sidebar col-md-4">
                 
                 <?php require_once("news_sidebar.php");?>
                 

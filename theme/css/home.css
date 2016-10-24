@@ -61,6 +61,22 @@
     margin-bottom: 0;
 }
 
+/* Responsive Media Queries for Homepage */
+/* ========================================================================== */
+
+ 
+@media (min-width:767px) and  (max-width: 979px){
+    #home-crafted-content {
+        text-align: center;
+    }
+}
+
+@media(max-width: 767px){
+    #home-crafted-content {
+        text-align: center;
+    }
+}
+
 /*
 Custom hacks for civicrm
 This file gets applied after everything else, so this is why we put the code here.

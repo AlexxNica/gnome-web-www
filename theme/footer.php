@@ -6,7 +6,7 @@
         </div>
 
         <div class="container">
-            <div class="links span9">
+            <div class="links col-sm-12 col-md-9">
                 <?php
                 wp_nav_menu('menu=footer');
                 ?>
@@ -18,7 +18,7 @@
                 if (count($list_of_languages) > 1) {
                                 
                 ?>
-                <div class="language span3">
+                <div class="language col-md-3">
                     <div>
                         <strong><?php _e( 'This website is available in many languages', 'grass' ); ?></strong>
                         <a href="<?php echo home_url('/languages/');?>" data-uri="<?php echo home_url('/');?>?select-language&amp;url=<?php echo $_SERVER['REQUEST_URI'];?>">
@@ -32,13 +32,13 @@
             }
             ?>
             
-            <div class="icons span3">
+            <div class="icons col-sm-8 col-md-3">
 	    	  <?php require_once("social_icons.php"); ?>
             </div>
 	    </div>
 	    <!-- footnotes -->
         <div class="container">
-            <div class="span12">
+            <div class="col-md-12">
                 <div id="footnotes" class="span9">
                     <?php _e( 'Copyright', 'grass' ); ?> © 2005‒<?php echo date('Y');?> <strong class="gnome_logo"><?php _e( 'The GNOME Project', 'grass' ); ?></strong><br />
                     <small>
@@ -76,4 +76,4 @@
     
     <?php
     wp_footer();
-    ?>   
+    ?>

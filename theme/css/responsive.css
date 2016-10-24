@@ -1,5 +1,19 @@
 /*responsive.css*/
 
+.btn-success {
+    background-color:#4e9a06;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.no-padding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
 /*--------------General------------------------*/
 @media(max-width: 767px) {
     img {
@@ -16,14 +30,6 @@
     }
 }
 /*-------------Mobile-Menu, Normal-Menu----------------------*/
-
-.mobile-menu {
-    display: none;
-    visibility: hidden;
-}
-.normal-menu {
-    display: block;
-}
 
 .normal-menu .foundation-menu-item .sub-menu li a:active,
 .normal-menu .foundation-menu-item .sub-menu li a:focus,
@@ -66,12 +72,6 @@
     padding: 1%;
 /*    margin-top: 10px; 
 */}
-
-.navbar .btn-navbar, .navbar .btn-navbar:hover, .navbar .btn-navbar:focus, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled]{
-    margin-top: 40px;
-    background-image: none;
-    background-color: #2e3436;
-}
 
 .plus-pull {
     color: white;
@@ -118,6 +118,9 @@
         .top_bar input {
             width: 85%;
         }
+        .crafted_content {
+            text-align: center;
+        }
 
     }
 
@@ -149,7 +152,6 @@
         .top_bar ul li {
             margin-right: 2px;
         }
-
     }
 
     @media (min-width:767px) and  (max-width: 979px){
@@ -160,6 +162,7 @@
             max-width: 100%;
             width: 70%;
             margin-left: 0;
+            margin-top: 0px !important;
         }
         #header #logo {
             height: auto;
@@ -171,6 +174,9 @@
         }
         .top_bar ul li {
             /*line-height: 28px;*/
+        }
+        #top_bar_search {
+            margin-top: 0px !important;
         }
     }
     /*-------------------Laptops-------------------------------*/
@@ -207,6 +213,7 @@
     .crafted_content .section h2, .crafted_content .section h3 {
         text-align: center;
     }
+    #support-gnome .title, #support-gnome h3, #support-gnome .links,
     .crafted_content .section .text{
         text-align: center;
     }
@@ -215,36 +222,6 @@
     }
 }
 
-@media (min-width: 767px) and (max-width: 979px){
-    
-    .crafted_content .section .image.span6{
-        max-width: 320px;
-        margin-left: 0px;
-    }
-    .crafted_content .section .text.span6{
-        max-width: 480px;
-        margin-left: 0px
-    }
-    .span12{
-        margin-left: 0px;
-    }
-
-
-}
-
-@media (min-width: 979px){
-    .crafted_content .section .image.span6{
-        max-width: 420px;
-        margin-left: 0px;
-    }
-    .crafted_content .section .text.span6{
-        max-width: 480px;
-        margin-left: 0px
-    }
-    .span12{
-        margin-left: 0px;
-    }
-}
 /*-----------------list adjustments-----------*/
 @media (max-width: 979px) {
     li {
@@ -348,43 +325,97 @@
         column-count: 2;
     }
 }
-/*-----------------Application Form--------------*/
-@media (min-width: 480px ){
-    #application_form .item label {
-        text-align: left;
-    }
-}
 
-/*plus-pull sign for apply page*/
-div[id *= apply-pull] {
-    margin: 0 4%;
-    padding: 0 1% 1%;
-    cursor: pointer;
-    width: 20%;
-    font-size: 16px;
+
+/*===================================================================================================================================================*/
+
+
+/* Custom media queries and Bootstrap overwrite rules for Damned Lies */
+
+
+.mobile-menu {
     display: none;
+    visibility: hidden;
 }
-p[id *= apply-mobile-hidden] {
+.normal-menu {
     display: block;
 }
-@media (max-width: 480px){
-    div[id *= apply-pull] {
-        display: inline;
-    }
-    p[id *= apply-mobile-hidden] {
-        display: none;
-    }
-    .heading_collapse {
-        display: inline-block;
-        width: 70%;
-    }
-
+.navbar-toggle,  .navbar-toggle:hover, .navbar-toggle:focus, .navbar-toggle:active, .navbar-toggle.active, .navbar-toggle.disabled, .navbar-toggle[disabled]{
+    margin-top: 40px;
+    background-image: none;
+    background-color: #2e3436;
 }
-/*------------Footer Adjustments-----------*/
+.table-responsive {
+    border: none;
+}
+.navbar-default .navbar-nav > li > a {
+    text-decoration: none;
+}
+.normal-menu .foundation-menu-item .sub-menu li a:active,
+.normal-menu .foundation-menu-item .sub-menu li a:focus,
+.normal-menu .foundation-menu-item .sub-menu li.current_page_item a{
+    background: rgba(100%, 100%, 100%, 0.4);
+    color: #000;
+    text-shadow: none;
+}
+
+.normal-menu .foundation-menu-item .sub-menu li a:hover{
+    background: rgba(100%, 100%, 100%, 0.2);
+}
+
+.normal-menu .foundation-menu-item .sub-menu li a {
+    color: #000;
+    text-shadow: none;
+}
+
+/*----------------Smartphones-------------------*/
 @media (max-width: 767px) {
-    #footer {
-        margin-left: -20px;
-        margin-right: -20px;
-        padding: 20px 20px;
+    header {
+        padding-bottom: 40px;
     }
+	.navbar-default,
+	.navbar-default .navbar-collapse {
+		background-color: transparent;
+		border-color: transparent;
+	}
+	.mobile-menu {
+		cursor: pointer;
+		display: inline-block;
+		float: right;
+		visibility: visible;
+		width:100%;
+    }
+	.normal-menu {
+		display: none;
+	}
+	.top_bar {
+		text-align: center;
+	}
+	.top_bar ul li {
+		display: block !important;
+	}
+	h1, #content h1 {
+		font-size: 23px;
+	}
+	h2 {
+		font-size: 20px;
+	}
+}
+
+/*-----------------Tablets------------------------*/
+@media (min-width:767px) and (max-width: 990px){
+    header {
+        padding-bottom: 30px;
+    }
+	#globalnav {
+		margin: 0 auto;
+	}
+	.top_bar {
+		margin:0 auto;
+		float: none;
+	}
+	.normal-menu #gnome_header {
+		height: auto;
+		padding: 0 33%;
+	}
 }

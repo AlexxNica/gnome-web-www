@@ -8,7 +8,7 @@ require_once("header.php"); ?>
 
     <!-- container -->
     <div id="container" class="two_columns">
-        <div class="container_12">
+        <div class="container">
         
             <div class="page_title with_subpages_list">
                 <h1><?php the_title(); ?></h1>

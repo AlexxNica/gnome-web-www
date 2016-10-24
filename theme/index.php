@@ -8,11 +8,11 @@ require_once("header.php"); ?>
 
     <!-- container -->
     <div id="container" class="two_columns">
-        <div class="container_12">
+        <div class="container">
         
             <?php require_once('inc/page-title.php'); ?>
             
-            <div class="content">
+            <div class="content col-md-9">
             <?php while ( have_posts() ) : the_post(); ?>
                 <?php the_content(); ?>
             <?php endwhile; // End the loop. Whew. ?>
@@ -20,7 +20,7 @@ require_once("header.php"); ?>
                 <div class="clear"></div>
             </div>
             
-            <div class="sidebar">
+            <div class="sidebar col-md-3">
                 
                 <?php
                 $parent_id  = $post->post_parent;
