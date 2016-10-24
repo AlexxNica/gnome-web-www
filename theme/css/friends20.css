@@ -1,8 +1,10 @@
+/*
+ * CSS code for FoG pages
+ * 
+ * page-donate, page-support-us, page-friends-of-gnome, page-thank-you, page-questionnaire
+ */
 
-#boxes {
-
-}
-
+/* Boxes for the "Donate to GNOME" page */
 #boxes > div {
   margin: 10px;
   width: 150px;
@@ -19,6 +21,32 @@
 #boxes > div {
   cursor: pointer;
 }
+
+.boxes-container div {
+    margin: 6px;
+    height: 180px;
+    width: 190px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+}
+
+.boxes-container :hover{
+    background-color: #4A90D9;
+    color: #fff;
+}
+
+.boxes-container .active{
+    background-color: #4A90D9;
+    color: #fff;
+}
+
+.boxes-container p {
+    padding: 8px;
+}
+
 
 #adopt {
   background-image: url("../images/adopt-normal.png");
@@ -139,4 +167,91 @@ small {
   color: gray;
 }
 
-.
+/*
+ * "Support GNOME" page
+ */
+ 
+#support-gnome .title {
+    font-size: 13pt;
+    font-weight: 600;
+    color: #919191;
+}
+
+#support-gnome .text {
+    display: block;
+    position: relative;
+    top: 11px;
+    right: 20px;
+}
+
+#support-gnome .article {
+   margin-bottom: 10px;
+   padding-bottom: 10px;
+}
+
+/*
+ * Miscellaneous
+ */
+ 
+.validation-msg{
+    background:#f2f2f2;
+    padding:8px;
+}
+
+.form-horizontal .control-label {
+    width: 120px;
+    text-align: left;
+    color: #8c5f93;
+    font-weight: 600;
+}
+
+.form-horizontal .controls {
+    margin-left: 90px;
+}
+
+/* Give hackers some space */
+#fog-hackers {
+    margin-bottom: 20px;
+}
+
+/* Customize select button for Bitcoin donations */
+select {
+    border: 1px solid #111;
+    background: transparent;
+    width: 150px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    height: 34px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../images/asc.png) 80% / 11% no-repeat #eee;
+}
+
+/* 
+ * "Thank you" page
+ */
+
+/* we need round icons */
+#thankyou [class*="fa fa-"] {
+    background-color: #D3D7CF;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    margin: 5px 10px 20px;
+    width: 50px;
+    font-size: 25px;
+    text-align: center;
+}
+
+/*
+ * Responsive Media Queries for the FoG pages
+ */
+
+@media (min-width: 767px) and (max-width: 979px){
+	#support-gnome .text {
+		position: inherit;
+	}
+}
