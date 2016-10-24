@@ -3,7 +3,15 @@
  * @package WordPress
  * @subpackage Default_Theme
  */
+ 
+show_admin_bar(false);
 
+/*
+ * Add support for theme translations.
+ * Translations should be under /languages/ directory.
+ */
+
+load_theme_textdomain( 'grass', get_template_directory().'/languages' );
 
 /*
  * Add support for custom menus and posts thumbnails
@@ -12,10 +20,10 @@
 add_theme_support('menus');
 add_theme_support( 'post-thumbnails');
 
-
 /*
  * Set default banner size
  */
+ 
 set_post_thumbnail_size(940, 280);
 
 /*
@@ -30,6 +38,43 @@ add_image_size( 'image-crafted-content', 420, 263, true);
 add_image_size( 'thumbnail-big', 210, 210, false);
 add_image_size( 'thumbnail-small', 120, 80, false);
 
+/*
+ * Media size for FoG Hacker icon
+ */
+
+add_image_size( 'fog-hacker-icon', 80, 80, true );
+
+/*
+ * Enqueue scripts and styles.
+ */
+
+function gnomegrass_resources() {
+
+    wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), null, true);
+    wp_enqueue_script( 'template', get_template_directory_uri() . '/js/template.js', array('jquery'), null, true);
+    wp_enqueue_script( 'responsive-menu', get_template_directory_uri() . '/js/responsive.js', array('jquery'), null, true);
+
+    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
+    wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
+
+    // Scripts and styles for page-friends-of-gnome and page-donate
+    if (is_page('friends-of-gnome') || is_page('donate')){
+        wp_enqueue_script( 'friends-js', get_template_directory_uri() . '/js/friends.js', false, null, true);
+        wp_enqueue_style('friends-style', get_template_directory_uri() . '/css/friends20.css', array('bootstrap'), null, false);
+    }
+    // Scripts and styles for page-support-us
+    if (is_page('support-us')){
+        wp_enqueue_style('friends-style', get_template_directory_uri() . '/css/friends20.css', array('bootstrap'), null, false);
+    }
+    // Scripts and styles for page-home
+    if (is_page('home')){
+        wp_enqueue_style('friends-style', get_template_directory_uri() . '/css/home.css', array('bootstrap'), null, false);
+        wp_enqueue_style('friends-style', get_template_directory_uri() . '/css/news.css', array('bootstrap'), null, false);
+    }
+}
+add_action('wp_enqueue_scripts', 'gnomegrass_resources');
+
 
 /*
  * Add support for banners and projects post types
@@ -38,6 +83,33 @@ add_image_size( 'thumbnail-small', 120, 80, false);
 
 add_action( 'init', function() {
     
+    register_post_type( 'hackers',
+        array(
+            'labels' => array(
+                'name' => 'FoG hackers',
+                'singular_name' => 'FoG hacker',
+                'add_new' => 'Add New',
+                'add_new_item' => 'Add New FoG hacker',
+                'edit' => 'Edit',
+                'edit_item' => 'Edit',
+                'new_item' => 'New FoG hacker',
+                'view' => 'View',
+                'view_item' => 'View FoG Hhacker',
+                'search_items' => 'Search FoG hackers',
+                'not_found' => 'No FoG hackers found',
+                'not_found_in_trash' => 'No FoG Hackers found in Trash',
+                'parent' => 'Parent FoG hackers',
+            ),
+            'public' => false,
+            'show_ui' => true,
+            'exclude_from_search' => true,
+            'supports' => array(
+                'title', 'editor', 'thumbnail', 'excerpt', 'revisions', 'author'
+            ),
+            'rewrite' => true
+        )
+    );
+
     register_post_type( 'banners',
         array(
             'labels' => array(
@@ -106,9 +178,6 @@ add_action( 'init', function() {
     
 });
 
-
-
-
 /* 
  * Applications Quick Links
  */
@@ -126,7 +195,6 @@ $applications_quick_links = array(
     'support'       => __('Support'),
     'translate'     => __('Translate'),
 );
-
 
 /*
  * Custom edit area in Applications
@@ -335,3 +403,72 @@ function special_nav_class($classes, $item){
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 
 
+
+/*
+ * Theme settings menu
+ */
+
+function theme_settings_page() {
+?>
+    <div class="wrap">
+    <h2>Theme Settings</h2>
+    <p>Theme settings for various pages.</p>
+    <form method="post" action="options.php">
+        <?php
+            settings_fields("section");
+            do_settings_sections("theme-options");
+            submit_button();
+        ?>
+    </form>
+    </div>
+<?php
+}
+
+function add_theme_menu_item() {
+    add_menu_page("Theme Panel", "Theme Settings", "manage_options", "theme-panel", "theme_settings_page", null, 99);
+}
+
+function show_year() {
+?>
+    <input type="text" class="regular-text" name="support_year" id="support_year" value="<?php echo get_option('support_year'); ?>" />
+    <p>The year of the hackfests.</p>
+<?php
+}
+
+function show_contributors() {
+?>
+    <input type="text" class="regular-text" name="support_contributors" id="support_contributors" value="<?php echo get_option('support_contributors'); ?>" />
+    <p>Enter the number of sponsored contributors.</p>
+<?php
+}
+
+function show_hackfests() {
+?>
+    <input type="text" class="regular-text" name="support_hackfests" id="support_hackfests" value="<?php echo get_option('support_hackfests'); ?>" />
+    <p>Enter the number of sponsored hackfests.</p>
+<?php
+}
+
+function show_screenshot() {
+?>
+    <input type="text" class="regular-text" name="homepage_screenshot" id="homepage_screenshot" value="<?php echo get_option('homepage_screenshot'); ?>" />
+<?php
+}
+
+
+function display_theme_panel_fields() {
+	add_settings_section("section", null, null, "theme-options");
+
+    add_settings_field("homepage_screenshot", "Release screenshot (URL)", "show_screenshot", "theme-options", "section");
+	add_settings_field("support_year", "Year", "show_year", "theme-options", "section");
+    add_settings_field("support_contributors", "Contributors", "show_contributors", "theme-options", "section");
+    add_settings_field("support_hackfests", "Hackfests", "show_hackfests", "theme-options", "section");
+
+    register_setting("section", "homepage_screenshot");
+    register_setting("section", "support_year");
+    register_setting("section", "support_contributors");
+    register_setting("section", "support_hackfests");
+}
+
+add_action("admin_init", "display_theme_panel_fields");
+add_action("admin_menu", "add_theme_menu_item");
