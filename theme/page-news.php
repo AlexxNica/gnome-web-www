@@ -16,7 +16,7 @@ $is_news_home = true;
 /*
  * Add link to global feeds instead of current page comments
  */
-automatic_feed_links(false);
+add_theme_support( 'automatic-feed-links');
 add_action('wp_head', function() {
    echo '<link rel="alternate" type="application/rss+xml" title="'.get_bloginfo('name').' &raquo; Feed" href="'.home_url('/').'feed/" />'; 
 });
@@ -68,9 +68,7 @@ require_once("header.php"); ?>
             </div>
             
             <div class="sidebar col-md-3">
-                
                 <?php require_once("news_sidebar.php");?>
-                
             </div>
             <?php require_once("footer_art.php"); ?>
         </div>

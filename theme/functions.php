@@ -47,28 +47,42 @@ add_image_size( 'fog-hacker-icon', 80, 80, true );
 /*
  * Enqueue scripts and styles.
  */
+ 
+function friends_common_resources() {
+        wp_enqueue_script( 'friends-js', get_template_directory_uri() . '/js/friends.js', false, null, true);
+        wp_enqueue_style('friends-style', get_template_directory_uri() . '/css/friends20.css', array('bootstrap'), null, false);
+}
 
 function gnomegrass_resources() {
 
+    // Common scripts
     wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), null, true);
     wp_enqueue_script( 'template', get_template_directory_uri() . '/js/template.js', array('jquery'), null, true);
     wp_enqueue_script( 'responsive-menu', get_template_directory_uri() . '/js/responsive.js', array('jquery'), null, true);
 
+    // Common stylesheets
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
     wp_enqueue_style('style', get_stylesheet_uri());
     wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
 
     // Scripts and styles for page-friends-of-gnome and page-donate
-    if (is_page('friends-of-gnome') || is_page('donate')){
-        wp_enqueue_script( 'friends-js', get_template_directory_uri() . '/js/friends.js', false, null, true);
-        wp_enqueue_style('friends-style', get_template_directory_uri() . '/css/friends20.css', array('bootstrap'), null, false);
+    if (is_page('friends-of-gnome') || is_page('donate')) {
+        friends_common_resources();
     }
+    
+    // Scripts and styles for page-thank-you
+    if (is_page('thank-you')) {
+        friends_common_resources();
+        wp_enqueue_script( 'clipboard', get_template_directory_uri() . '/js/clipboard.min.js', array('jquery'), null, true);
+    }
+    
     // Scripts and styles for page-support-us
-    if (is_page('support-us')){
+    if (is_page('support-us')) {
         wp_enqueue_style('friends-style', get_template_directory_uri() . '/css/friends20.css', array('bootstrap'), null, false);
     }
+    
     // Scripts and styles for page-home
-    if (is_page('home')){
+    if (is_page('home')) {
         wp_enqueue_style('friends-style', get_template_directory_uri() . '/css/home.css', array('bootstrap'), null, false);
         wp_enqueue_style('friends-style', get_template_directory_uri() . '/css/news.css', array('bootstrap'), null, false);
     }
@@ -472,3 +486,21 @@ function display_theme_panel_fields() {
 
 add_action("admin_init", "display_theme_panel_fields");
 add_action("admin_menu", "add_theme_menu_item");
+
+add_action( 'admin_head', 'replace_default_featured_image_meta_box', 100 );
+function replace_default_featured_image_meta_box() {
+    add_meta_box('postimagediv', __('FoG Hacker Image'), 'post_thumbnail_meta_box', 'hackers', 'side', 'high');
+    add_meta_box('postexcerpt', __('FoG Hacker Description'), 'post_excerpt_meta_box', 'hackers', 'normal', 'high');
+    
+    remove_meta_box( 'postimagediv', 'my-post-type-here', 'side' );
+    remove_meta_box( 'postexcerpt', 'post', 'side' );
+}
+
+
+
+add_action( 'after_setup_theme', 'wpt_setup' );
+    if ( ! function_exists( 'wpt_setup' ) ):
+        function wpt_setup() {  
+            register_nav_menu( 'primary', __( 'Primary navigation', 'grass' ) );
+        } endif;
+

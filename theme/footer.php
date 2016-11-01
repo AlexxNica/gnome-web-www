@@ -6,7 +6,7 @@
         </div>
 
         <div class="container">
-            <div class="links col-sm-12 col-md-9">
+            <div class="links col-sm-9 col-md-9">
                 <?php
                 wp_nav_menu('menu=footer');
                 ?>
@@ -32,7 +32,7 @@
             }
             ?>
             
-            <div class="icons col-sm-8 col-md-3">
+            <div class="icons col-sm-3">
 	    	  <?php require_once("social_icons.php"); ?>
             </div>
 	    </div>

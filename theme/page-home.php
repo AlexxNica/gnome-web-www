@@ -18,7 +18,7 @@ require_once("header.php"); ?>
     <div id="home">
     <div id="home-crafted-content" class="row">
             <div class="col-sm-12 col-md-6">
-                <a href="<?php echo $screenshot ?>"><img src="<?php echo $screenshot ?>" alt="release screenshost"></a>
+                <a href="<?php echo $screenshot ?>"><img src="<?php echo $screenshot ?>" class="img-responsive" alt="release screenshost"></a>
             </div>
             <div class="text col-sm-12 col-md-6">
                 <h3>GNOME 3: Ease, comfort and control</h3>

@@ -11,7 +11,7 @@ require_once("header.php"); ?>
             
 			<div class="content">
 				<div class="grid_12">
-					<img class="img-responsive" src="<?php bloginfo('stylesheet_directory'); ?>/images/donations/friends-banner.png" alt="">
+					<img class="img-responsive center-block" src="<?php bloginfo('stylesheet_directory'); ?>/images/donations/friends-banner.png" alt="">
 					<p><?php _e( "Joining Friends of GNOME is the best way to support GNOME. Regular monthly subscriptions provide us with predictable income that we can use to keep the GNOME Foundation's lights on.", 'grass' ); ?></p>
 				</div>
 
@@ -43,7 +43,7 @@ require_once("header.php"); ?>
 
 				<div class="col-md-12">
 					<h3><?php _e( 'Monthly subscription amount', 'grass'); ?></h3>
-						<div class="form-group">
+                        <div class="form-group">
                             <div class="col-sm-2">
                                 <label class="control-label"><?php _e( 'Currency', 'grass' ); ?></label>
                             </div>
@@ -125,7 +125,7 @@ require_once("header.php"); ?>
 							<label>
 								<input type="hidden" name="os2" id="list_donor" value="No" />
 								<input name="os2" id="list_donor" type="checkbox" value="Yes" checked /> <?php _e( 'Include me on the list of donors', 'grass' ); ?>
-								<input type="hidden" name="on2" value="List me on the donors page" />
+                                <input type="hidden" name="on2" value="List me on the donors page" />
 							</label>
                             </div>
                             <div class="checkbox col-md-12">

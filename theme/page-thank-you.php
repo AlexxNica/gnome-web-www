@@ -1,11 +1,5 @@
 <?php
 
-add_action('wp_head', function() {
-    echo '<link rel="stylesheet" type="text/css" media="all" href="'.get_bloginfo('template_url').'/css/friends20.css" />' . "\n";
-    echo '<script type="text/javascript" src="'.get_bloginfo('template_url').'/js/friends.js"></script>' . "\n";
-    echo '<script type="text/javascript" src="'.get_bloginfo('template_url').'/js/clipboard.min.js"></script>' . "\n";
-});
-
 require_once("header.php"); ?>
 
 	<!-- container -->
@@ -17,7 +11,7 @@ require_once("header.php"); ?>
             
 			<div class="content">
 				<div class="col-md-12 text-center">
-					<img class="img-responsive" src="<?php bloginfo('stylesheet_directory'); ?>/images/donations/thankyou-banner.png" alt="">
+					<img class="img-responsive center-block" src="<?php bloginfo('stylesheet_directory'); ?>/images/donations/thankyou-banner.png" alt="">
 					<div class="main_feature">
                 		<p><?php _e( 'Thank you for supporting GNOME and our mission to give everyone access to Free Software.', 'grass' ); ?></p>
             		</div>

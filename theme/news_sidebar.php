@@ -6,32 +6,7 @@
     <h4><?php _e('Connect with GNOME', 'grass'); ?></h4>
     
     <div class="social_network_icons">
-        <ul>
-            <li>
-                <a href="http://identi.ca/gnome">
-                    <img src="<?php bloginfo('template_url')?>/images/social_networks/identica.png" alt=" " />
-                    Identi.ca
-                </a>
-            </li>
-            <li>
-                <a href="http://twitter.com/gnome">
-                    <img src="<?php bloginfo('template_url')?>/images/social_networks/twitter.png" alt=" " />
-                    Twitter
-                </a>
-            </li>
-            <li>
-                <a href="http://www.facebook.com/GNOMEDesktop">
-                    <img src="<?php bloginfo('template_url')?>/images/social_networks/facebook.png" alt=" " />
-                    Facebook
-                </a>
-            </li>
-            <li>
-                <a href="https://plus.google.com/108054458791366257368/posts">
-                    <img src="<?php bloginfo('template_url')?>/images/social_networks/gplus.png" alt="GNOME on Google+" rel="publisher" />
-                    Google+
-                </a>
-            </li>
-        </ul>
+        <?php require("social_icons.php");?>
     </div>
 </div>
     
