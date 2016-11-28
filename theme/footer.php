@@ -41,7 +41,7 @@
                 <small>
                     <?php _e( 'Free to share and remix', 'grass' ); ?>: <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons CC-BY</a>.
                     <?php _e( 'Optimized for standards', 'grass' ); ?>.
-                    <?php _e( 'Hosted by', 'grass' ); ?> <a href="http://www.canonical.com/">Canonical</a>.
+                    <?php _e( 'Hosted by', 'grass' ); ?> <a href="http://www.redhat.com/">Red Hat</a>.
                     <?php _e( 'Powered by', 'grass' ); ?> <a href="http://www.wordpress.org">WordPress</a>.
                 </small>
             </div>
