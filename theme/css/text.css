@@ -75,6 +75,9 @@ code {
     background: rgba(0,0,0,0.1);
     padding: 1px;
 }
+a {
+  text-decoration: underline;
+}
 
 
 /* Text classes */

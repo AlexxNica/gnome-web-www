@@ -22,29 +22,30 @@
   cursor: pointer;
 }
 
-.boxes-container div {
-    margin: 6px;
-    height: 180px;
-    width: 190px;
+.boxes-container {
+    padding-bottom: 20px;
+}
+
+.boxes {
+    text-align: center;
     background-color: #f0f0f0;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: inline-block;
+    cursor: pointer;
 }
 
-.boxes-container :hover{
+.boxes:hover {
+    background-color: #f5f5f5;
+}
+
+.boxes p:nth-child(2) {
+    color: gray;
+}
+
+.boxes.active {
     background-color: #4A90D9;
-    color: #fff;
 }
 
-.boxes-container .active{
-    background-color: #4A90D9;
+.boxes.active p {
     color: #fff;
-}
-
-.boxes-container p {
-    padding: 8px;
 }
 
 
@@ -157,7 +158,6 @@ div.wrapper {
 }
 
 #foundation-info {
-
   padding: 10px;
   width: 650px;
 }
@@ -172,46 +172,42 @@ small {
  */
  
 #support-gnome .title {
+    text-align: left;
     font-size: 13pt;
     font-weight: 600;
     color: #919191;
 }
 
-#support-gnome .text {
-    display: block;
-    position: relative;
-    top: 11px;
-    right: 20px;
+#support-gnome .article {
+    padding-bottom: 20px;
+    line-height: 15pt;
 }
 
-#support-gnome .article {
-   margin-bottom: 10px;
-   padding-bottom: 10px;
+#support-gnome .article img {
+    margin-right: 10px;
 }
 
 /*
  * Miscellaneous
  */
  
-.validation-msg{
+.validation-msg {
     background:#f2f2f2;
     padding:8px;
 }
 
 .form-horizontal .control-label {
-    width: 120px;
-    text-align: left;
-    color: #8c5f93;
+    color: #3465A4;
     font-weight: 600;
 }
 
-.form-horizontal .controls {
-    margin-left: 90px;
+/* Give hackers some space */
+.fog-hackers {
+    margin-bottom: 20px;
 }
 
-/* Give hackers some space */
-#fog-hackers {
-    margin-bottom: 20px;
+.fog-banner {
+    padding-bottom: 20px;
 }
 
 /* Customize select button for Bitcoin donations */
@@ -226,6 +222,10 @@ select {
     -moz-appearance: none;
     appearance: none;
     background: url(../images/asc.png) 80% / 11% no-repeat #eee;
+}
+
+.text {
+    color: gray;
 }
 
 /* 
@@ -244,14 +244,4 @@ select {
     width: 50px;
     font-size: 25px;
     text-align: center;
-}
-
-/*
- * Responsive Media Queries for the FoG pages
- */
-
-@media (min-width: 767px) and (max-width: 979px){
-	#support-gnome .text {
-		position: inherit;
-	}
 }

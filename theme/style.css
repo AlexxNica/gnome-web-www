@@ -36,21 +36,6 @@ a:visited {
 .hidden {
     display: none;
 }
-.maxwidth {
-    max-width: 920px;
-    width: auto;
-    margin: 0 auto;
-}
-.sanewidth {
-    width: 780px;
-    margin: 0 auto;
-}
-.alpha {
-    margin-left: 0;
-}
-.omega {
-    margin-right: 0;
-}
 .center-text {
     text-align: center;
 }
@@ -402,7 +387,7 @@ a:visited {
     text-shadow: 0 1px 0 #fff;
     line-height: normal;
     letter-spacing: -0.05em;
-    color: #8c5f93;
+    color: #0489B7;
 }
 .page_title h1 a {
     text-decoration: none;
@@ -891,6 +876,7 @@ dl.icon_list dt img {
 .action_button:hover {
     background-position: top;
     color: #000;
+    text-decoration: none;
 }
 .action_button:visited {
     color: inherit;

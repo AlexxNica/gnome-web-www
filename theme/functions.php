@@ -18,7 +18,7 @@ load_theme_textdomain( 'grass', get_template_directory().'/languages' );
  */
 
 add_theme_support('menus');
-add_theme_support( 'post-thumbnails');
+add_theme_support('post-thumbnails');
 
 /*
  * Set default banner size
@@ -118,7 +118,7 @@ add_action( 'init', function() {
             'show_ui' => true,
             'exclude_from_search' => true,
             'supports' => array(
-                'title', 'editor', 'thumbnail', 'excerpt', 'revisions', 'author'
+                'title', 'thumbnail', 'excerpt', 'revisions', 'author'
             ),
             'rewrite' => true
         )
@@ -496,11 +496,17 @@ function replace_default_featured_image_meta_box() {
     remove_meta_box( 'postexcerpt', 'post', 'side' );
 }
 
+/*
+ * Add reStructuredText to upload mimetypes
+ * Fixes BZ #687843
+ */
 
+add_filter('upload_mimes', 'custom_mimes_types');
 
-add_action( 'after_setup_theme', 'wpt_setup' );
-    if ( ! function_exists( 'wpt_setup' ) ):
-        function wpt_setup() {  
-            register_nav_menu( 'primary', __( 'Primary navigation', 'grass' ) );
-        } endif;
+function custom_mimes_types ($existing_mimes) {
 
+    // Add file extension 'extension' with mime type 'mime/type'
+    $existing_mimes['rst'] = 'text/restructured';
+
+    return $existing_mimes;
+}

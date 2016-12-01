@@ -20,50 +20,50 @@ require_once("header.php"); ?>
 			<div class="clearfix"></div>
 
 			<div id="support-gnome" class="content">
-				<p><?php _e( 'Amount', 'grass' ); ?>Donations are essential to the everyday operations of the GNOME project. Without them, we wouldn't be able to carry on our work, to produce a Free Software alternative that works in the interests of everyone.</p>
+				<p><?php _e( "Donations are essential to the everyday operations of the GNOME project. Without them, we wouldn't be able to carry on our work, to produce a Free Software alternative that works in the interests of everyone.", 'grass' ); ?></p>
 
 				<div class="row" style="padding-bottom: 25px;">
-					<div class="col-sm-5">
-						<a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/donations/friends-of-gnome.png" alt=""></a>
+					<div class="col-xs-12 col-sm-5 col-md-4">
+						<a href="#"><img class="img-responsive" src="<?php bloginfo('stylesheet_directory'); ?>/images/donations/friends-of-gnome.png" alt=""></a>
 					</div>
-					<div class="col-sm-7 text">
-						<h3><?php _e( 'Friends of GNOME', 'grass' ); ?></h3>
+					<div class="col-xs-12 col-sm-7 col-md-8">
+						<h2><?php _e( 'Friends of GNOME', 'grass' ); ?></h2>
 						<p><?php _e( 'Becoming a Friend of GNOME is one of the best ways to support the GNOME project. By paying a monthly subscription, you can provide a predictable income for the GNOME Foundation. Friends receive a thank you post card from a GNOME hacker and have the option of a free LWN subscription.', 'grass' ); ?></p>
 						<div class="links">
-							<p><a class="btn btn-success" role="button" href="friends-of-gnome"><?php _e( 'Become a Friend of GNOME', 'grass' ); ?></a></p>
+							<p><a class="btn btn-success" href="friends-of-gnome"><?php _e( 'Become a Friend of GNOME', 'grass' ); ?></a></p>
 							<p><a href="previous-donors"><?php _e( 'View the list of donors', 'grass' ); ?></a></p>
 						</div>
 					</div>
 				</div>
 				<h3><?php _e( 'What donations pay for', 'grass' ); ?></h3>
-				<br>
-				<div class="row article">
-					<div class="col-sm-3">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/donations/hackfests.png" alt="">
-					</div>
-					<div class="col-sm-8 text">
-						<header class="title"><?php _e( 'Hackfests', 'grass' ); ?></header>
+                <br>
+                <div class="row article clearfix">
+					<div class="col-sm-12">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/donations/hackfests.png" class="pull-left" alt="">
+                        <div class="col-sm-8">
+						<p class="title"><?php _e( 'Hackfests', 'grass' ); ?></p>
 						<?php _e( 'Hackfests are events where contributors get together to work and plan for the future. They are essential to how the GNOME project works.', 'grass' ); ?>
 						<p>In <?php echo $year ?>, we sponsored <?php echo $contributors ?> contributors to attend <?php echo $hackfests ?> hackfests, thanks to donations.</p>
-					</div>
+                        </div>
+                    </div>
 				</div>
-				<div class="row article">
-					<div class="col-sm-3">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/donations/infrastructure.png" alt="">
-					</div>
-					<div class="col-sm-8 text">
-						<header class="title"><?php _e( 'Infrastructure', 'grass' ); ?></header>
+				<div class="row article clearfix">
+					<div class="col-md-12">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/donations/infrastructure.png" class="pull-left" alt="">
+						<div class="col-sm-8">
+                        <p class="title"><?php _e( 'Infrastructure', 'grass' ); ?></p>
 						<?php _e( "GNOME could not operate without its development infrastructure. We wouldn't be able to keep it operating without donations.", 'grass' ); ?>
-					</div>
+                        </div>
+                    </div>
 				</div>
-				<div class="row article">
-					<div class="col-sm-3">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/donations/outreach.png" alt="">
-					</div>
-					<div class="col-sm-8 text">
-						<header class="title"><?php _e( 'Outreach', 'grass' ); ?></header>
+				<div class="row article clearfix">
+					<div class="col-md-12">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/donations/outreach.png" class="pull-left" alt="">
+						<div class="col-sm-8">
+                        <p class="title"><?php _e( 'Outreach', 'grass' ); ?></p>
 						<?php _e( 'Reaching out to new users and contributors is an important part of what GNOME does. Donations enable us to organize outreach events and have presence at major conferences.', 'grass' ); ?>
-					</div>
+                        </div>
+                    </div>
 				</div>
 
 				<h3><?php _e( 'Other ways to support us', 'grass' ); ?></h3>

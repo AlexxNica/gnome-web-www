@@ -55,7 +55,7 @@ if (function_exists('wppo_get_lang')) {
 -->
 <!-- global gnome.org domain bar -->
 <div id="global_domain_bar">
-    <div class="maxwidth">
+    <div class="maxwidth container">
         <div class="tab">
             <a class="root" href="http://www.gnome.org/">GNOME.org</a>
         </div>

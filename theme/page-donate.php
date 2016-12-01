@@ -22,27 +22,34 @@ function matching_donation_text() {
 				<?php endwhile; // End the loop. Whew. ?>
 				
 				<div class="clearfix"></div>
-				
-				<div class="boxes-container text-center">
-					<div class="boxes active" target="1">
-						<p class="main_feature">PayPal</p>
-						<p class="text"><?php _e( 'Tax deductible in the United States', 'grass' ); ?></p>
-					</div>
-					<div class="boxes" target="2">
-						<p class="main_feature"><?php _e( 'Bank Transfer', 'grass' ); ?></p>
-						<p class="text"><?php _e( 'For EU bank account holders only; tax deductible', 'grass' ); ?></p>
-					</div>
-					<div class="boxes" target="3">
-						<p class="main_feature"><?php _e( 'Check', 'grass' ); ?></p>
-						<p class="text"><?php _e( 'Available to United States bank account holders; tax deductible', 'grass' ); ?></p>
-					</div>
-					<div class="boxes" target="4">
-						<p class="main_feature">Bitcoin</p>
-						<p class="text"></p>
-					</div>
+                
+				<div class="boxes-container row equalizer">
+                    <div class="col-sm-3">
+                        <div class="boxes active col-sm-12" target="1">
+                            <p class="main_feature">PayPal</p>
+                            <p><?php _e( 'Tax deductible in the United States', 'grass' ); ?></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="boxes col-sm-12" target="2">
+                            <p class="main_feature"><?php _e( 'Bank Transfer', 'grass' ); ?></p>
+                            <p><?php _e( 'For EU bank account holders only; tax deductible', 'grass' ); ?></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="boxes col-sm-12" target="3">
+                            <p class="main_feature"><?php _e( 'Check', 'grass' ); ?></p>
+                            <p><?php _e( 'Available to United States bank account holders; tax deductible', 'grass' ); ?></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="boxes col-sm-12" target="4">
+                            <p class="main_feature">Bitcoin</p>
+                        </div>
+                    </div>
 				</div>
 
-				<div id="boxes-content" class="col-sm-12">
+				<div id="boxes-content" class="col-sm-12 no-padding">
 					<!-- PayPal -->
 					<div id="box1" class="boxes-content" >
 						<p><?php _e( 'The GNOME Foundation is a non-profit organization, and donations made by Paypal are tax deductible in the United States. Contact your tax office for more information and to find out if you qualify.', 'grass' ); ?></p>
@@ -53,12 +60,12 @@ function matching_donation_text() {
 							<input type="hidden" name="return" value="https://www.gnome.org/thank-you/" />
 							<input type="hidden" name="item_name" value="Friends of GNOME - One time donation" />
 							<input type="hidden" name="notify_url" value="https://muelli.cryptobitch.de/paypaltest/ipnhandler.php" /> 
-									
+
 							<div class="form-group">
-                                <div class="col-sm-2">
+                                <div class="col-sm-2 col-md-1">
                                     <label class="control-label"><?php _e( 'Currency', 'grass' ); ?></label>
                                 </div>            
-                                <div class="col-sm-10">
+                                <div class="col-sm-10 col-md-11">
 									<label class="radio-inline">
 										<input type="radio" name="os0" value="USD" id="cur-usd" onClick="document.getElementById('cur').value=this.value" checked="checked"/>$ USD
 									</label>
@@ -69,15 +76,16 @@ function matching_donation_text() {
                                 </div>
 							</div>
 							<div class="form-group">
-                                <div class="col-sm-2">
+                                <div class="col-sm-2 col-md-1">
                                     <label class="control-label"><?php _e( 'Amount', 'grass' ); ?></label>
                                 </div>
-                                <div class="col-sm-10">
+                                <div class="col-sm-10 col-md-11 no-padding">
 									<input type="hidden" name="cmd" value="_xclick" />
 									<input type="text" disabled class="currency" placeholder="$" style="background: #fff; border: 0; width: 10px;"/>
 									<input id="amount-paypal" style="width: 65px;" type="tel" name="amount" size="5" value="25" required /> <br>
                                 </div>
 							</div>
+
                             <div class="form-group">
                                 <div class="checkbox col-sm-10">
                                     <label>
@@ -87,6 +95,7 @@ function matching_donation_text() {
                                     </label>
                                 </div>
                             </div>
+                            <br>
 							<div class="form-group">
                                 <div class="col-sm-12">
 									<button type="submit" class="btn btn-success" name="submit"><?php _e( 'Donate', 'grass' ); ?></button>
@@ -173,7 +182,8 @@ function matching_donation_text() {
 							</div>
 
 							<input type="hidden" name="data" value="nZRF5Hm4nQGR1KC5Teo6TKlb70jK8EHVcreK7DFO6yMJSbIPTqK0XcB/Et62OHNuPy5dIcrZWQN2GKC1HU7L4zOqX9jwoBIKwlrVorwfnMlCWbL1YynaGevJjggRZQu4THkqvYaCQ7GFtSOjtLXcgZNUeD0m0q3Z/y/5iLFCqdGgiR8WMzb3H9sjPPtSTfSrMkdSnBCzdMJVfOUgkAWK2vppfBJDjNlAGDrJB820w0qU6+2B9kM0v8UUGZ7IrZrDM9hoFgKUpsAfL2PyDfF93L8siKwV2F0HnpXE8WqeiOu/Zi1W6K7Ev9NnNxkVcNaelEHoPaxSfiLBhTaCg5i7eg==" />
-							<div style="margin: auto; width: 100%;">
+							<br>
+                            <div style="margin: auto; width: 100%;">
 								<button type="submit" class="btn btn-success" name="submit"><?php _e( 'Donate', 'grass' ); ?></button>
 							</div>
 							</fieldset>

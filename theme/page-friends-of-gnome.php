@@ -10,10 +10,12 @@ require_once("header.php"); ?>
             </div>
             
 			<div class="content">
-				<div class="grid_12">
-					<img class="img-responsive center-block" src="<?php bloginfo('stylesheet_directory'); ?>/images/donations/friends-banner.png" alt="">
-					<p><?php _e( "Joining Friends of GNOME is the best way to support GNOME. Regular monthly subscriptions provide us with predictable income that we can use to keep the GNOME Foundation's lights on.", 'grass' ); ?></p>
-				</div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img class="img-responsive center-block fog-banner" src="<?php bloginfo('stylesheet_directory'); ?>/images/donations/friends-banner.png" alt="">
+                        <p><?php _e( "Joining Friends of GNOME is the best way to support GNOME. Regular monthly subscriptions provide us with predictable income that we can use to keep the GNOME Foundation's lights on.", 'grass' ); ?></p>
+                    </div>
+                </div>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php the_content(); ?>
@@ -21,6 +23,7 @@ require_once("header.php"); ?>
 
 				<div class="clearfix"></div>
 
+                <div class="row">
 				<form id="donate_form" class="form-horizontal" action="https://www.paypal.com/cgi-bin/webscr" method="post" name="application_form">
 					<input type="hidden" name="business" value="friends@gnome.org" />
 					<input type="hidden" name="return" value="http://www.gnome.org/thank-you/" />
@@ -44,10 +47,10 @@ require_once("header.php"); ?>
 				<div class="col-md-12">
 					<h3><?php _e( 'Monthly subscription amount', 'grass'); ?></h3>
                         <div class="form-group">
-                            <div class="col-sm-2">
+                            <div class="col-sm-2 col-md-1">
                                 <label class="control-label"><?php _e( 'Currency', 'grass' ); ?></label>
                             </div>
-                            <div class="col-sm-10">
+                            <div class="col-sm-10 col-md-11">
 								<label class="radio-inline">
 									<input type="radio" name="os0" value="USD" id="cur-usd" onClick="document.getElementById('cur').value=this.value" checked="checked"/>$ USD
 								</label>
@@ -59,24 +62,24 @@ require_once("header.php"); ?>
 						</div>
 
 						<div class="form-group">
-                            <div class="col-sm-2">
+                            <div class="col-sm-2 col-md-1">
                                 <label class="control-label" for="amount"><?php _e( 'Amount', 'grass' ); ?></label>
                             </div>
-							<div class="col-sm-10">
-                                <div class="col-md-2" style="margin: 0px 0px 15px;">
+							<div class="col-sm-10 col-md-11 no-padding">
+                                <div class="col-sm-3 col-md-2 no-padding">
 								<input type="hidden" name="cmd" value="_xclick-subscriptions" />
 								<input type="text" disabled class="currency" placeholder="$" style="background: #fff; border: 0; width: 10px;"/>
 								<input id="amount" type="tel" style="width: 65px;" name="a3" size="5" value="25" required />
                                 </div>
-								<div id="validation-msg" class="help-inline col-md-8"></div>
+								<div id="validation-msg" class="help-inline col-sm-7 col-md-8"></div>
 							</div>
 						</div>
 
 						<p style="color: gray;">Regular donations can only be made through PayPal. Subscription payments will continue until you contact the GNOME Foundation to cancel the payments. For other ways to pay, see <a href="#">donate to GNOME</a></p>
-
-						<h3><?php _e( 'Adopt a hacker!', 'grass' ); ?></h3>
+                        <div class="col-sm-12 no-padding">
+                        <h3><?php _e( 'Adopt a hacker!', 'grass' ); ?></h3>
 						<p><?php _e( 'Select which of our dedicated hackers you would like to receive a thank you post card from.', 'grass' ); ?></p>
-						
+						</div>
                         <!-- Show the hackers -->
 						<div class="control-group">
                         <?php
@@ -86,10 +89,10 @@ require_once("header.php"); ?>
                         ?>
                             
                         <?php while ( have_posts() ) : the_post(); ?>
-                        <div id="fog-hackers" class="col-xs-10 col-sm-6">
+                        <div class="fog-hackers col-xs-10 col-sm-6">
                             <div class="media">
                                 <div class="pull-left" style="margin-top: 25px;">
-                                    <input class="radio" type="radio" name="os1" value="You will receive a postcard from <?php the_title(); ?>" required >
+                                    <input class="radio" type="radio" name="os1" value="You will receive a postcard from <?php the_title(); ?>" required checked >
                                 </div>
 
                                 <div class="media-left">
@@ -103,7 +106,7 @@ require_once("header.php"); ?>
                                 </div>
 
                                 <div class="media-body media-middle">
-                                    <p class="media-heading"><?php the_content(); ?></p>
+                                    <p class="media-heading"><?php the_title(); ?></p>
                                     <?php
                                         if (has_excerpt( $post->ID )) {
                                             the_excerpt();
@@ -136,11 +139,12 @@ require_once("header.php"); ?>
 							</label>
                             </div>
 						</div>            
-
+                        <br>
 						<!-- Display the payment button. -->
 						<button id="subscription-btn" class="btn btn-success" type="submit" name="submit"><?php _e( 'Subscribe', 'grass' ); ?></button>
 				</div>
 				</form>
+                </div>
 			</div> <!-- END content -->
 <?php require_once("footer_art.php"); ?>
 		</div> <!-- END .container -->
