@@ -23,14 +23,24 @@
 
 /* Make equal height columns */
 
-@media screen and (min-width: 768px) {
-    .equalizer, .equalizer > div[class*='col-'] {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
+.equalizer,
+.equalizer > div[class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 767px) {
+    .boxes {
+        margin: 15px 0;
     }
 }
+
 
 /*--------------General------------------------*/
 @media(max-width: 767px) {

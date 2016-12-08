@@ -24,26 +24,26 @@ function matching_donation_text() {
 				<div class="clearfix"></div>
                 
 				<div class="boxes-container row equalizer">
-                    <div class="col-sm-3">
-                        <div class="boxes active col-sm-12" target="1">
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="boxes active col-xs-12" target="1">
                             <p class="main_feature">PayPal</p>
                             <p><?php _e( 'Tax deductible in the United States', 'grass' ); ?></p>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="boxes col-sm-12" target="2">
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="boxes col-xs-12" target="2">
                             <p class="main_feature"><?php _e( 'Bank Transfer', 'grass' ); ?></p>
                             <p><?php _e( 'For EU bank account holders only; tax deductible', 'grass' ); ?></p>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="boxes col-sm-12" target="3">
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="boxes col-xs-12" target="3">
                             <p class="main_feature"><?php _e( 'Check', 'grass' ); ?></p>
                             <p><?php _e( 'Available to United States bank account holders; tax deductible', 'grass' ); ?></p>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="boxes col-sm-12" target="4">
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="boxes col-xs-12" target="4">
                             <p class="main_feature">Bitcoin</p>
                         </div>
                     </div>
