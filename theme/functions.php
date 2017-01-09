@@ -80,7 +80,6 @@ function gnomegrass_resources() {
     // Common scripts
     wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), null, true);
     wp_enqueue_script( 'template', get_template_directory_uri() . '/js/template.js', array('jquery'), null, true);
-    wp_enqueue_script( 'responsive-menu', get_template_directory_uri() . '/js/responsive.js', array('jquery'), null, true);
 
     // Common stylesheets
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
