@@ -3,9 +3,9 @@ Theme Name: GNOME Grass
 Theme URI: http://gnome.org/
 Author: Vinicius Depizzol <vdepizzol@gmail.com>
 Description: The original theme for the GNOME Project website.
-
+Version: 2.0.0
+Text Domain: grass
 */
-@import url("css/reset.css");
 @import url("css/text.css");
 @import url("css/responsive.css");
 
