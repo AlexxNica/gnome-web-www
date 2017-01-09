@@ -3,15 +3,15 @@
  * @package GNOME Website
  * @subpackage Grass Theme
  */
+?>
 
-require_once("header.php"); ?>
+<?php get_header(); ?>
 
     <!-- container -->
-    <div id="container" class="two_columns">
-        <div class="container">
-        
+    <div class="container two_columns">
+        <div class="col-xs-12">
             <?php require_once('inc/page-title.php'); ?>
-            
+
             <div class="content col-md-9">
             <?php while ( have_posts() ) : the_post(); ?>
                 <?php the_content(); ?>
@@ -52,12 +52,9 @@ require_once("header.php"); ?>
                 </ul>
                 <?php } ?>            
             </div>
-            <?php require_once("footer_art.php"); ?>
         </div>
     </div>
-    
+
     <div class="clearfix"></div>
     
-    <?php require_once("footer.php"); ?>
-</body>
-</html>
+<?php get_footer(); ?>

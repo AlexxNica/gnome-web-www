@@ -64,9 +64,9 @@ if (array_key_exists('submit', $_POST)) {
 }
 
 ?>
-<?php require_once("header.php"); ?>
+<?php get_header(); ?>
 <!-- container -->
-<div id="container" class="two_columns">
+<div id="foundation" class="two_columns">
     <div class="container">
 
      <div class="page_title">
@@ -184,13 +184,9 @@ if (array_key_exists('submit', $_POST)) {
 <br />
 <div class="clear"></div>
 </div>
-
-<?php require_once("footer_art.php"); ?>
 </div>
 </div>
 
 <div class="clearfix"></div>
 
-<?php require_once("footer.php"); ?>
-</body>
-</html>
+<?php get_footer(); ?>

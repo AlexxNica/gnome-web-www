@@ -4,7 +4,7 @@
  * @subpackage Default_Theme
  */
  
-show_admin_bar(false);
+show_admin_bar(true);
 
 /*
  * Add support for theme translations.
@@ -13,23 +13,40 @@ show_admin_bar(false);
 
 load_theme_textdomain( 'grass', get_template_directory().'/languages' );
 
+// Add default posts and comments RSS feed links to head.
+add_theme_support('automatic-feed-links');
+
 /*
- * Add support for custom menus and posts thumbnails
+ * Let WordPress manage the document title.
+ *
+ * @link https://developer.wordpress.org/reference/functions/add_theme_support/#title-tag
  */
 
-add_theme_support('menus');
-add_theme_support('post-thumbnails');
+add_theme_support( 'title-tag' );
 
 /*
- * Set default banner size
+ * Switch default core markup for search form, comment form, and comments to output valid HTML5.
+ *
+ * @link https://developer.wordpress.org/reference/functions/add_theme_support/#html5
  */
  
-set_post_thumbnail_size(940, 280);
+add_theme_support('html5', array(
+    'search-form',
+    'comment-form',
+    'comment-list',
+    'gallery',
+    'caption',
+));
 
 /*
- * Media sizes for applications icons
+ * Enable support for Post Thumbnails on posts and pages.
+ *
+ * @link https://developer.wordpress.org/reference/functions/add_theme_support/#post-thumbnails
  */
 
+add_theme_support('post-thumbnails');
+
+// Media sizes for applications icons
 add_image_size( 'icon-big', 256, 256, true);
 add_image_size( 'icon-medium', 186, 186, true);
 add_image_size( 'icon-small', 64, 64, true);
@@ -38,19 +55,24 @@ add_image_size( 'image-crafted-content', 420, 263, true);
 add_image_size( 'thumbnail-big', 210, 210, false);
 add_image_size( 'thumbnail-small', 120, 80, false);
 
-/*
- * Media size for FoG Hacker icon
- */
-
+// Media size for FoG Hackers and Board Directors icons
 add_image_size( 'fog-hacker-icon', 80, 80, true );
 
 /*
- * Enqueue scripts and styles.
+ * Set default banner size
+ */
+
+set_post_thumbnail_size(940, 280);
+
+
+
+/*
+ * Enqueue scripts and styles
  */
  
 function friends_common_resources() {
         wp_enqueue_script( 'friends-js', get_template_directory_uri() . '/js/friends.js', false, null, true);
-        wp_enqueue_style('friends-style', get_template_directory_uri() . '/css/friends20.css', array('bootstrap'), null, false);
+        wp_enqueue_style('friends', get_template_directory_uri() . '/css/friends.css', array('bootstrap'), null, 'all');
 }
 
 function gnomegrass_resources() {
@@ -66,7 +88,7 @@ function gnomegrass_resources() {
     wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
 
     // Scripts and styles for page-friends-of-gnome and page-donate
-    if (is_page('friends-of-gnome') || is_page('donate')) {
+    if (is_page( array('friends', 'donate', 'support-us')) ) {
         friends_common_resources();
     }
     
@@ -78,13 +100,22 @@ function gnomegrass_resources() {
     
     // Scripts and styles for page-support-us
     if (is_page('support-us')) {
-        wp_enqueue_style('friends-style', get_template_directory_uri() . '/css/friends20.css', array('bootstrap'), null, false);
+        wp_enqueue_style('friends', get_template_directory_uri() . '/css/friends.css', array('bootstrap'), null, 'all');
     }
     
     // Scripts and styles for page-home
-    if (is_page('home')) {
-        wp_enqueue_style('friends-style', get_template_directory_uri() . '/css/home.css', array('bootstrap'), null, false);
-        wp_enqueue_style('friends-style', get_template_directory_uri() . '/css/news.css', array('bootstrap'), null, false);
+    if ( !is_home() || is_front_page() ) {
+        wp_enqueue_style('home', get_template_directory_uri() . '/css/home.css', array('bootstrap'), null, 'all');
+        wp_enqueue_style('news', get_template_directory_uri() . '/css/news.css', array('bootstrap'), null, 'all');
+    }
+
+    if (is_page( array('news', 'press') )) {
+        wp_enqueue_style('news', get_template_directory_uri() . '/css/news.css', array('bootstrap'), null, 'all');
+    }
+
+    global $post_type;
+    if( 'post' == $post_type ) {
+        wp_enqueue_style('news', get_template_directory_uri() . '/css/news.css', array('bootstrap'), null, 'all');
     }
 }
 add_action('wp_enqueue_scripts', 'gnomegrass_resources');
@@ -96,7 +127,6 @@ add_action('wp_enqueue_scripts', 'gnomegrass_resources');
  */
 
 add_action( 'init', function() {
-    
     register_post_type( 'hackers',
         array(
             'labels' => array(
@@ -118,7 +148,34 @@ add_action( 'init', function() {
             'show_ui' => true,
             'exclude_from_search' => true,
             'supports' => array(
-                'title', 'thumbnail', 'excerpt', 'revisions', 'author'
+                'title', 'thumbnail', 'excerpt', 'revisions', 'author', 'custom-fields'
+            ),
+            'rewrite' => true
+        )
+    );
+
+    register_post_type( 'directors',
+        array(
+            'labels' => array(
+                'name' => 'Board Directors',
+                'singular_name' => 'Board Director',
+                'add_new' => 'Add New',
+                'add_new_item' => 'Add New Director',
+                'edit' => 'Edit',
+                'edit_item' => 'Edit',
+                'new_item' => 'New Director',
+                'view' => 'View',
+                'view_item' => 'View Director',
+                'search_items' => 'Search Directors',
+                'not_found' => 'No Directors found',
+                'not_found_in_trash' => 'No Directors found in Trash',
+                'parent' => 'Parent Directors',
+            ),
+            'public' => false,
+            'show_ui' => true,
+            'exclude_from_search' => true,
+            'supports' => array(
+                'title', 'thumbnail','revisions', 'author'
             ),
             'rewrite' => true
         )
@@ -149,7 +206,7 @@ add_action( 'init', function() {
             'rewrite' => true
         )
     );
-    
+
     register_taxonomy(  
         'project_category',
         'projects',  
@@ -417,80 +474,10 @@ function special_nav_class($classes, $item){
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
 
 
-
-/*
- * Theme settings menu
- */
-
-function theme_settings_page() {
-?>
-    <div class="wrap">
-    <h2>Theme Settings</h2>
-    <p>Theme settings for various pages.</p>
-    <form method="post" action="options.php">
-        <?php
-            settings_fields("section");
-            do_settings_sections("theme-options");
-            submit_button();
-        ?>
-    </form>
-    </div>
-<?php
-}
-
-function add_theme_menu_item() {
-    add_menu_page("Theme Panel", "Theme Settings", "manage_options", "theme-panel", "theme_settings_page", null, 99);
-}
-
-function show_year() {
-?>
-    <input type="text" class="regular-text" name="support_year" id="support_year" value="<?php echo get_option('support_year'); ?>" />
-    <p>The year of the hackfests.</p>
-<?php
-}
-
-function show_contributors() {
-?>
-    <input type="text" class="regular-text" name="support_contributors" id="support_contributors" value="<?php echo get_option('support_contributors'); ?>" />
-    <p>Enter the number of sponsored contributors.</p>
-<?php
-}
-
-function show_hackfests() {
-?>
-    <input type="text" class="regular-text" name="support_hackfests" id="support_hackfests" value="<?php echo get_option('support_hackfests'); ?>" />
-    <p>Enter the number of sponsored hackfests.</p>
-<?php
-}
-
-function show_screenshot() {
-?>
-    <input type="text" class="regular-text" name="homepage_screenshot" id="homepage_screenshot" value="<?php echo get_option('homepage_screenshot'); ?>" />
-<?php
-}
-
-
-function display_theme_panel_fields() {
-	add_settings_section("section", null, null, "theme-options");
-
-    add_settings_field("homepage_screenshot", "Release screenshot (URL)", "show_screenshot", "theme-options", "section");
-	add_settings_field("support_year", "Year", "show_year", "theme-options", "section");
-    add_settings_field("support_contributors", "Contributors", "show_contributors", "theme-options", "section");
-    add_settings_field("support_hackfests", "Hackfests", "show_hackfests", "theme-options", "section");
-
-    register_setting("section", "homepage_screenshot");
-    register_setting("section", "support_year");
-    register_setting("section", "support_contributors");
-    register_setting("section", "support_hackfests");
-}
-
-add_action("admin_init", "display_theme_panel_fields");
-add_action("admin_menu", "add_theme_menu_item");
-
 add_action( 'admin_head', 'replace_default_featured_image_meta_box', 100 );
 function replace_default_featured_image_meta_box() {
-    add_meta_box('postimagediv', __('FoG Hacker Image'), 'post_thumbnail_meta_box', 'hackers', 'side', 'high');
-    add_meta_box('postexcerpt', __('FoG Hacker Description'), 'post_excerpt_meta_box', 'hackers', 'normal', 'high');
+    add_meta_box('postimagediv', 'FoG Hacker Image', 'post_thumbnail_meta_box', 'hackers', 'side', 'high');
+    add_meta_box('postexcerpt', 'FoG Hacker Description', 'post_excerpt_meta_box', 'hackers', 'normal', 'high');
     
     remove_meta_box( 'postimagediv', 'my-post-type-here', 'side' );
     remove_meta_box( 'postexcerpt', 'post', 'side' );
@@ -510,3 +497,41 @@ function custom_mimes_types ($existing_mimes) {
 
     return $existing_mimes;
 }
+
+/*
+ * Bootstrap Walker for the menu
+ */
+
+require_once('lib/wp-bootstrap-navwalker.php');
+
+register_nav_menus( array(
+        'primary' => 'Navbar Menu', 'grass',
+) );
+
+/*
+ * GNOME Grass Customizer
+ */
+
+require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/grass-sanitize.php';
+
+/**
+ * Order posts by the last word in the post_title.
+ * Activated when orderby is 'wpse_last_word'
+ * @link http://wordpress.stackexchange.com/a/198624/26350
+ * 
+ * Used in Foundation page to sort the Directors
+ */
+
+add_filter( 'posts_orderby', function( $orderby, \WP_Query $q )
+{
+    if( 'wpse_last_word' === $q->get( 'orderby' ) && $get_order =  $q->get( 'order' ) )
+    {
+        if( in_array( strtoupper( $get_order ), ['ASC', 'DESC'] ) )
+        {
+            global $wpdb;
+            $orderby = " SUBSTRING_INDEX( {$wpdb->posts}.post_title, ' ', -1 ) " . $get_order;
+        }
+    }
+    return $orderby;
+}, PHP_INT_MAX, 2 );

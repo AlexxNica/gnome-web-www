@@ -12,16 +12,17 @@ if (false === ($members = get_transient('foundation_members_list'))) {
     set_transient('foundation_members_list', $members, 60*60*12);
     
 }
+?>
 
-require_once("header.php"); ?>
+<?php get_header(); ?>
 
     <!-- container -->
-    <div id="container" class="two_columns">
+    <div id="foundation" class="two_columns">
         <div class="container">
-	  	<div class="page_title">
-	  	  <h1><?php the_title(); ?></h1>
-		</div>        
-		<div class="clearfix"></div>
+            <div class="page_title">
+                <h1><?php the_title(); ?></h1>
+            </div>
+        <div class="clearfix"></div>
             
             <div class="content without_sidebar">
             <?php while ( have_posts() ) : the_post(); ?>
@@ -45,13 +46,9 @@ require_once("header.php"); ?>
                 <br />
                 <div class="clear"></div>
             </div>
-            
-            <?php require_once("footer_art.php"); ?>
         </div>
     </div>
     
     <div class="clearfix"></div>
     
-    <?php require_once("footer.php"); ?>
-</body>
-</html>
+<?php get_footer(); ?>

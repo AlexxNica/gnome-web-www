@@ -3,30 +3,24 @@
  * @package GNOME Website
  * @subpackage Grass Theme
  */
- 
-
-add_action('wp_head', function() {
-    echo '<link rel="stylesheet" type="text/css" media="all" href="'.get_bloginfo('template_url').'/css/news.css" />';
-});
 
 /*
  * Add link to global feeds instead of current page comments
  */
-automatic_feed_links(false);
 add_action('wp_head', function() {
    echo '<link rel="alternate" type="application/rss+xml" title="'.get_bloginfo('name').' &raquo; Feed" href="'.home_url('/').'feed/" />'; 
 });
+?>
 
-require_once("header.php"); ?>
+<?php get_header(); ?>
 
     <!-- container -->
-    <div id="container" class="two_columns">
-        <div class="container">
-        
-            <div class="page_title">
-                <h1><a href="<?php bloginfo('url'); ?>/news/"><?php echo __('News', 'grass');?></a></h1>
+    <div class="container two_columns">
+            <div class="col-xs-12">
+                <div class="page_title">
+                    <h1><a href="<?php bloginfo('url'); ?>/news/"><?php esc_html_e('News', 'grass');?></a></h1>
+                </div>
             </div>
-            
             <div class="content col-md-9">
             <?php while ( have_posts() ) : the_post(); ?>
                 <div class="news_title">
@@ -44,12 +38,8 @@ require_once("header.php"); ?>
                 <?php require_once("news_sidebar.php");?>
                       
             </div>
-            <?php require_once("footer_art.php"); ?>
-        </div>
     </div>
     
     <div class="clearfix"></div>
     
-    <?php require_once("footer.php"); ?>
-</body>
-</html>
+<?php get_footer(); ?>

@@ -3,16 +3,16 @@
  * @package GNOME Website
  * @subpackage Grass Theme
  */
+?>
 
-require_once("header.php"); ?>
+<?php get_header(); ?>
 
     <!-- container -->
-    <div id="container" class="two_columns">
-        <div class="container_12">
+    <div class="container two_columns">
 
             <?php if ( have_posts() ) : ?>
                 <div class="page_title">
-                    <h1><?php _e( 'Looking for', 'grass' ); ?> <em><?php echo htmlentities(strip_tags($_GET['s']));?></em>...</h1>
+                    <h1><?php esc_html_e( 'Looking for', 'grass' ); ?> <em><?php echo htmlentities(strip_tags($_GET['s']));?></em>...</h1>
                 </div>
                 
                 <div class="content">
@@ -41,26 +41,26 @@ require_once("header.php"); ?>
             
                 <div class="content without_sidebar">
                     
-                    <div class="grid_10 alpha prefix_1 omega suffix_1">
+                    <div class="col-lg-7 col-lg-offset-0 col-sm-8 col-sm-offset-0 col-xs-7 col-xs-offset-2">
                     
                         <p><?php get_search_form(); ?></p>
                         
                         <hr />
                     
-                        <h2><?php _e( 'Sorry, but nothing was found.', 'grass' ); ?></h2>
+                        <h2><?php esc_html_e( 'Sorry, but nothing was found.', 'grass' ); ?></h2>
                         
-                        <p><?php _e( 'Suggestions:', 'grass' ); ?></p>
+                        <p><?php esc_html_e( 'Suggestions:', 'grass' ); ?></p>
                         
                         <ul>
-                            <li><?php _e( 'Make sure all words are spelled correctly.', 'grass' ); ?></li>
-                            <li><?php _e( 'Try different keywords.', 'grass' ); ?></li>
-                            <li><?php _e( 'Try fewer keywords.', 'grass' ); ?></li>
+                            <li><?php esc_html_e( 'Make sure all words are spelled correctly.', 'grass' ); ?></li>
+                            <li><?php esc_html_e( 'Try different keywords.', 'grass' ); ?></li>
+                            <li><?php esc_html_e( 'Try fewer keywords.', 'grass' ); ?></li>
                         </ul>
                         
                         <p>
                         <?php
                         printf(
-                                __( 'If you feel lost, you may want to search for %1$s in all GNOME websites on %2$s.', 'grass'),
+                              /* translators: %1$s is the search keyword, %2$s refers to Google */  __( 'If you feel lost, you may want to search for %1$s in all GNOME websites on %2$s.', 'grass'),
                                 '“'.htmlspecialchars(stripslashes(strip_tags($_GET['s']))).'”',
                                 '<a href="http://google.com/search?q='.htmlspecialchars(stripslashes(strip_tags($_GET['s']))).'%20site:gnome.org">Google</a>'
                             );
@@ -74,20 +74,8 @@ require_once("header.php"); ?>
                     
             </div>
             <?php endif; ?>
-            
-            <?php
-            if ( have_posts() ) :
-                $footer_art = 'search';
-            else:
-                $footer_art = 'search_no-results';
-            endif;
-            ?>
-            <?php require_once("footer_art.php"); ?>
-        </div>
     </div>
     
     <div class="clearfix"></div>
     
-    <?php require_once("footer.php"); ?>
-</body>
-</html>
+<?php get_footer(); ?>

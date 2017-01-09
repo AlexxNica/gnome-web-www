@@ -1,8 +1,25 @@
+/* News Title */
+/* ========================================================================== */
+
+.news_title h1 {
+    margin-top: 0;
+    color: #333;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+}
+.news_title .date {
+    margin: 0;
+    color: #3465a4;
+}
+
 /* News List */
 /* ========================================================================== */
 
 .news_list {
     list-style: none;
+    padding-left: 0px;
 }
 .news_list li {
     margin: 10px 0;
@@ -18,12 +35,47 @@
     font-size: 18px;
     line-height: normal;
 }
+.span4.news:first-child {
+    margin-left: 0;
+}
+
+.news_list .news strong {
+    display: block;
+    min-height: 30px;
+}
+
+.news_list .news {
+    margin-bottom: 20px;
+}
+.news_list .news .date {
+    font-family: 'Droid Serif', 'DejaVu Serif', Cambria, Georgia, serif;
+    color: #888a85;
+}
+.news_list .news a {
+    color: #555753;
+    display: block;
+    text-decoration: none;
+}
+.news_list .news a strong {
+    font-size: 18px;
+    color: #000;
+    line-height: 1.5;
+}
+.news_list .news a:hover strong {
+    text-decoration: underline;
+}
+
+.news_list .action_button {
+    float: right;
+    margin-bottom: 0.8em;
+}
 
 /* Press Release */
 /* ========================================================================== */
 
 .press_list {
     display: table;
+    padding-left: 0px;
 }
 .press_list li {
     display: table-row;
