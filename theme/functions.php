@@ -463,15 +463,6 @@ if (array_key_exists('render-footer-menu', $_GET)) {
     exit;
 }
 
-function special_nav_class($classes, $item){
-    if($item->title == "Foundation +"){
-        $classes[] = "foundation-menu-item";
-    }
-    return $classes;
-}
-
-add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
-
 
 add_action( 'admin_head', 'replace_default_featured_image_meta_box', 100 );
 function replace_default_featured_image_meta_box() {
@@ -504,7 +495,7 @@ function custom_mimes_types ($existing_mimes) {
 require_once('lib/wp-bootstrap-navwalker.php');
 
 register_nav_menus( array(
-        'primary' => 'Navbar Menu', 'grass',
+        'primary' => 'Navbar Menu'
 ) );
 
 /*
