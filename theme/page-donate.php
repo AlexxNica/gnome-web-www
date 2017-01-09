@@ -18,26 +18,26 @@
 
                 <!-- Donation Boxes -->
                 <div class="boxes-selection-container row equalizer">
-                    <div class="col-sm-3">
-                        <div class="boxes active col-sm-12" data-target="1">
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="boxes active col-xs-12" data-target="1">
                             <p class="main_feature">PayPal</p>
                             <p><?php esc_html_e( 'Tax deductible in the United States', 'grass' ); ?></p>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="boxes col-sm-12" data-target="2">
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="boxes col-xs-12" data-target="2">
                             <p class="main_feature"><?php esc_html_e( 'Bank Transfer', 'grass' ); ?></p>
                             <p><?php esc_html_e( 'For EU bank account holders only; tax deductible', 'grass' ); ?></p>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="boxes col-sm-12" data-target="3">
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="boxes col-xs-12" data-target="3">
                             <p class="main_feature"><?php /* translators: This is a payment option */ esc_html_e( 'Check', 'grass' ); ?></p>
                             <p><?php esc_html_e( 'Available to United States bank account holders; tax deductible', 'grass' ); ?></p>
                         </div>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="boxes col-sm-12" data-target="4">
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="boxes col-xs-12" data-target="4">
                             <p class="main_feature">Bitcoin</p>
                         </div>
                     </div>

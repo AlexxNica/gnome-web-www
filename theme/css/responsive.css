@@ -2,25 +2,20 @@
  * CSS Media queries for the GNOME Project website
  */
 
+/* Make equal height columns */
+
+.equalizer,
+.equalizer > div[class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
 @media screen and (min-width: 767px) {
-
-    /* Make equal height columns */
-
-    .equalizer,
-    .equalizer > div[class*='col-'] {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    }
-
-    .boxes {
-        margin: 15px 0;
-    }
-
     body { padding-top: 50px } /* height of the menu collapsed */
 
     .nav-bg {
@@ -77,6 +72,9 @@
 }
 
 @media screen and (max-width: 767px) {
+    .boxes {
+        margin: 15px 0;
+    }
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #ffffff;
     }
