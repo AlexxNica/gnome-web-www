@@ -44,6 +44,16 @@ a:visited {
     padding: 0 !important;
 }
 
+/* Sticky Footer */
+.gnome-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.gnome-content{
+  flex: 1;
+}
+
 /*
  * Bootstrap extension
  * Extend and overwrite Bootstrap Framework

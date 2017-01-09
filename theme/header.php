@@ -39,7 +39,7 @@ if (function_exists('wppo_get_lang')) {
     }
     ?>
 </head>
-<body>
+<body <?php body_class('gnome-body'); ?>>
     <!-- accessibility access -->
     <div id="accessibility_access">
         <ul>
@@ -92,3 +92,5 @@ if (function_exists('wppo_get_lang')) {
             </div>
         </nav>
     </header>
+
+    <div class="gnome-content">
