@@ -43,6 +43,9 @@ a:visited {
 .no-padding {
     padding: 0 !important;
 }
+.featured-banner {
+    min-width: 100%;
+}
 
 /* Sticky Footer */
 .gnome-body {
@@ -82,6 +85,21 @@ body.admin-bar .navbar-fixed-top {
 
 .btn-primary {
     color: #fff !important;
+}
+
+.input-group-no-bg {
+    background-color: transparent;
+    border: none;
+    padding: 6px 4px;
+    width: 19px;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Accessibility access */
