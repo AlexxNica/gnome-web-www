@@ -154,6 +154,33 @@ add_action( 'init', function() {
         )
     );
 
+    register_post_type( 'directors',
+        array(
+            'labels' => array(
+                'name' => 'Board Directors',
+                'singular_name' => 'Board Director',
+                'add_new' => 'Add New',
+                'add_new_item' => 'Add New Director',
+                'edit' => 'Edit',
+                'edit_item' => 'Edit',
+                'new_item' => 'New Director',
+                'view' => 'View',
+                'view_item' => 'View Director',
+                'search_items' => 'Search Directors',
+                'not_found' => 'No Directors found',
+                'not_found_in_trash' => 'No Directors found in Trash',
+                'parent' => 'Parent Directors',
+            ),
+            'public' => false,
+            'show_ui' => true,
+            'exclude_from_search' => true,
+            'supports' => array(
+                'title', 'thumbnail','revisions', 'author'
+            ),
+            'rewrite' => true
+        )
+    );
+
     register_post_type( 'banners',
         array(
             'labels' => array(
@@ -557,3 +584,24 @@ register_nav_menus( array(
 
 require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/grass-sanitize.php';
+
+/**
+ * Order posts by the last word in the post_title.
+ * Activated when orderby is 'wpse_last_word'
+ * @link http://wordpress.stackexchange.com/a/198624/26350
+ * 
+ * Used in Foundation page to sort the Directors
+ */
+
+add_filter( 'posts_orderby', function( $orderby, \WP_Query $q )
+{
+    if( 'wpse_last_word' === $q->get( 'orderby' ) && $get_order =  $q->get( 'order' ) )
+    {
+        if( in_array( strtoupper( $get_order ), ['ASC', 'DESC'] ) )
+        {
+            global $wpdb;
+            $orderby = " SUBSTRING_INDEX( {$wpdb->posts}.post_title, ' ', -1 ) " . $get_order;
+        }
+    }
+    return $orderby;
+}, PHP_INT_MAX, 2 );
