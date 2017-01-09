@@ -19,6 +19,7 @@ if (function_exists('wppo_get_lang')) {
 <head>
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#4a86cf">
     <meta name="application-name" content="GNOME.org Website">
     <link href="<?php bloginfo('stylesheet_directory'); ?>/images/gnome-logo.svg" rel="icon" sizes="any">
     <link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.ico" />
