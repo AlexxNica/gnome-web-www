@@ -540,3 +540,13 @@ function custom_mimes_types ($existing_mimes) {
 
     return $existing_mimes;
 }
+
+/*
+ * Bootstrap Walker for the menu
+ */
+
+require_once('lib/wp-bootstrap-navwalker.php');
+
+register_nav_menus( array(
+        'primary' => 'Navbar Menu', 'grass',
+) );
