@@ -77,8 +77,6 @@ The GNOME Project is a diverse international community which involves hundreds o
 
 
 <!-- END container -->
-               
-        <?php require_once("footer_art.php"); ?>
         </div>
     </div>
 </div>

@@ -7,23 +7,23 @@
 add_action('wp_head', function() {
     echo '<link rel="stylesheet" type="text/css" media="all" href="'.get_bloginfo('template_url').'/css/project.css" />'."\n";
 });
+?>
 
-
-require_once("header.php"); ?>
+<?php get_header(); ?>
 
     <!-- container -->
     <div id="container" class="two_columns">
-        <div class="container_12">
+        <div class="container">
         
             <div class="page_title">
                 <h1><a href="<?php bloginfo('url'); ?>/applications/"><?php echo __('Applications', 'grass');?></a></h1>
             </div>
         
-            <div class="sidebar">
+            <div class="sidebar col-sm-3">
                 <?php include('applications_sidebar.php'); ?>
             </div>
             
-            <div class="content">
+            <div class="content col-sm-9">
             
                 <div class="applications_list">
                     <div class="row">
@@ -64,15 +64,9 @@ require_once("header.php"); ?>
 
                 <div class="clear"></div>
             </div>
-            <?php
-            $footer_art = 'applications';
-            require_once("footer_art.php");
-            ?>
         </div>
     </div>
     
     <div class="clearfix"></div>
     
-    <?php require_once("footer.php"); ?>
-</body>
-</html>
+<?php get_footer(); ?>

@@ -4,34 +4,26 @@
  * @subpackage Grass Theme
  */
 
-add_action('wp_head', 'add_news_stylesheet');
-
-function add_news_stylesheet() {
-    echo '<link rel="stylesheet" type="text/css" media="all" href="'.get_bloginfo('template_url').'/css/news.css" />';
-}
-
 $is_news_home = true;
-
 
 /*
  * Add link to global feeds instead of current page comments
  */
-add_theme_support( 'automatic-feed-links');
 add_action('wp_head', function() {
    echo '<link rel="alternate" type="application/rss+xml" title="'.get_bloginfo('name').' &raquo; Feed" href="'.home_url('/').'feed/" />'; 
 });
+?>
 
-
-require_once("header.php"); ?>
+<?php get_header(); ?>
 
     <!-- container -->
     <div id="container" class="two_columns">
         <div class="container">
-        
-            <div class="page_title">
-                <h1><?php echo __('News', 'grass');?></h1>
+            <div class="col-xs-12">
+                <div class="page_title">
+                    <h1><?php esc_html_e('News', 'grass');?></h1>
+                </div>
             </div>
-            
             <div class="content col-md-9">
             
                 <?php the_content(); ?>
@@ -56,26 +48,20 @@ require_once("header.php"); ?>
                 </ul>
                 
                 <?php if (  $wp_query->max_num_pages > 1 ) : ?>
-                <div class="page_navigation">
+                <div class="page_navigation clearfix">
                     <span class="next"><?php previous_posts_link(__('Newer posts', 'grass')); ?></span>
                     <span class="prev"><?php next_posts_link(__('Older posts', 'grass')); ?></span>
-                    <div class="clear"></div>
                 </div>
                 <?php endif; ?>
                 <div class="clear"></div>
-                <div class="clearfix"></div>
-
             </div>
             
             <div class="sidebar col-md-3">
                 <?php require_once("news_sidebar.php");?>
             </div>
-            <?php require_once("footer_art.php"); ?>
         </div>
     </div>
     
     <div class="clearfix"></div>
     
-    <?php require_once("footer.php"); ?>
-</body>
-</html>
+<?php get_footer(); ?>

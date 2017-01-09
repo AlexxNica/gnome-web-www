@@ -2,14 +2,13 @@
 /*
 Template Name: One Column with submenu in the title
 */
+?>
 
-
-require_once("header.php"); ?>
+<?php get_header(); ?>
 
     <!-- container -->
-    <div id="container" class="two_columns">
-        <div class="container">
-        
+    <div class="container two_columns">
+        <div class="col-xs-12">
             <div class="page_title with_subpages_list">
                 <h1><?php the_title(); ?></h1>
                 
@@ -44,13 +43,9 @@ require_once("header.php"); ?>
                 <br />
                 <div class="clear"></div>
             </div>
-            
-            <?php require_once("footer_art.php"); ?>
         </div>
     </div>
     
     <div class="clearfix"></div>
     
-    <?php require_once("footer.php"); ?>
-</body>
-</html>
+<?php get_footer(); ?>
