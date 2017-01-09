@@ -136,9 +136,9 @@ a:visited {
 /* ========================================================================== */
 
 
-
+.gnome-header,
 #header {
-    margin-top: 20px;
+    margin-bottom: 40px;
 }
 #header img {
     vertical-align: middle;
@@ -164,6 +164,18 @@ a:visited {
     opacity: 0.85;
 }
 
+.gnome-navbar-brand {
+    height: 50px;
+    padding: 6px;
+    float: left;
+    outline: 0;
+    margin-left: 7px;
+}
+.gnome-navbar-brand img {
+    max-height: 35px;
+    min-height: 35px;
+    min-width: 35px;
+}
 
 /* Top bar */
 /* ========================================================================== */
@@ -303,7 +315,197 @@ a:visited {
     margin-top: 5px;
 }
 
+/* Main Navigation Menu */
+/* ========================================================================== */
 
+.navbar-default {
+    background-color: #4a86cf;
+    border-color: #3968a1;
+}
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #ffffff;
+}
+.navbar-default .navbar-text {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > li {
+    margin-left: 10px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ffffff;
+    background: rgba(100%, 100%, 100%, 0.2);
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+    background-color: #4a86cf;
+}
+.navbar-default .navbar-nav > li > .dropdown-toggle .caret{
+    display: none;
+}
+.navbar-default .navbar-nav > li > .dropdown-toggle .dropdown-header{
+    padding: 0px;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+    color: #ffffff;
+    background-color: #3968a1;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+    background-color: #3968a1;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #3968a1;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #3968a1;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #ffffff;
+    background-color: #3968a1;
+}
+.navbar-default .navbar-toggle {
+    border-color: #3968a1;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #3968a1;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: transparent;
+}
+.navbar-default .navbar-link {
+    color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+    color: #ffffff;
+}
+
+/* Searchform on Navbar */
+/* ========================================================================== */
+
+#navbar-search {
+    background-color: transparent;
+    color:#fff;
+    border: none;
+    border-radius: 0;
+    transition: none;
+    box-shadow: none;
+    padding: 8px 8px 8px 40px;
+}
+#navbar-search:focus {
+    background-color: rgba(100%,100%,100%,0.1);
+}
+
+/* Color for search's placeholder text*/
+
+#navbar-search::-webkit-input-placeholder {
+    color: #fff;
+}
+#navbar-search::-moz-placeholder {
+    color: #fff;
+}
+#navbar-search::-ms-placeholder {
+    color: #fff;
+}
+#navbar-search::placeholder {
+    color: #fff;
+}
+
+/* CSS hack to align search icon with the text*/
+
+.fa.form-control-feedback {
+    line-height: 34px;
+}
+.has-feedback-left input.form-control {
+    padding-left: 34px;
+    padding-right: 12px;
+}
+.has-feedback-left .form-control-feedback {
+    left: 0;
+}
+.form-horizontal .has-feedback-left .form-control-feedback {
+    left: 12px;
+}
+.form-control-feedback {
+    color: #fff;
+    background-color: #4a86cf;
+}
+
+/* Animated "Close" icon on Navbar */
+/* ========================================================================== */
+
+.navbar-toggle {
+    border: none;
+    background: transparent !important;
+}
+.navbar-toggle:hover {
+    background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+    width: 22px;
+    transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform-origin: 10% 10%;
+    -webkit-transform-origin: 10% 10%;
+    -ms-transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+    opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+    -webkit-transform-origin: 10% 90%;
+    -ms-transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+    opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+}
+.navbar-form,
+.navbar-collapse {
+    box-shadow: none;
+}
 
 /* Foundation Navigation Menu */
 /* ========================================================================== */
