@@ -1459,3 +1459,15 @@ class[*="span"] .omega {
 .social_network_icons .fa-rss:hover {
     color: #ff6600;
 }
+
+/* Hero Sections */
+/* ========================================================================== */
+
+section {
+    padding: 60px;
+    margin: 60px 0;
+}
+
+.bg-grey {
+    background: #f6f6f6;
+}
