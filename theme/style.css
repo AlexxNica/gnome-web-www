@@ -54,6 +54,12 @@ a:visited {
   flex: 1;
 }
 
+/* We don't want the admin-bar to overlap the navbar */
+body.admin-bar .navbar-fixed-top {
+    top: 28px !important;
+}
+
+
 /*
  * Bootstrap extension
  * Extend and overwrite Bootstrap Framework

@@ -4,7 +4,7 @@
  * @subpackage Default_Theme
  */
  
-show_admin_bar(false);
+show_admin_bar(true);
 
 /*
  * Add support for theme translations.
