@@ -1,25 +1,6 @@
-/*responsive.css*/
-
-.btn-success {
-    background-color:#4e9a06;
-    color: #fff !important;
-}
-
-.btn {
-    text-decoration: none;
-    border-radius: 6px;
-    padding: 6px 30px;
-}
-
-.col-centered{
-    float: none;
-    margin: 0 auto;
-}
-
-.no-padding {
-   padding: 0 !important;
-   margin: 0 !important;
-}
+/*
+ * CSS Media queries for the GNOME Project website
+ */
 
 /* Make equal height columns */
 
@@ -30,203 +11,80 @@
         display: -ms-flexbox;
         display: flex;
     }
-}
 
-/*--------------General------------------------*/
-@media(max-width: 767px) {
-    img {
-        margin : 10px auto;
-        display: block;
-    }
-    .mobile_text {
-        text-align: justify;
-    }
-}
-@media(min-width: 768px){
-    #header {
-        margin-bottom: 20px;
-    }
-}
-/*-------------Mobile-Menu, Normal-Menu----------------------*/
+    body { padding-top: 50px } /* height of the menu collapsed */
 
-.normal-menu .foundation-menu-item .sub-menu li a:active,
-.normal-menu .foundation-menu-item .sub-menu li a:focus,
-.normal-menu .foundation-menu-item .sub-menu li.current_page_item a{
-    background: rgb(128, 128, 128);
-    color: #fff;
-}
-
-.normal-menu .foundation-menu-item .sub-menu li a:hover{
-    background: rgb(211, 211, 211);
-}
-
-.normal-menu .foundation-menu-item .sub-menu li a {
-    color: #000;
-}
-
-.mobile-menu .top_bar ul li a {
-  display: inline-block;
-  width: 90%;
-  height: 100%;
-  padding: 1.5%;
-}
-
-.mobile-menu-text {
-    letter-spacing: 1px;
-    font-size: large;
-    vertical-align: middle;
-    height:25px;
-}
-#menu-globalnav {
-    margin: 0px 0px 10px 0px;
-    list-style: none;
-}
-
-#menu-globalnav .menu-item {
-    float: none;
-    font-size: large;
-    letter-spacing: 2px;
-    line-height: 100%;
-    padding: 1%;
- }
-
-.plus-pull {
-    color: white;
-    /*margin-left: -5px;*/
-    cursor: pointer;
-    display: inline-block;
-}
-
-.menu-globalnav-container > .menu > .menu-item > .sub-menu {
-    background-color: inherit;
-}
-
-    /*----------------Smartphones-------------------*/
-    @media (max-width: 767px) {
-        form {
-            padding: 5px 10px;
-            margin-left: 0.5%;
-        }
-        .mobile-menu {
-            cursor: pointer;
-            display: inline-block;
-            float: right;
-            visibility: visible;
-            width:100%;
-        }
-        .normal-menu {
-            display: none;
-        }
-        .top_bar {
-            -moz-border-radius: 6px;
-            -webkit-border-radius: 6px;
-            border-radius: 6px;
-        }
-        .top_bar ul li {
-            display: block !important;
-            border-bottom: 1px solid rgba(102, 102, 102, 1);
-        }
-        .top_bar .sub-menu li {
-            border-bottom: 0px;
-        }
-        .top_bar .sub-menu li:first-child {
-            border-top: 1px white solid;
-        }
-        .top_bar input {
-            width: 85%;
-        }
-        .crafted_content {
-            text-align: center;
-        }
-
+    .nav-bg {
+        height: 45px;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        background-color: #4a86cf;
     }
 
-    /*-----------------Tablets------------------------*/
-    @media (min-width: 767px) {
-        
-        .menu-globalnav-container {
-/*            max-height: 20px;
-*/        }
-        .nav li {
-            display: inline-block;
-            vertical-align: top;
-        }
-        .top_bar {
-            height: 36px;
-        }
-        #top_bar_search {
-            height: 36px;
-        }
-        .top_bar .sub-menu {
-            padding: 8px 0;
-            margin-top: 8px;
-            position: relative;
-            z-index: 20;
-            -moz-border-radius: 6px;
-            -webkit-border-radius: 6px;
-            border-radius: 6px;
-        }
-        .top_bar ul li {
-            margin-right: 2px;
-        }
+    .menu-open .gnome-content{
+        padding-top: 40px;
     }
 
-    @media (min-width:768px) and  (max-width: 991px){
-        .menu-globalnav-container {
-            width: 724px;
-        }
-        .top_bar {
-            max-width: 100%;
-            width: 70%;
-            margin-left: 0;
-            margin-top: 0px !important;
-        }
-        #header #logo {
-            height: auto;
-            width: 199px;
-            padding: 0 33%;
-        }
-        #top_bar_search {
-            width: 30%;
-        }
-        .top_bar ul li {
-            /*line-height: 28px;*/
-        }
-        #top_bar_search {
-            margin-top: 0px !important;
-        }
+    .navbar-nav.nav > li {
+        position: static;
     }
-    /*-------------------Laptops-------------------------------*/
-    @media (min-width: 979px){
-    .menu-globalnav-container {
-            width: 680px;
+
+    .navbar-nav.nav .dropdown-menu {
+        left: 0 !important;
+        right: 0 !important;
+        box-shadow: none;
+        border: none;
+        margin: 0 auto;
+        background: transparent;
+        padding: 0;
+        border-radius: 0;
+        max-width: 920px;
+    }
+
+    .navbar-nav.nav .dropdown-menu > li {
+        float: left;
+        margin: 0px;
+    }
+
+    .navbar-nav.nav .dropdown-menu > li > a {
+        width: auto !important;
+        background: transparent;
+        line-height: 45px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 0;
     }
 }
 
-    /*-------------Sub-Menu---------------------------*/
-    #menu-globalnav-1 .sub-menu {
-        display: none;
+@media screen and (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffffff;
     }
-    #menu-globalnav .sub-menu {
-        display: none;
-        vertical-align: top;
-        margin: -2%;
-        transition: all 1s;
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #ffffff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #ffffff;
+        background-color: #3968a1;
+    }
+    .gnome-navbar-brand {
+        margin-left: 15px;
+    }
+    header {
+        padding-bottom: 40px;
     }
 
-    #menu-globalnav .sub-menu .menu-item {
-        list-style: none;
-        margin-top: 0px;
-        display: block;
-        
+    h1, #content h1 {
+        font-size: 23px;
+    }
+    h2 {
+        font-size: 20px;
     }
 
-    #menu-globalnav .sub-menu .menu-item:first-child {
-        margin-top: 3%;
-    }
-
-/*------------Column without sidebar-----------*/
-@media (max-width: 767px){
     .crafted_content .section h2, .crafted_content .section h3 {
         text-align: center;
     }
@@ -236,194 +94,16 @@
     .crafted_content .section .image img{
         margin: auto;
     }
-}
-
-
-/*-------------------Membership------------------*/
-@media (max-width: 767px) {
-    .foundation_members_list {
-        display: none;
-    }
-    .member_heading {
-        display: none;
-    }
-}
- /*-------------------Foundation----------------------*/
- 
-.foundation_board {
-  -moz-column-count: 2 !important;
-  -webkit-column-count: 2 !important;
-  column-count: 2 !important;
-  margin: 0 auto;
-  list-style: none;
-}
-
-.foundation_board img {
-    margin: auto !important;
-}
-@media (min-width: 360px) and (max-width: 768px) {
     .foundation_board {
-        -moz-column-count: 2 !important;
-        -webkit-column-count: 2 !important;
-        column-count: 2 !important;
-    }
-}
-@media (max-width: 767px) {
-
-    .foundation-mobile-hidden {
-        display: none;
-    }
-}
-@media (max-width: 991px) {
-    .foundation_board li{
-        text-align: center;
-    }
-
-    .foundation_board img {
-        display: block;
-    }
-}
-/*--------------------two-column/sidebar-------------------------*/
-@media(max-width: 767px){
-    #container.two_columns .sidebar {
-        width: auto;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        display: block;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
     }
 
 }
-@media(min-width: 768px){
-    #container.two_columns .sidebar {
-        width: 220px;
-    }
-    #container.two_columns .content {
-        margin-left: 0px;
-    }
-}
-.press_list {
-    margin-left: 0px;
-}
-.news_list {
-    margin-left: 0px;
-}
-/*----------------Applications-------------------*/
-@media (max-width: 767px){
-    .app_image_mhide {
-        display: none;
-    }
-    .app_image_mshow {
-        display: inline-block ;
-    }
-}
-@media (min-width: 767px){
-    .app_image_mhide {
-        display: block;
-        margin-top: 25px;
-    }
-    .app_image_mshow {
-        display: none;
-    }
-}
-@media (min-width: 360px) and (max-width: 767px) {
-    #app_column {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
-    }
-}
 
-
-/*===================================================================================================================================================*/
-
-
-/* Custom media queries and Bootstrap overwrite rules for Damned Lies */
-
-
-.mobile-menu {
-    display: none;
-    visibility: hidden;
-}
-.normal-menu {
-    display: block;
-}
-.navbar-toggle,  .navbar-toggle:hover, .navbar-toggle:focus, .navbar-toggle:active, .navbar-toggle.active, .navbar-toggle.disabled, .navbar-toggle[disabled]{
-    margin-top: 40px;
-    background-image: none;
-    background-color: #2e3436;
-}
-.table-responsive {
-    border: none;
-}
-.navbar-default .navbar-nav > li > a {
-    text-decoration: none;
-}
-.normal-menu .foundation-menu-item .sub-menu li a:active,
-.normal-menu .foundation-menu-item .sub-menu li a:focus,
-.normal-menu .foundation-menu-item .sub-menu li.current_page_item a{
-    background: rgba(100%, 100%, 100%, 0.4);
-    color: #000;
-    text-shadow: none;
-}
-
-.normal-menu .foundation-menu-item .sub-menu li a:hover{
-    background: rgba(100%, 100%, 100%, 0.2);
-}
-
-.normal-menu .foundation-menu-item .sub-menu li a {
-    color: #000;
-    text-shadow: none;
-}
-
-/*----------------Smartphones-------------------*/
-@media (max-width: 767px) {
-    header {
-        padding-bottom: 40px;
-    }
-	.navbar-default,
-	.navbar-default .navbar-collapse {
-		background-color: transparent;
-		border-color: transparent;
-	}
-	.mobile-menu {
-		cursor: pointer;
-		display: inline-block;
-		float: right;
-		visibility: visible;
-		width:100%;
-    }
-	.normal-menu {
-		display: none;
-	}
-	.top_bar {
-		text-align: center;
-	}
-	.top_bar ul li {
-		display: block !important;
-	}
-	h1, #content h1 {
-		font-size: 23px;
-	}
-	h2 {
-		font-size: 20px;
-	}
-}
-
-/*-----------------Tablets------------------------*/
 @media (min-width:768px) and (max-width: 991px){
-    header {
-        padding-bottom: 30px;
+    #searchform {
+        width: 70px;
     }
-	#globalnav {
-		margin: 0 auto;
-	}
-	.top_bar {
-		margin:0 auto;
-		float: none;
-	}
-	.normal-menu #gnome_header {
-		height: auto;
-		padding: 0 33%;
-	}
 }
