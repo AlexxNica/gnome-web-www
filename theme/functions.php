@@ -196,6 +196,7 @@ add_action( 'init', function() {
                 'parent' => 'Parent Banner',
             ),
             'public' => true,
+            'show_ui' => false,
             'exclude_from_search' => true,
             'supports' => array(
                 'title', 'thumbnail', 'excerpt', 'revisions', 'author'
