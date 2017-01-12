@@ -84,8 +84,8 @@ function gnomegrass_resources() {
     wp_enqueue_style('style', get_stylesheet_uri());
     wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
 
-    // Scripts and styles for page-friends-of-gnome and page-donate
-    if (is_page( array('friends', 'donate', 'support-us')) ) {
+    // Scripts and styles for page-friends, page-support-gnome and page-donate
+    if (is_page( array('friends', 'donate', 'support-gnome')) ) {
         friends_common_resources();
     }
     
@@ -95,8 +95,8 @@ function gnomegrass_resources() {
         wp_enqueue_script( 'clipboard', get_template_directory_uri() . '/js/clipboard.min.js', array('jquery'), null, true);
     }
     
-    // Scripts and styles for page-support-us
-    if (is_page('support-us')) {
+    // Scripts and styles for page-support-gnome
+    if (is_page('support-gnome')) {
         wp_enqueue_style('friends', get_template_directory_uri() . '/css/friends.css', array('bootstrap'), null, 'all');
     }
     
