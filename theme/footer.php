@@ -42,7 +42,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div id="footnotes" class="col-sm-9">
-                    <?php esc_html_e( 'Copyright', 'grass' ); ?> © 2005‒<?php echo date('Y');?> <strong class="gnome_logo"><?php esc_html_e( 'The GNOME Project', 'grass' ); ?></strong><br />
+                    <strong class="gnome_logo">&copy; <?php esc_html_e( 'The GNOME Project', 'grass' ); ?></strong><br />
                     <small>
                         <?php esc_html_e( 'Free to share and remix', 'grass' ); ?>: <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons CC-BY</a>.
                         <?php esc_html_e( 'Optimized for standards', 'grass' ); ?>.
