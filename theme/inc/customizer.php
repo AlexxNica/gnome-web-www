@@ -8,6 +8,35 @@
 add_action( 'customize_register', 'gnome_grass_options' );
 
 function gnome_grass_options( $wp_customize ) {
+    // Friends of GNOME Panel
+    $wp_customize->add_panel( 'fog_settings', array(
+    'priority'       => 28,
+    'capability'     => 'edit_theme_options',
+    'title'          => 'Friends of GNOME',
+    'description'    => 'Settings for Friends of GNOME pages',
+    ));
+    // Donation Ruler Section
+    $wp_customize->add_section( 'donation_ruler',
+        array(
+            'title' => 'Donation Ruler',
+            'priority' => 94,
+            'panel' => 'fog_settings',
+        )
+    );
+    $wp_customize->add_setting( 'show_donation_ruler',
+        array(
+            'default' => false,
+            'sanitize_callback' => 'grass_sanitize_checkbox',
+        )
+    );
+    $wp_customize->add_control(
+    'show_donation_ruler',
+    array(
+        'section'   => 'donation_ruler',
+        'label'     => 'Check to enable FoG donation ruler',
+        'type'      => 'checkbox'
+         )
+     );
     // Homepage Featured Section
     $wp_customize->add_panel( 'page_home', array(
     'priority'       => 26,

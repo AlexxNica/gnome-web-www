@@ -52,11 +52,15 @@ if (function_exists('wppo_get_lang')) {
         </ul>
     </div>
 
-    <!-- Donation ruler for when we run campaigns
-    <script type="text/javascript" src="https://static.gnome.org/friends/ruler/ruler-privacy.js">  </script>
-    -->
+    <?php /* Donation ruler for when we run campaigns */
+        if( get_theme_mod('show_donation_ruler') == true ) { /* The default value in customizer is false */
+            echo '<div class="donation-ruler-container">'."\n";
+            echo '<script type="text/javascript" src="https://static.gnome.org/friends/ruler/ruler-privacy.js"> </script>'."\n";
+            echo '</div>'."\n";
+        }
+    ?>
 
-    <header class="gnome-header">
+    <header class="gnome-header <?php if( get_theme_mod('show_donation_ruler') == true ){ echo ('visible-fog-ruler'); }?>">
         <nav class="navbar navbar-fixed-top navbar-default affix-top">
             <div class="container">
                 <div class="navbar-header">
