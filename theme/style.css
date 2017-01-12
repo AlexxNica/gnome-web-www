@@ -57,9 +57,20 @@ a:visited {
   flex: 1;
 }
 
-/* We don't want the admin-bar to overlap the navbar */
+/* We don't want WordPress admin-bar to overlap the navbar or donation ruler */
 body.admin-bar .navbar-fixed-top {
-    top: 28px !important;
+    top: 31px;
+}
+body.admin-bar .donation-ruler-container {
+    top: 31px;
+}
+
+/* If we run donation campaigns, move the navbar below the donation ruler */
+.visible-fog-ruler .navbar-fixed-top {
+    top: 40px;
+}
+body.admin-bar .visible-fog-ruler .navbar-fixed-top {
+    top: 71px;
 }
 
 
@@ -1504,4 +1515,22 @@ section {
 
 .bg-grey {
     background: #f6f6f6;
+}
+
+/* Donation ruler container */
+/* ========================================================================== */
+
+.donation-ruler-container {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    height: 40px;
+    background-color: #68a834;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    line-height: normal;
+    z-index: 110;
+    color: #ffffff;
+    padding-top: 7px;
 }
