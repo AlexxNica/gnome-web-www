@@ -20,14 +20,14 @@
                 <div class="donation-boxes-container">
                     <div class="row">
                         <div class="col-sm-6 donation-boxes">
-                            <a href="./friends" class="btn btn-success btn-block">
+                            <a href="../friends" class="btn btn-success btn-block">
                                 <p><?php esc_html_e( 'Become a Friend of GNOME', 'grass' ); ?></p>
                                 <p><?php esc_html_e( 'Monthly subscription - one of the best ways to support the GNOME project', 'grass' ); ?></p>
                             </a>
                         </div>
                         <div class="col-sm-6 col-md-4" style="padding: 10px;">
                             <p><?php esc_html_e('Friends receive a thank you postcard from a GNOME hacker and have the option to receive a free Linux Weekly News subscription.', 'grass');?></p>
-                            <a href="./previous-donors"><?php esc_html_e('See who is already a Friend of GNOME', 'grass');?></a>
+                            <a href="../friends/previous-donors"><?php esc_html_e('See who is already a Friend of GNOME', 'grass');?></a>
                         </div>
                     </div>
                     <div class="row">
@@ -78,7 +78,7 @@
                                 <i class="fa fa-chevron-right" aria-hidden="true"></i>
                             </button>
                             <div class="collapse" id="otherWays">
-                                <p>Companies can sponsor events or join the GNOME Foundation Advisory Board. If you are interested in this, please contact the <a href="../foundation/contacts">GNOME Foundation Board of Directors</a> for more details. GNOME also benefits when you shop at the <a href="./amazon">GNOME Amazon store</a>.</p>
+                                <p>Companies can sponsor events or join the GNOME Foundation Advisory Board. If you are interested in this, please contact the <a href="../foundation/contacts">GNOME Foundation Board of Directors</a> for more details. GNOME also benefits when you shop at the <a href="../friends/amazon">GNOME Amazon store</a>.</p>
                             </div>
                         </div>
                     </div>
