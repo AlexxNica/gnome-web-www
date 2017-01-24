@@ -88,7 +88,7 @@ $(function() {
             $("#validation-msg").addClass("alert-validation").text('Make it over $30 and get a free LWN.net subscription!');
             $("#subscription-btn").removeAttr('disabled', 'disabled');
         } else if (value >= 30){
-            $("#validation-msg").addClass("alert-validation").html("<div class='checkbox'><label><input type='hidden' name='os4' id='lwn_subscription' value='No' /><input class='checkbox' name='os4' id='lwn_subscription' type='checkbox' value='Yes' /> Sign me up for a free LWN.net subscription </label></div> <span style='color: gray;'>You will receive an email with instructions on how to claim after donating for two months.</span> <input type='hidden' name='on4' value='LWN.net subscription' />");
+            $("#validation-msg").addClass("alert-validation").html("<div class='checkbox'><label><input type='hidden' name='os4' id='lwn_subscription' value='No' /><input class='checkbox' name='os4' id='lwn_subscription' type='checkbox' value='Yes' /> Sign me up for a free LWN.net subscription </label></div> <span style='color: gray;'>You will receive an email with instructions on how to claim after donating for two months.</span> <input type='hidden' name='on4' value='LWN.net subscription' /><input type='hidden' name='on5' value='variables_epoch' /><input type='hidden' name='os5' value='1' />");
             $("#subscription-btn").removeAttr('disabled', 'disabled');
         } else {
             $("#validation-msg").addClass("alert-validation").text("Subscriptions must be over $5");
