@@ -43,7 +43,7 @@ if (array_key_exists('submit', $_POST)) {
         $summary . "\n\n" .
         
         "Foundation Previous Participation:\n" .
-        $previous_participation . "\n\n" .
+        $references . "\n\n" .
         
         "[Application received at " . date("D M j G:i:s Y") . " (Eastern time)]" . "\n\n".
         
