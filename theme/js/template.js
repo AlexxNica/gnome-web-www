@@ -13,32 +13,6 @@ jQuery(document).ready(function($) {
     }
 
 
-    /* Foundation menu
-     * ====================================================================== */
-
-    // Don't let Bootstrap handle the dropdown menu
-    $('#menu-primary .dropdown-toggle').removeAttr('data-toggle');
-
-    $('#menu-primary .dropdown-toggle').on('click', function(e) {
-
-        $('#menu-primary .dropdown').toggleClass('open');
-        $('html').toggleClass('menu-open');
-
-        if ($('#menu-primary .dropdown-menu').is(":visible")) {
-            $('.navbar').append('<span class="nav-bg"></span>');
-        } else {
-            $('span.nav-bg').remove();
-        }
-        // Don't jump at the top of the page
-        e.preventDefault()
-        return false;
-    });
-
-    // Trigger click to keep the menu open on Foundation page
-    if( $('.foundation-menu-item').hasClass('current-menu-parent') ) {
-        $('#menu-primary .dropdown-toggle').trigger('click');
-    }
-
     /* Global search placeholder
      * ====================================================================== */
     
