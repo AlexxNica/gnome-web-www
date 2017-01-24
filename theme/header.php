@@ -4,10 +4,10 @@
 if (function_exists('wppo_get_lang')) {
     $current_lang = str_replace('_', '-', strtolower(wppo_get_lang()));
     if (strpos($current_lang, '-') !== false) {
-       $current_lang = explode('-', $current_lang);
-       $current_lang[1] = strtoupper($current_lang[1]);
-       $current_lang = implode('-', $current_lang);
-    }
+     $current_lang = explode('-', $current_lang);
+     $current_lang[1] = strtoupper($current_lang[1]);
+     $current_lang = implode('-', $current_lang);
+ }
 } else {
     $current_lang = 'en';
 }
@@ -17,88 +17,87 @@ if (function_exists('wppo_get_lang')) {
 
 <!-- Good morning, GNOME -->
 <head>
-<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-<title><?php wp_title('-', true, 'right'); ?> <?php bloginfo('name'); ?></title>
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
-<link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.png" />
-<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/loader.js"></script>
+    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#4a86cf">
+    <meta name="application-name" content="GNOME.org Website">
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/images/gnome-logo.svg" rel="icon" sizes="any">
+    <link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.ico" />
+    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-<!-- Fancybox -->
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/pack/fancybox-1.3.4/jquery.easing-1.3.pack.js"></script>
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/pack/fancybox-1.3.4/jquery.fancybox-1.3.4.pack.js"></script>
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_directory'); ?>/pack/fancybox-1.3.4/jquery.fancybox-1.3.4.css" />
+    <?php wp_head(); ?>
 
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/template.js"></script>
-<?php wp_head(); ?>
-
-<?php
-
-
-
-if (is_single() || is_page()) {
-    $custom_css = get_post_meta($post->ID, 'custom_css', true);
-    if (!empty($custom_css)) {
-        echo '<style type="text/css">'."\n";
-        echo $custom_css."\n";
-        echo '</style>'."\n";
+    <!-- Fancybox -->
+    <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/pack/fancybox-1.3.4/jquery.easing-1.3.pack.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/pack/fancybox-1.3.4/jquery.fancybox-1.3.4.pack.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_directory'); ?>/pack/fancybox-1.3.4/jquery.fancybox-1.3.4.css" />
+    <?php
+    if (is_single() || is_page()) {
+        $custom_css = get_post_meta($post->ID, 'custom_css', true);
+        if (!empty($custom_css)) {
+            echo '<style type="text/css">'."\n";
+            echo $custom_css."\n";
+            echo '</style>'."\n";
+        }
     }
-}
-
-?>
+    ?>
 </head>
-
-
-<body>
-
+<body <?php body_class('gnome-body'); ?>>
     <!-- accessibility access -->
     <div id="accessibility_access">
         <ul>
-            <li><a href="#container"><?php _e( 'Go to page content', 'grass' ); ?></a></li>
-            <li><a href="#top_bar"><?php _e( 'Go to main menu', 'grass' ); ?></a></li>
-            <li><a href="#s" onclick="$('#s').focus(); return false;"><?php _e( 'Go to the search field', 'grass' ); ?></a></li>
+            <li><a href="#container"><?php esc_html_e( 'Go to page content', 'grass' ); ?></a></li>
+            <li><a href="#top_bar"><?php esc_html_e( 'Go to main menu', 'grass' ); ?></a></li>
+            <li><a href="#s" onclick="$('#s').focus(); return false;"><?php esc_html_e( 'Go to the search field', 'grass' ); ?></a></li>
         </ul>
     </div>
 
-<!-- Donation ruler for when we run campaigns
-<script type="text/javascript" src="http://www-old.gnome.org/friends/ruler/ruler-privacy.js">  </script> -->
-    
-    <!-- global gnome.org domain bar -->
-        <div id="global_domain_bar">
-            <div class="maxwidth">
-                <div class="tab">
-                    <a class="root" href="http://www.gnome.org/">GNOME.org</a>
+    <?php /* Donation ruler for when we run campaigns */
+        if( get_theme_mod('show_donation_ruler') == true ) { /* The default value in customizer is false */
+            echo '<div class="donation-ruler-container">'."\n";
+            echo '<script type="text/javascript" src="https://static.gnome.org/friends/ruler/ruler-privacy.js"> </script>'."\n";
+            echo '</div>'."\n";
+        }
+    ?>
+
+    <header class="gnome-header <?php if( get_theme_mod('show_donation_ruler') == true ){ echo ('visible-fog-ruler'); }?>">
+        <nav class="navbar navbar-fixed-top navbar-default affix-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
+                    <a id="home-link" class="gnome-navbar-brand"  title="<?php esc_attr_e( 'Go to home page', 'grass' ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/gnome-logo.svg" alt="GNOME: The Free Software Desktop Project">
+                    </a>
+                </div>
+                    <div class="navbar-collapse collapse" id="navbar-wrapper">
+                    <?php
+                        wp_nav_menu( array(
+                            'menu'              => 'primary',
+                            'theme_location'    => 'primary',
+                            'depth'             =>  2,
+                            'container'         => 'false',
+                            'container_class'   => 'collapse navbar-collapse',
+                            'container_id'      => 'bs-example-navbar-collapse-1',
+                            'menu_class'        => 'nav navbar-nav',
+                            'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                            'walker'            => new WP_Bootstrap_Navwalker())
+                        );
+                    ?>
+                    <form id="searchform" method="get" class="navbar-form navbar-right" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
+                        <label for="navbar-search" class="sr-only"><?php esc_html_e( 'Search:', 'grass' ); ?></label>
+                        <div class="form-group has-feedback has-feedback-left">
+                            <span class="form-control-feedback"><i class="fa fa-search" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="s" id="navbar-search" value="<?php if(isset($_GET['s'])) { echo htmlspecialchars(stripslashes(strip_tags($_GET['s']))); } ?>" placeholder="<?php esc_attr_e( 'Search', 'grass' ); ?>"/>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </div>
-    
-    
-    <!-- header -->
-    <div id="header" class="container_12">
-        <div id="logo" class="grid_3">
-            <h1><a title="<?php _e( 'Go to home page', 'grass' ); ?>" href="<?php echo home_url('/'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/gnome-logo.png" alt="<?php echo _e('GNOME: The Free Software Desktop Project', 'grass');?>" /></a></h1>
-        </div>
-        <div id="top_bar" class="grid_9">
-            <div class="left">
-                <?php wp_nav_menu('menu=globalnav'); ?>
-                <?php /*<ul>
-                    <li class="selected"><a href="index.html">About</a></li>
-                    <li><a href="../products/index.html">Products</a></li>
-                    <li><a href="../download/index.html">Download</a></li>
-                    <li><a href="../support/index.html">Support</a></li>
-                    <li><a href="../community/index.html">Community</a></li>
-                    <li><a href="../contact/index.html">Contact</a></li>
-                </ul> */ ?>
-            </div>
-            <div class="right">
-                <form role="search" method="get" id="searchform" action="<?php echo home_url('/'); ?>" >
-                    <div>
-                        <label class="hidden" for="s"><?php _e( 'Search', 'grass' ); ?>: </label><input type="text" value="<?php if(isset($_GET['s'])) { echo htmlspecialchars(stripslashes(strip_tags($_GET['s']))); } ?>" name="s" id="s" placeholder="<?php _e( 'Search', 'grass' ); ?>" />
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+        </nav>
+    </header>
 
-    <div class="clearfix"></div>
+    <div class="gnome-content">

@@ -12,22 +12,46 @@
 wp_enqueue_style( 'genericons', '/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css', array(), '3.1' );
 
 /*
- * Add support for custom menus and posts thumbnails
+ * Add support for theme translations.
+ * Translations should be under /languages/ directory.
  */
 
-add_theme_support('menus');
-add_theme_support( 'post-thumbnails');
+load_theme_textdomain( 'grass', get_template_directory().'/languages' );
 
+// Add default posts and comments RSS feed links to head.
+add_theme_support('automatic-feed-links');
 
 /*
- * Set default banner size
+ * Let WordPress manage the document title.
+ *
+ * @link https://developer.wordpress.org/reference/functions/add_theme_support/#title-tag
  */
-set_post_thumbnail_size(940, 280);
+
+add_theme_support( 'title-tag' );
 
 /*
- * Media sizes for applications icons
+ * Switch default core markup for search form, comment form, and comments to output valid HTML5.
+ *
+ * @link https://developer.wordpress.org/reference/functions/add_theme_support/#html5
+ */
+ 
+add_theme_support('html5', array(
+    'search-form',
+    'comment-form',
+    'comment-list',
+    'gallery',
+    'caption',
+));
+
+/*
+ * Enable support for Post Thumbnails on posts and pages.
+ *
+ * @link https://developer.wordpress.org/reference/functions/add_theme_support/#post-thumbnails
  */
 
+add_theme_support('post-thumbnails');
+
+// Media sizes for applications icons
 add_image_size( 'icon-big', 256, 256, true);
 add_image_size( 'icon-medium', 186, 186, true);
 add_image_size( 'icon-small', 64, 64, true);
@@ -36,6 +60,71 @@ add_image_size( 'image-crafted-content', 420, 263, true);
 add_image_size( 'thumbnail-big', 210, 210, false);
 add_image_size( 'thumbnail-small', 120, 80, false);
 
+// Media size for FoG Hackers and Board Directors icons
+add_image_size( 'fog-hacker-icon', 80, 80, true );
+
+/*
+ * Set default banner size
+ */
+
+set_post_thumbnail_size(940, 280);
+
+
+
+/*
+ * Enqueue scripts and styles
+ */
+ 
+function friends_common_resources() {
+        wp_enqueue_script( 'friends-js', get_template_directory_uri() . '/js/friends.js', false, null, true);
+        wp_enqueue_style('friends', get_template_directory_uri() . '/css/friends.css', array('bootstrap'), null, 'all');
+}
+
+function gnomegrass_resources() {
+
+    // Common scripts
+    wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), null, true);
+    wp_enqueue_script( 'template', get_template_directory_uri() . '/js/template.js', array('jquery'), null, true);
+    wp_enqueue_script( 'foundation', get_template_directory_uri() . '/js/foundation-bar.js', array('jquery'), null, true);
+
+    // Common stylesheets
+    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
+    wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
+
+    // Scripts and styles for page-friends, page-support-gnome and page-donate
+    if (is_page( array('friends', 'donate', 'support-gnome')) ) {
+        friends_common_resources();
+    }
+    
+    // Scripts and styles for page-thank-you
+    if (is_page('thank-you')) {
+        friends_common_resources();
+        wp_enqueue_script( 'clipboard', get_template_directory_uri() . '/js/clipboard.min.js', array('jquery'), null, true);
+    }
+    
+    // Scripts and styles for page-support-gnome
+    if (is_page('support-gnome')) {
+        wp_enqueue_style('friends', get_template_directory_uri() . '/css/friends.css', array('bootstrap'), null, 'all');
+    }
+    
+    // Scripts and styles for page-home
+    if ( !is_home() || is_front_page() ) {
+        wp_enqueue_style('home', get_template_directory_uri() . '/css/home.css', array('bootstrap'), null, 'all');
+        wp_enqueue_style('news', get_template_directory_uri() . '/css/news.css', array('bootstrap'), null, 'all');
+    }
+
+    if (is_page( array('news', 'press') )) {
+        wp_enqueue_style('news', get_template_directory_uri() . '/css/news.css', array('bootstrap'), null, 'all');
+    }
+
+    global $post_type;
+    if( 'post' == $post_type ) {
+        wp_enqueue_style('news', get_template_directory_uri() . '/css/news.css', array('bootstrap'), null, 'all');
+    }
+}
+add_action('wp_enqueue_scripts', 'gnomegrass_resources');
+
 
 /*
  * Add support for banners and projects post types
@@ -43,7 +132,60 @@ add_image_size( 'thumbnail-small', 120, 80, false);
  */
 
 add_action( 'init', function() {
-    
+    register_post_type( 'hackers',
+        array(
+            'labels' => array(
+                'name' => 'FoG hackers',
+                'singular_name' => 'FoG hacker',
+                'add_new' => 'Add New',
+                'add_new_item' => 'Add New FoG hacker',
+                'edit' => 'Edit',
+                'edit_item' => 'Edit',
+                'new_item' => 'New FoG hacker',
+                'view' => 'View',
+                'view_item' => 'View FoG Hhacker',
+                'search_items' => 'Search FoG hackers',
+                'not_found' => 'No FoG hackers found',
+                'not_found_in_trash' => 'No FoG Hackers found in Trash',
+                'parent' => 'Parent FoG hackers',
+            ),
+            'public' => false,
+            'show_ui' => true,
+            'exclude_from_search' => true,
+            'supports' => array(
+                'title', 'thumbnail', 'excerpt', 'revisions', 'author', 'custom-fields'
+            ),
+            'rewrite' => true
+        )
+    );
+
+    register_post_type( 'directors',
+        array(
+            'labels' => array(
+                'name' => 'Board Directors',
+                'singular_name' => 'Board Director',
+                'add_new' => 'Add New',
+                'add_new_item' => 'Add New Director',
+                'edit' => 'Edit',
+                'edit_item' => 'Edit',
+                'new_item' => 'New Director',
+                'view' => 'View',
+                'view_item' => 'View Director',
+                'search_items' => 'Search Directors',
+                'not_found' => 'No Directors found',
+                'not_found_in_trash' => 'No Directors found in Trash',
+                'parent' => 'Parent Directors',
+            ),
+            'public' => false,
+            'show_ui' => true,
+            'exclude_from_search' => true,
+            'supports' => array(
+                'title', 'thumbnail','revisions', 'author'
+            ),
+            'rewrite' => true
+        )
+    );
+
     register_post_type( 'banners',
         array(
             'labels' => array(
@@ -62,6 +204,7 @@ add_action( 'init', function() {
                 'parent' => 'Parent Banner',
             ),
             'public' => true,
+            'show_ui' => false,
             'exclude_from_search' => true,
             'supports' => array(
                 'title', 'thumbnail', 'excerpt', 'revisions', 'author'
@@ -69,7 +212,7 @@ add_action( 'init', function() {
             'rewrite' => true
         )
     );
-    
+
     register_taxonomy(  
         'project_category',
         'projects',  
@@ -112,9 +255,6 @@ add_action( 'init', function() {
     
 });
 
-
-
-
 /* 
  * Applications Quick Links
  */
@@ -132,7 +272,6 @@ $applications_quick_links = array(
     'support'       => __('Support'),
     'translate'     => __('Translate'),
 );
-
 
 /*
  * Custom edit area in Applications
@@ -330,3 +469,66 @@ if (array_key_exists('render-footer-menu', $_GET)) {
     wp_nav_menu('menu=footer');
     exit;
 }
+
+
+add_action( 'admin_head', 'replace_default_featured_image_meta_box', 100 );
+function replace_default_featured_image_meta_box() {
+    add_meta_box('postimagediv', 'FoG Hacker Image', 'post_thumbnail_meta_box', 'hackers', 'side', 'high');
+    add_meta_box('postexcerpt', 'FoG Hacker Description', 'post_excerpt_meta_box', 'hackers', 'normal', 'high');
+    
+    remove_meta_box( 'postimagediv', 'my-post-type-here', 'side' );
+    remove_meta_box( 'postexcerpt', 'post', 'side' );
+}
+
+/*
+ * Add reStructuredText to upload mimetypes
+ * Fixes BZ #687843
+ */
+
+add_filter('upload_mimes', 'custom_mimes_types');
+
+function custom_mimes_types ($existing_mimes) {
+
+    // Add file extension 'extension' with mime type 'mime/type'
+    $existing_mimes['rst'] = 'text/restructured';
+
+    return $existing_mimes;
+}
+
+/*
+ * Bootstrap Walker for the menu
+ */
+
+require_once('lib/wp-bootstrap-navwalker.php');
+
+register_nav_menus( array(
+        'primary' => 'Navbar Menu'
+) );
+
+/*
+ * GNOME Grass Customizer
+ */
+
+require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/grass-sanitize.php';
+
+/**
+ * Order posts by the last word in the post_title.
+ * Activated when orderby is 'wpse_last_word'
+ * @link http://wordpress.stackexchange.com/a/198624/26350
+ * 
+ * Used in Foundation page to sort the Directors
+ */
+
+add_filter( 'posts_orderby', function( $orderby, \WP_Query $q )
+{
+    if( 'wpse_last_word' === $q->get( 'orderby' ) && $get_order =  $q->get( 'order' ) )
+    {
+        if( in_array( strtoupper( $get_order ), ['ASC', 'DESC'] ) )
+        {
+            global $wpdb;
+            $orderby = " SUBSTRING_INDEX( {$wpdb->posts}.post_title, ' ', -1 ) " . $get_order;
+        }
+    }
+    return $orderby;
+}, PHP_INT_MAX, 2 );

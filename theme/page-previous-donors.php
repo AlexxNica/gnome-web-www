@@ -40,20 +40,19 @@ foreach (array(
 
     }
 }
+?>
 
-
-
-
-require_once("header.php"); ?>
+<?php get_header(); ?>
 
     <!-- container -->
-    <div id="container" class="two_columns">
-        <div class="container_12">
+    <div class="container two_columns">
         
+            <div class="col-xs-12">
             <?php require_once('inc/page-title.php'); ?>
+            </div>
             
-            <div class="content without_sidebar">
-                
+            <div class="row content without_sidebar">
+                <div class="col-xs-12">
                 <?php
                 
                 if (isset($donors)) {
@@ -64,7 +63,7 @@ require_once("header.php"); ?>
                         if ($level_count > 1) { // The count behaves weirdly for me. Always +1.
                             echo "<h4>$fname_dispname_map[$level]</h4>\n";
                             echo '<ul class="col-3">'."\n";
-			     foreach ($donor_array as $donor_line) {
+                 foreach ($donor_array as $donor_line) {
                                 $donor = trim($donor_line, "\x00..\x20");
                                 if (strlen($donor) > 0)
                                     echo "  <li>".htmlspecialchars($donor)."</li>\n";
@@ -83,13 +82,9 @@ require_once("header.php"); ?>
                 <br />
                 <div class="clear"></div>
             </div>
-            
-            <?php require_once("footer_art.php"); ?>
         </div>
-    </div>
+    </div>    </div>
     
     <div class="clearfix"></div>
     
-    <?php require_once("footer.php"); ?>
-</body>
-</html>
+<?php get_footer(); ?>

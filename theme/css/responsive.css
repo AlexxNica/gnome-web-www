@@ -1,0 +1,135 @@
+/*
+ * CSS Media queries for the GNOME Project website
+ */
+
+/* Make equal height columns */
+
+.equalizer,
+.equalizer > div[class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 767px) {
+    body { padding-top: 50px } /* height of the menu collapsed */
+
+    .nav-bg {
+        height: 45px;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        background-color: #4a86cf;
+    }
+
+    .menu-open .gnome-content{
+        padding-top: 40px;
+    }
+
+    .navbar-nav.nav > li {
+        position: static;
+    }
+
+    .navbar-nav.nav .dropdown-menu {
+        left: 0 !important;
+        right: 0 !important;
+        box-shadow: none;
+        border: none;
+        margin: 0 auto;
+        background: transparent;
+        padding: 0;
+        border-radius: 0;
+        max-width: 920px;
+    }
+
+    .navbar-nav.nav .dropdown-menu > li {
+        float: left;
+        margin: 0px;
+    }
+
+    .navbar-nav.nav .dropdown-menu > li > a {
+        width: auto !important;
+        background: transparent;
+        line-height: 45px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 0;
+    }
+    .alert-validation-container {
+        margin-bottom: 50px;
+    }
+    .alert-validation {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-top: -2px;
+        margin-left: 270px;
+    }
+    .equalizer,
+    .equalizer > div[class*='col-'] {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        -webkit-box-flex: 1;
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .boxes {
+        margin: 15px 0;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffffff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #ffffff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #ffffff;
+        background-color: #3968a1;
+    }
+    .gnome-navbar-brand {
+        margin-left: 15px;
+    }
+    header {
+        padding-bottom: 40px;
+    }
+
+    h1, #content h1 {
+        font-size: 23px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+
+    .crafted_content .section h2, .crafted_content .section h3 {
+        text-align: center;
+    }
+    .crafted_content .section .text{
+        text-align: center;
+    }
+    .crafted_content .section .image img{
+        margin: auto;
+    }
+    .foundation_board {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media (min-width:768px) and (max-width: 991px){
+    #searchform {
+        width: 70px;
+    }
+    .alert-validation-container {
+        margin-bottom: 80px;
+    }
+}

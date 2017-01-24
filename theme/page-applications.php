@@ -8,19 +8,18 @@ add_action('wp_head', function() {
     echo '<link rel="stylesheet" type="text/css" media="all" href="'.get_bloginfo('template_url').'/css/project.css" />';
 });
 
-
-
 /*
  * Remove feed from this page
  */
 //automatic_feed_links(false);
 //remove_theme_support('automatic-feed-links');
+?>
 
-require_once("header.php"); ?>
+<?php get_header(); ?>
 
     <!-- container -->
     <div id="container">
-        <div class="container_12">
+        <div class="container">
         
             <div class="page_title">
                 <h1><?php the_title(); ?></h1>
@@ -44,11 +43,11 @@ require_once("header.php"); ?>
                 
                 <hr class="top_shadow" />
                 
-                <div class="grid_3 alpha">
+                <div class="col-sm-3">
                     <?php include('applications_sidebar.php'); ?>
                 </div>
                 
-                <div class="grid_9 omega">
+                <div class="col-sm-9">
                     
                     <div class="applications_featured">
                         <?php while ( have_posts() ) : the_post(); ?>
@@ -125,13 +124,9 @@ require_once("header.php"); ?>
                 <?php endif; ?>
                 
             </div>
-            <?php $footer_art = 'applications'; ?>
-            <?php require_once("footer_art.php"); ?>
         </div>
     </div>
     
     <div class="clearfix"></div>
     
-    <?php require_once("footer.php"); ?>
-</body>
-</html>
+<?php get_footer(); ?>

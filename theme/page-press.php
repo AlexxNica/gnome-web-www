@@ -4,33 +4,28 @@
  * @subpackage Grass Theme
  */
 
-add_action('wp_head', 'add_news_stylesheet');
-
-function add_news_stylesheet() {
-    echo '<link rel="stylesheet" type="text/css" media="all" href="'.get_bloginfo('template_url').'/css/news.css" />';
-}
-
 $is_news_home = true;
 
 /*
  * Add link to press feeds instead of current page comments
  */
-automatic_feed_links(false);
 add_action('wp_head', function() {
    echo '<link rel="alternate" type="application/rss+xml" title="'.get_bloginfo('name').' &raquo; ' . get_the_title() . ' Feed" href="'.home_url('/').'category/press/feed/" />'; 
 });
+?>
 
-require_once("header.php"); ?>
+<?php get_header(); ?>
 
     <!-- container -->
     <div id="container" class="two_columns">
-        <div class="container_12">
-        
-            <div class="page_title">
-                <h1><?php the_title(); ?></h1>
+        <div class="container">
+            <div class="col-xs-12">
+                <div class="page_title">
+                    <h1><?php the_title(); ?></h1>
+                </div>
             </div>
             
-            <div class="content">
+            <div class="content col-md-8">
             
                 <?php the_content(); ?>
                 <?php
@@ -63,19 +58,17 @@ require_once("header.php"); ?>
                 </div>
                 <?php endif; ?>
                 <div class="clear"></div>
+                <div class="clearfix"></div>
             </div>
             
-            <div class="sidebar">
+            <div class="sidebar col-md-4">
                 
                 <?php require_once("news_sidebar.php");?>
                 
             </div>
-            <?php require_once("footer_art.php"); ?>
         </div>
     </div>
     
     <div class="clearfix"></div>
     
-    <?php require_once("footer.php"); ?>
-</body>
-</html>
+<?php get_footer(); ?>

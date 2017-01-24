@@ -10,22 +10,23 @@ add_action('wp_head', function() {
     echo '<script type="text/javascript" src="'.get_bloginfo('template_url').'/pack/jcarousel/jquery.jcarousel.min.js"></script>'."\n";
     echo '<script type="text/javascript" src="'.get_bloginfo('template_url').'/js/project.js"></script>'."\n";
 });
+?>
 
-require_once("header.php"); ?>
+<?php get_header(); ?>
 
     <!-- container -->
     <div id="container" class="two_columns">
-        <div class="container_12">
+        <div class="container">
         
             <div class="page_title">
                 <h1><a href="<?php bloginfo('url'); ?>/applications/"><?php echo __('Applications', 'grass');?></a></h1>
             </div>
         
-            <div class="sidebar">
+            <div class="sidebar col-sm-3">
                 <?php include('applications_sidebar.php'); ?>
             </div>
             
-            <div class="content">
+            <div class="content col-sm-9">
             <?php while ( have_posts() ) : the_post(); ?>
             
                 <div class="project">
@@ -305,15 +306,9 @@ require_once("header.php"); ?>
             <?php endwhile; // End the loop. Whew. ?>
             
             </div>
-            <?php
-            $footer_art = 'applications';
-            require_once("footer_art.php");
-            ?>
         </div>
     </div>
     
     <div class="clearfix"></div>
     
-    <?php require_once("footer.php"); ?>
-</body>
-</html>
+<?php get_footer(); ?>

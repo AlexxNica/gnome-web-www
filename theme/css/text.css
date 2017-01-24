@@ -27,17 +27,20 @@ h1, h2, h3, h4, h5, h6, dt {
 }
 h1 {
     font-size: 42px;
+    font-weight: bold;
 }
 h2 {
     font-size: 25px;
+    font-weight: bold;
 }
-h3, dt {
+h3 {
     font-size: 21px;
+    font-weight: bold;
     margin: 0.4em 0 0.5em;
-    color: #2E3436;
+    /*color: #2E3436;*/
 }
 dt {
-    color: #E36615;
+    color: #2E3436;
 }
 dt a:hover {
     color: #fa7721;    
@@ -58,10 +61,10 @@ ol {
 ul {
     list-style:square;
 }
-li {
+/*li {
     margin-left:30px;
-}
-dl,dt,h1,h2,h3,h4,h5,h6,pre,table,address,fieldset {
+}*/
+h1,h2,h3,h4,h5,h6,pre,table,address,fieldset {
     margin: 0.8em 0 0.4em;
 }
 p, dd, .action_box, ul, ol {
@@ -71,6 +74,9 @@ code {
     background: #ececec;
     background: rgba(0,0,0,0.1);
     padding: 1px;
+}
+a {
+  text-decoration: underline;
 }
 
 
@@ -84,6 +90,13 @@ code {
 .main_feature {
     font-size: 16pt;
     line-height: 130%;
+    margin-top: 20px;
+}
+
+.main_heading {
+    font-size: 24pt;
+    line-height: 130%;
+    margin: 0.4em 0;
 }
 
 .footnotes {

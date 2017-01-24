@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function($) {
 
     // Get browser  
     $.each($.browser, function(i) {
@@ -12,7 +12,7 @@ $(document).ready(function() {
         $('body').addClass(match[0]);
     }
 
-    
+
     /* Global search placeholder
      * ====================================================================== */
     

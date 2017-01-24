@@ -1,20 +1,6 @@
-<div class="social_network_icons">
-        <ul>
-                <a href="http://identi.ca/gnome">
-                    <img src="<?php bloginfo('template_url')?>/images/social_networks/identica.png" alt=" " />
-                    
-                </a>
-                <a href="http://twitter.com/gnome">
-                    <img src="<?php bloginfo('template_url')?>/images/social_networks/twitter.png" alt=" " />
-                   
-                </a>
-                <a href="http://www.facebook.com/GNOMEDesktop">
-                    <img src="<?php bloginfo('template_url')?>/images/social_networks/facebook.png" alt=" " />
-                    
-                </a>
-                <a href="https://plus.google.com/108054458791366257368/posts">
-                    <img src="<?php bloginfo('template_url')?>/images/social_networks/gplus.png" alt="GNOME on Google+" rel="publisher" />
-                    
-                </a>
-        </ul>
-</div>
+    <div class="social_network_icons">
+        <a href="https://gnome.org/feed" target="_blank" aria-label="RSS Feed"><i class="fa fa-2x fa-rss" aria-hidden="true" title="RSS Feed"></i></a>
+        <a href="https://www.facebook.com/GNOMEDesktop" target="_blank" aria-label="GNOME on Facebook"><i class="fa fa-2x fa-facebook" aria-hidden="true" title="GNOME on Facebook"></i></a>
+        <a href="https://twitter.com/gnome" target="_blank" aria-label="GNOME on Twitter"><i class="fa fa-2x fa-twitter" aria-hidden="true" title="GNOME on Twitter"></i></a>
+        <a href="https://plus.google.com/+gnome" target="_blank" aria-label="GNOME on Google Plus"><i class="fa fa-2x fa-google-plus" aria-hidden="true" title="GNOME on Google Plus"></i></a>
+    </div>

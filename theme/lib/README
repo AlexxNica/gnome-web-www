@@ -1,0 +1,5 @@
+* wp-bootstrap-navwalker
+https://github.com/wp-bootstrap/wp-bootstrap-navwalker
+
+Modified bootstrap walker for our Foundation submenu needs.
+For more information, see commit ce98936a1dd9efcede0531cc824dc847a771d63a

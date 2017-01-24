@@ -14,3 +14,4 @@ As you can see, the master branch is linked to a git's hook that automatically
 updates the website hosted at www.gnome.org by grabbing the latest content from the
 above repository.
 
+Test

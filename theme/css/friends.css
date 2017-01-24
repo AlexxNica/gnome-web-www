@@ -1,0 +1,153 @@
+/*
+ * CSS code for FoG pages
+ * 
+ * page-donate, page-support-us, page-friends, page-thank-you, page-questionnaire
+ */
+
+/* Boxes for the "Donate to GNOME" page */
+
+.boxes-selection-container {
+    padding-bottom: 20px;
+}
+
+.boxes {
+    text-align: center;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.boxes:hover {
+    background-color: #f5f5f5;
+}
+
+.text-gray,
+.boxes p:nth-child(2) {
+    color: gray;
+}
+
+.boxes.active {
+    background-color: #4A90D9;
+}
+
+.boxes.active p {
+    color: #fff;
+}
+
+/* Customize select button for Bitcoin donations */
+#bitcoin_donation select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../images/asc.svg) 80% / 11% no-repeat #eee;
+}
+
+/*
+ * "Support GNOME" page
+ */
+
+.donation-boxes-container  {
+    margin: 20px auto;
+}
+.donation-boxes  {
+    margin: 10px auto;
+}
+.donation-boxes a {
+    padding: 15px;
+    border-radius: 0;
+    white-space: normal;
+}
+.donation-boxes p:nth-child(1) {
+    font-size: 17pt;
+    line-height: 90%;
+}
+.donation-boxes .btn {
+    text-align: left !important;
+}
+.donation-benefits {
+    padding-top: 15px;
+}
+.boxes-content-container {
+    min-height: 370px;
+}
+.donation-benefits button {
+    padding-left:0px;
+    text-align: left;
+    white-space: normal;
+    color: gray;
+}
+.donation-benefits button:hover,
+.donation-benefits button:focus {
+    color: gray;
+    text-decoration: none;
+}
+.donation-benefits button [class*="fa fa-"] {
+    margin-left: 5px;
+}
+
+
+/*
+ * "Become a Friend of GNOME" page
+ */
+ 
+.fog-hackers {
+    margin-bottom: 20px;
+}
+
+.fog-hackers .media-heading label {
+    font-weight: 400;
+}
+
+/* description for FoG hacker */
+.fog-hackers .media-body p:nth-child(2){
+    display: inline;
+    color: gray;
+}
+
+
+.alert-validation-container {
+    position: relative;
+}
+
+.alert-validation {
+    background: #f2f2f2;
+    padding: 7px 14px;
+}
+
+/* Remove the default padding from the checkbox 
+ * This applies only when the lwm subscription message is visible
+ */
+.alert-validation .checkbox{
+    padding-top: 0px;
+}
+
+
+#donate_form .input-group .form-control,
+#bitcoin_donation .input-group .form-control {
+    border-radius: 4px;
+}
+/* 
+ * "Thank you" page
+ */
+
+/* we need round icons */
+#thankyou [class*="fa fa-"] {
+    background-color: #D3D7CF;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    margin: 5px 10px 20px;
+    width: 50px;
+    font-size: 25px;
+    text-align: center;
+}
+
+/*
+ * Miscellaneous
+ */
+ 
+.form-horizontal .control-label {
+    color: #3465A4;
+    font-weight: 600;
+}
