@@ -69,7 +69,7 @@
                                 </div>
                             </div>
 
-                            <p class="text-gray">Subscription payments will continue until you contact the GNOME Foundation to cancel the payments. Regular donations can only be made through PayPal. <a href="../donate">One time donations</a> can be made using other payment methods, but do not qualify for Friends of GNOME membership.</p>
+                            <p class="text-gray">Subscription payments will continue until you contact the GNOME Foundation to cancel the payments. Regular donations can only be made through PayPal. <a href="../support-gnome/donate">One time donations</a> can be made using other payment methods, but do not qualify for Friends of GNOME membership.</p>
 
                             <div class="col-sm-12 no-padding">
                                 <h3><?php esc_html_e( 'Adopt a hacker!', 'grass' ); ?></h3>
