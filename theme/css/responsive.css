@@ -123,6 +123,9 @@
         -webkit-column-count: 1;
         column-count: 1;
     }
+    .btn-xs-margin-bottom {
+        margin-bottom: 8px;
+    }
 }
 
 @media (min-width:768px) and (max-width: 991px){

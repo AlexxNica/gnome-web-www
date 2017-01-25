@@ -24,11 +24,11 @@ add_action('wp_head', function() {
                     <p><?php echo get_theme_mod( 'featured_subheading');?></p>
                     <div class="col-md-12">
                         <?php if ( get_theme_mod( 'featured_button_url_1' ) ) : ?>
-                        <a class="btn btn-default" href="<?php echo esc_url( get_page_link( get_theme_mod('featured_button_url_1'))) ?>"><?php echo esc_html( get_theme_mod( 'featured_button_text_1')) ?></a>
+                        <a class="btn btn-default btn-xs-margin-bottom" href="<?php echo esc_url( get_page_link( get_theme_mod('featured_button_url_1'))) ?>"><?php echo esc_html( get_theme_mod( 'featured_button_text_1')) ?></a>
                         <?php endif; ?>
 
                         <?php if ( get_theme_mod( 'featured_button_url_2' ) ) : ?>
-                        <a class="btn btn-default" href="<?php echo esc_url( get_page_link( get_theme_mod('featured_button_url_2'))) ?>"><?php echo esc_html( get_theme_mod( 'featured_button_text_2')) ?></a>
+                        <a class="btn btn-default btn-xs-margin-bottom" href="<?php echo esc_url( get_page_link( get_theme_mod('featured_button_url_2'))) ?>"><?php echo esc_html( get_theme_mod( 'featured_button_text_2')) ?></a>
                         <?php endif; ?>
                     </div>
                 </div>
