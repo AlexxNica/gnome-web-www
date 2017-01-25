@@ -21,7 +21,7 @@ if (function_exists('wppo_get_lang')) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#4a86cf">
     <meta name="application-name" content="GNOME.org Website">
-    <link href="<?php bloginfo('stylesheet_directory'); ?>/images/gnome-logo.svg" rel="icon" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="<?php bloginfo('stylesheet_directory'); ?>/images/gnome-icon.svg" sizes="any">
     <link rel="icon" type="image/png" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.ico" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
