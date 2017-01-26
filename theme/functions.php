@@ -3,72 +3,82 @@
  * @package WordPress
  * @subpackage Default_Theme
  */
-
-/*
- * The genericons.css stylesheet wasn't loaded, enqueue
- * it for share icons to show up correctly. 
- */
-
-wp_enqueue_style( 'genericons', '/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css', array(), '3.1' );
-
-/*
- * Add support for theme translations.
- * Translations should be under /languages/ directory.
- */
-
-load_theme_textdomain( 'grass', get_template_directory().'/languages' );
-
-// Add default posts and comments RSS feed links to head.
-add_theme_support('automatic-feed-links');
-
-/*
- * Let WordPress manage the document title.
- *
- * @link https://developer.wordpress.org/reference/functions/add_theme_support/#title-tag
- */
-
-add_theme_support( 'title-tag' );
-
-/*
- * Switch default core markup for search form, comment form, and comments to output valid HTML5.
- *
- * @link https://developer.wordpress.org/reference/functions/add_theme_support/#html5
- */
  
-add_theme_support('html5', array(
-    'search-form',
-    'comment-form',
-    'comment-list',
-    'gallery',
-    'caption',
-));
-
-/*
- * Enable support for Post Thumbnails on posts and pages.
+if ( ! function_exists( 'grass_setup' ) ) : 
+/**
+ * Sets up theme defaults and registers support for various WordPress features.
  *
- * @link https://developer.wordpress.org/reference/functions/add_theme_support/#post-thumbnails
+ * Note that this function is hooked into the after_setup_theme hook, which
+ * runs before the init hook. The init hook is too late for some features, such
+ * as indicating support for post thumbnails. 
  */
+function grass_setup() {
 
-add_theme_support('post-thumbnails');
+    /*
+     * Add support for theme translations.
+     * Translations should be under /languages/ directory.
+     */
 
-// Media sizes for applications icons
-add_image_size( 'icon-big', 256, 256, true);
-add_image_size( 'icon-medium', 186, 186, true);
-add_image_size( 'icon-small', 64, 64, true);
+    load_theme_textdomain( 'grass', get_template_directory().'/languages' );
 
-add_image_size( 'image-crafted-content', 420, 263, true);
-add_image_size( 'thumbnail-big', 210, 210, false);
-add_image_size( 'thumbnail-small', 120, 80, false);
+    // Add default posts and comments RSS feed links to head.
+    add_theme_support('automatic-feed-links');
 
-// Media size for FoG Hackers and Board Directors icons
-add_image_size( 'fog-hacker-icon', 80, 80, true );
+    /*
+     * Let WordPress manage the document title.
+     *
+     * @link https://developer.wordpress.org/reference/functions/add_theme_support/#title-tag
+     */
 
-/*
- * Set default banner size
- */
+    add_theme_support( 'title-tag' );
 
-set_post_thumbnail_size(940, 280);
+    /*
+     * Switch default core markup for search form, comment form, and comments to output valid HTML5.
+     *
+     * @link https://developer.wordpress.org/reference/functions/add_theme_support/#html5
+     */
+     
+    add_theme_support('html5', array(
+        'search-form',
+        'comment-form',
+        'comment-list',
+        'gallery',
+        'caption',
+    ));
 
+    /*
+     * Enable support for Post Thumbnails on posts and pages.
+     *
+     * @link https://developer.wordpress.org/reference/functions/add_theme_support/#post-thumbnails
+     */
+
+    add_theme_support('post-thumbnails');
+
+    // Media sizes for applications icons
+    add_image_size( 'icon-big', 256, 256, true);
+    add_image_size( 'icon-medium', 186, 186, true);
+    add_image_size( 'icon-small', 64, 64, true);
+
+    add_image_size( 'image-crafted-content', 420, 263, true);
+    add_image_size( 'thumbnail-big', 210, 210, false);
+    add_image_size( 'thumbnail-small', 120, 80, false);
+
+    // Media size for FoG Hackers and Board Directors icons
+    add_image_size( 'fog-hacker-icon', 80, 80, true );
+
+    /*
+     * Set default banner size
+     */
+
+    set_post_thumbnail_size(940, 280);
+
+    // Register a menu for the navbar
+    register_nav_menus( array(
+            'primary' => 'Navbar Menu'
+    ) );
+}
+endif;
+add_action( 'after_setup_theme', 'grass_setup' ); 
 
 
 /*
@@ -91,6 +101,13 @@ function gnomegrass_resources() {
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
     wp_enqueue_style('style', get_stylesheet_uri());
     wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
+
+    /*
+    * The genericons.css stylesheet wasn't loaded, enqueue
+    * it for share icons to show up correctly. 
+    */
+
+    wp_enqueue_style( 'genericons', '/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css', array(), '3.1' );
 
     // Scripts and styles for page-friends, page-support-gnome and page-donate
     if (is_page( array('friends', 'donate', 'support-gnome')) ) {
@@ -500,10 +517,6 @@ function custom_mimes_types ($existing_mimes) {
  */
 
 require_once('lib/wp-bootstrap-navwalker.php');
-
-register_nav_menus( array(
-        'primary' => 'Navbar Menu'
-) );
 
 /*
  * GNOME Grass Customizer
