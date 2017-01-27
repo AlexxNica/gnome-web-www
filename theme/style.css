@@ -134,89 +134,12 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-
-/* Global Domain Bar */
-/* ========================================================================== */
-
-
-
-#global_domain_bar {
-    background: #fff;
-    height: 10px;
-}
-#global_domain_bar .maxwidth {
-    position: relative;
-}
-
-/* Tab */
-
-#global_domain_bar .tab {
-    background: #fff;
-    position: absolute;
-    right: 0;
-    float: right;
-    padding: 6px 8px;
-    font-size: 12px;
-    line-height: 16px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    -moz-box-shadow: 0 4px 2px -2px #8fb3d9;
-    -webkit-box-shadow: 0 4px 2px -2px #8fb3d9;
-    box-shadow: 0 4px 2px -2px #8fb3d9;
-    white-space: nowrap;
-}
-#global_domain_bar .tab a.root {
-    color: #555753 !important;
-    font-weight: bold;
-    text-decoration: none;
-    background: #fff url(images/favicon.png) 0 0 no-repeat;
-    padding-left: 18px;
-    border-right: 1px solid #ccc;
-    padding-right: 6px;
-    margin-right: 3px;
-}
-#global_domain_bar .tab a.root:last-child {
-    border-right: 0;
-    padding-right: 0;
-    margin-right: 0;
-    padding-bottom: 3px;
-}
-#global_domain_bar .tab a.root:hover {
-    text-decoration: underline;
-}
-
-
 /* Header */
 /* ========================================================================== */
 
 
-.gnome-header,
-#header {
+.gnome-header {
     margin-bottom: 40px;
-}
-#header img {
-    vertical-align: middle;
-    float: left;
-    margin-right: 10px;
-}
-#header #logo {
-    float: left;
-}
-#header #logo h1 {
-    margin: 0;
-}
-#header #logo img {
-    -webkit-transition: opacity 200ms ease-out;
-    -moz-transition: opacity 200ms ease-out;
-    transition: opacity 200ms ease-out;
-    opacity: 1;
-    margin-left: -3px;
-    height: 76px;
-    width: 199px;
-}
-#header #logo img:hover {
-    opacity: 0.85;
 }
 
 .gnome-navbar-brand {
@@ -226,149 +149,13 @@ input[type=number]::-webkit-outer-spin-button {
     outline: 0;
     margin-left: 7px;
 }
+
 .gnome-navbar-brand img {
     max-height: 35px;
     min-height: 35px;
     min-width: 35px;
 }
 
-/* Top bar */
-/* ========================================================================== */
-
-
-
-.top_bar {
-    background: #2e3436 url("images/top_bar-bg.png") top repeat-x;
-    margin-top: 55px;
-    font-size: 13px;
-    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px 0 0 6px;
-}
-.top_bar ul {
-    list-style: none;
-    margin: 7px 0 0 0;
-    padding: 0;
-}
-.top_bar ul li {
-    display: inline;
-    margin: 0 0 0 0.5%;     /* to get some left margin for menu items*/
-}
-.top_bar a {
-    color: #fff;
-    text-decoration: none;
-    padding: 4px 8px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    outline: 0;
-    -webkit-transition: background 100ms linear;
-    -moz-transition: background 100ms linear;
-    transition: background 100ms linear;
-    text-shadow: 0 1px 0 #000;
-}
-.top_bar a:hover {
-    background: #64696d;
-    background: rgba(100%, 100%, 100%, 0.2);
-}
-.top_bar a:focus {
-    background: rgba(100%, 100%, 100%, 0.15);
-}
-.top_bar a:active, .top_bar  li.current-menu-item > a, .top_bar li.current-page-ancestor > a{
-    -moz-box-shadow: inset 0 -1px 0 rgba(100%,100%,100%, 0.4), inset 0 1px 3px rgba(0,0,0,0.4);
-    -webkit-box-shadow: inset 0 -1px 0 rgba(100%,100%,100%, 0.4), inset 0 1px 3px rgba(0,0,0,0.4);
-    box-shadow: inset 0 -1px 0 rgba(100%,100%,100%, 0.4), inset 0 1px 3px rgba(0,0,0,0.4);
-
-}
-.top_bar li.selected a {
-    font-weight: bold;
-}
-.top_bar li a span.home {
-    background: url("images/top_bar-item-home.png") no-repeat;
-    padding-left: 18px;
-}
-/*--------------------Search for smartphones----------------------*/
-
-.top_bar #main_search {
-    text-align: right;
-}
-
-.top_bar .left{
-    max-height: 40px;
-    margin-top: 8px;
-}
-.top_bar input {
-    /*margin: 0px;*/
-    line-height: 22px;
-    width: 90%;
-    border: 0;
-    /*font: inherit;*/
-    color: inherit;
-    padding: 0 5%;
-    background: transparent url(images/search-icon.png) 8px center no-repeat;
-    color: #fff;
-    /*border-left: 1px solid rgba(100%,100%,100%,0.3); removed left line search option*/
-    outline: none;
-}
-.top_bar input.placeholder {
-    color: #CCC;
-}
-.top_bar input:focus {
-    background-color: rgba(100%,100%,100%,0.1);
-    -moz-border-radius-topright: 5px;
-    -moz-border-radius-bottomright: 5px;
-    -webkit-border-top-right-radius: 6px;
-    -webkit-border-bottom-right-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-}
-/*------------Search for tablets and above-----------------------------*/
-#top_bar_search {
-    background: #2e3436 url("images/top_bar-bg.png") top repeat-x;
-    margin-top: 55px;
-    margin-left: 0px;
-    font-size: 13px;
-    -moz-border-radius: 0 6px 6px 0;
-    -webkit-border-radius: 0 6px 6px 0;
-    border-radius: 0 6px 6px 0;
-    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-#top_bar_search #main_search {
-    text-align: right;
-}
-#top_bar_search input {
-    margin: -5px 0;
-    line-height: 22px;
-    width: 150px;
-    border: 0;
-    font: inherit;
-    color: inherit;
-    padding: 8px 8px 8px 28px;
-    background: transparent url(images/search-icon.png) 8px center no-repeat;
-    color: #fff;
-    border-left: 1px solid rgba(100%,100%,100%,0.3);
-    outline: none;
-}
-#top_bar_search input.placeholder {
-    color: #CCC;
-}
-#top_bar_search input:focus {
-    background-color: rgba(100%,100%,100%,0.1);
-    -moz-border-radius-topright: 5px;
-    -moz-border-radius-bottomright: 5px;
-    -webkit-border-top-right-radius: 6px;
-    -webkit-border-bottom-right-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-}
-#top_bar_search .right {
-    margin-top: 5px;
-}
 
 /* Main Navigation Menu */
 /* ========================================================================== */
@@ -562,65 +349,6 @@ input[type=number]::-webkit-outer-spin-button {
     box-shadow: none;
 }
 
-/* Foundation Navigation Menu */
-/* ========================================================================== */
-
-.foundation_nav{
-    background: #fff repeat-x;
-    padding: 0px 0;
-    margin-top: 7px;
-    margin-bottom: 40px;
-    margin-left: 40px;
-    margin-right: -7px;
-    font-size: 14px;
-    line-height: normal;
-}
-
-.foundation_nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0 0px;
-}
-
-.foundation_nav ul li {
-    display: inline;
-    margin: 0 3% 0 0;
-}
-
-.foundation_nav a {
-    color: #8c5f93;
-    text-decoration: none;
-    padding: 4px 30px;
-    -moz-border-radius: 7px;
-    -webkit-border-radius: 7px;
-    border-radius: 7px;
-    outline: 0;
-}
-
-.foundation_nav a:hover {
-    text-decoration: underline;
-}
-.foundation_nav a:focus {
-    background: #8c5f93;
-    color: #fff;
-}
-
-.foundation_nav a:active, .foundation_nav li.current-menu-item a, .foundation_nav li.current-page-ancestor a {
-    text-decoration: none;
-    background: #8c5f93;
-    color: #fff;
-    -moz-box-shadow: inset 0 -1px 0 rgba(100%,100%,100%, 0.4), inset 0 1px 3px rgba(0,0,0,0.4);
-    -webkit-box-shadow: inset 0 -1px 0 rgba(100%,100%,100%, 0.4), inset 0 1px 3px rgba(0,0,0,0.4);
-    box-shadow: inset 0 -1px 0 rgba(100%,100%,100%, 0.4), inset 0 1px 3px rgba(0,0,0,0.4);
-}
-
-.foundation_nav li.selected a {
-    font-weight: bold;
-}
-.foundation_nav li a span.home {
-    background: url("images/top_bar-item-home.png") no-repeat;
-    padding-left: 18px;
-}
 
 /* Foundation */
 /* ========================================================================== */
@@ -1126,6 +854,7 @@ dl.icon_list dt img {
     background-position: bottom;
 }
 
+
 /* Page Navigation */
 /* ========================================================================== */
 
@@ -1152,38 +881,6 @@ dl.icon_list dt img {
     float: right;
     background: url(images/go-next.png) top right no-repeat;
     padding-right: 40px;
-}
-
-
-
-/* Footer Artwork */
-/* ========================================================================== */
-
-#footer_art {
-    background: transparent no-repeat;
-    height: 180px;
-    margin-top: 0;
-    clear: left;
-}
-#footer_art.none {
-    height: 30px;
-    margin-top: 0;
-}
-#footer_art.default {
-    background-image: url(images/footer_arts/default.png);
-}
-
-
-/* Footer Grass */
-/* ========================================================================== */
-
-#footer_grass {
-    background: url(images/grass.png) top center repeat-x;
-    height: 39px;
-    margin-top: -53px;
-    margin-bottom: 20px;
-    margin-left: -20px;
-    margin-right: -20px;
 }
 
 
@@ -1446,31 +1143,6 @@ hr.bottom_shadow {
     left: 0;
     background: url(images/video-play.png) center center no-repeat;
     margin: 4px;
-}
-
-/* temporary civicrm hacks */
-
-
-.crm-group legend {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-#Main .crm-block .crm-section .content {
-    margin-left: 0;
-}
-
-
-.crm-section {
-    margin-bottom: 10px;
-}
-
-/* span hacks */
-class[*="span"] .alpha {
-    margin-left: 0;
-}
-class[*="span"] .omega {
-    margin-right: 0;
 }
 
 .col-3 {
