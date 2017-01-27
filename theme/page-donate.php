@@ -21,7 +21,7 @@
                     <div class="col-xs-6 col-sm-3">
                         <div class="boxes active col-xs-12" data-target="1">
                             <p class="main_feature">PayPal</p>
-                            <p><?php esc_html_e( 'Tax deductible in the United States; accepts credit cards', 'grass' ); ?></p>
+                            <p><?php esc_html_e( 'Accepts credit cards; tax deductible in the United States', 'grass' ); ?></p>
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-3">
