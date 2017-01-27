@@ -39,6 +39,7 @@
                     <div class="col-xs-6 col-sm-3">
                         <div class="boxes col-xs-12" data-target="4">
                             <p class="main_feature">Bitcoin</p>
+                            <p><?php esc_html_e( 'For existing Bitcoin users', 'grass' ); ?></p>
                         </div>
                     </div>
                 </div>
@@ -138,6 +139,8 @@
                         
                         <!-- Bitcoin -->
                         <div id="box4" class="boxes-content" style="display:none;">
+                            <p><?php esc_html_e( "If you don't already have bitcoins, this isn't for you.", 'grass' ); ?></p>
+                            <h3><?php esc_html_e( 'Donation amount', 'grass' ); ?></h3>
                             <form id="bitcoin_donation" class="form-horizontal" action="https://bitpay.com/checkout" method="post">
                                 <input type="hidden" name="action" value="checkout" />
                                 <div class="form-group">
