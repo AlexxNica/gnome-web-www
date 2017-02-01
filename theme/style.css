@@ -1044,24 +1044,9 @@ dl.icon_list dt img {
 /* ========================================================================== */
 
 hr {
-    border: 0 #ccc solid;
-    border-top-width: 1px;
-    clear: both;
+    border-top: 1px #c9c9c9 solid;
     height: 0;
     margin: 40px 0;
-}
-
-hr.top_shadow,
-hr.bottom_shadow {
-    height: 25px;
-    background: url(images/hr-shadow.png) no-repeat bottom;
-    background-size: contain;
-    border: 0;
-}
-hr.bottom_shadow {
-    -moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
 }
 
 /* Crafted Content */
