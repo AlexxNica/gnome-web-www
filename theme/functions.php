@@ -531,8 +531,7 @@ function bootstrap_responsive_images( $html ){
     $html = preg_replace('/(<img.*?)(\/>)/', '$1 class="' . $classes . '" $2', $html);
   }
   // remove dimensions from images, does not need it!
-  // Keep dimensions for now..
-  // $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
+  $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
   return $html;
 }
 add_filter( 'the_content','bootstrap_responsive_images',10 );
